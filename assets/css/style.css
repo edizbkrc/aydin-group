@@ -2928,7 +2928,7 @@ header .logo {
 header .logo img {
   height: 41px;
 }
-header .wrapper {
+header .wrapper, header .mobileWrapper {
   width: 100%;
   display: flex;
   align-items: center;
@@ -2937,29 +2937,29 @@ header .wrapper {
   z-index: 2;
   background: #fff;
 }
-header .wrapper .langs {
+header .wrapper .langs, header .mobileWrapper .langs {
   margin-right: auto;
   gap: 10px;
   display: flex;
   align-items: center;
   padding: 0 30px;
 }
-header .wrapper .langs a {
+header .wrapper .langs a, header .mobileWrapper .langs a {
   font-size: 15px;
   font-weight: 700;
   color: #0E3B85;
 }
-header .wrapper .zhafir {
+header .wrapper .zhafir, header .mobileWrapper .zhafir {
   height: 100%;
   padding: 0 35px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-header .wrapper .zhafir img {
+header .wrapper .zhafir img, header .mobileWrapper .zhafir img {
   height: 18px;
 }
-header .wrapper .openSearchBtn {
+header .wrapper .openSearchBtn, header .mobileWrapper .openSearchBtn {
   height: 100%;
   display: flex;
   align-items: center;
@@ -2974,13 +2974,13 @@ header .wrapper .openSearchBtn {
   transition: 0.3s 0.05s linear all;
   background-position: 100% 100%;
 }
-header .wrapper .openSearchBtn .icon {
+header .wrapper .openSearchBtn .icon, header .mobileWrapper .openSearchBtn .icon {
   width: 23px;
   height: 23px;
   fill: #0E3B85;
   transition: 0.3s ease all;
 }
-header .wrapper .openMenuBtn {
+header .wrapper .openMenuBtn, header .mobileWrapper .openMenuBtn {
   border-left: 1px solid #EDF1F8;
   cursor: pointer;
   height: 100%;
@@ -2994,13 +2994,13 @@ header .wrapper .openMenuBtn {
   background-size: 200% 100%;
   transition: 0.3s linear all;
 }
-header .wrapper .openMenuBtn .icon {
+header .wrapper .openMenuBtn .icon, header .mobileWrapper .openMenuBtn .icon {
   width: 32px;
   height: 12px;
   fill: #0E3B85;
   transition: 0.3s 0.1s ease all;
 }
-header .wrapper .openMenuBtn span {
+header .wrapper .openMenuBtn span, header .mobileWrapper .openMenuBtn span {
   color: #0E3B85;
   font-size: 12px;
   font-weight: 300;

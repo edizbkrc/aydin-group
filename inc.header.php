@@ -107,7 +107,7 @@
                 </a>
             </li>
         </ul>
-        <div class="wrapper">
+        <div class="mobileWrapper">
             <div class="langs">
                 <a href="">EN</a>
                 <a href="">TR</a>
