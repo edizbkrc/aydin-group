@@ -324,7 +324,7 @@ html.debugMode:after {
     flex-direction: column;
     width: 100%;
     padding: 30px;
-    top: 10%;
+    top: 5%;
   }
   .page .pageBanner.type8 .content .title {
     height: auto;
@@ -336,6 +336,17 @@ html.debugMode:after {
     width: 100%;
     border-right: none;
     justify-content: flex-start;
+    padding-bottom: 20px;
+    position: relative;
+  }
+  .page .pageBanner.type8 .content .side::before {
+    content: "";
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #EDF1F8;
   }
 }
 @media screen and (max-width: 1399px) {
