@@ -243,6 +243,10 @@ html.debugMode:after {
     width: 50%;
     flex: auto;
   }
+  footer .subFooter .haitianBrands .logo:nth-child(even)::after {
+    content: "";
+    display: none;
+  }
 }
 @media screen and (max-width: 424px) {
   footer .menuList {

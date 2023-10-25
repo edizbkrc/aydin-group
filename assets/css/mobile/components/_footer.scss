@@ -4,6 +4,7 @@
     .menuList {
       flex-wrap: wrap;
       gap: 50px 0;
+
       .menu {
         width: 50%;
         padding-left: 0;
@@ -23,7 +24,12 @@
           width: 50%;
           flex: auto;
 
-
+          &:nth-child(even) {
+            &::after{
+              content: '';
+              display: none;
+            }
+          }
         }
       }
     }
@@ -84,12 +90,13 @@
     .menuList {
     }
 
-    .info{
+    .info {
       padding: 0 20px 35px;
     }
 
     .subFooter {
       padding: 0 20px;
+
       .haitianBrands {
         gap: 30px 0;
       }
