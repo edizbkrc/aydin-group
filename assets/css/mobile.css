@@ -356,6 +356,9 @@ html.debugMode:after {
   }
 }
 @media screen and (max-width: 575px) {
+  .accordionItem .accordionBody {
+    padding: 10px;
+  }
   .accordionItem .accordionHeader {
     font-size: 20px;
   }
