@@ -345,7 +345,7 @@ html.debugMode:after {
     position: absolute;
     bottom: 0;
     left: 0;
-    right: 0;
+    right: 50%;
     background: #EDF1F8;
   }
 }
@@ -357,7 +357,7 @@ html.debugMode:after {
 @media screen and (max-width: 624px) {
   .eventList .eventItem {
     flex-direction: column;
-    gap: 35px;
+    gap: 45px;
     text-align: center;
   }
 }
