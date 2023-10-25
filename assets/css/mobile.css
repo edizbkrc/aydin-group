@@ -325,11 +325,12 @@ html.debugMode:after {
     width: 100%;
     padding: 30px;
     top: 5%;
+    padding: 0;
   }
   .page .pageBanner.type8 .content .title {
     height: auto;
     width: 100%;
-    padding: 20px 0;
+    padding: 20px 0 20px 30px;
   }
   .page .pageBanner.type8 .content .side {
     height: auto;
@@ -338,6 +339,7 @@ html.debugMode:after {
     justify-content: flex-start;
     padding-bottom: 20px;
     position: relative;
+    padding-left: 30px;
   }
   .page .pageBanner.type8 .content .side::before {
     content: "";

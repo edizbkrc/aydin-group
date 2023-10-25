@@ -7,11 +7,12 @@
           width: 100%;
           padding: 30px;
           top: 5%;
+          padding: 0;
 
           .title {
             height: auto;
             width: 100%;
-            padding: 20px 0;
+            padding: 20px 0 20px 30px;
           }
 
           .side {
@@ -21,6 +22,7 @@
             justify-content: flex-start;
             padding-bottom: 20px;
             position: relative;
+            padding-left:30px ;
 
             &::before {
               content: '';
