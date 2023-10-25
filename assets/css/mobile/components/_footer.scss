@@ -1,5 +1,26 @@
-@include media("screen", "<=md") {
+@include media("screen", "<=sm") {
+  footer {
+    .menuList {
+      flex-wrap: wrap;
+      gap: 50px 0;
 
+      .menu {
+        width: 50%;
+      }
+    }
+  }
+}
+
+@include media("screen", "<=md") {
+  footer{
+    .menuList{
+      flex-wrap: wrap;
+      gap: 50px 0;
+      .menu{
+        width: 50%;
+      }
+    }
+  }
 
 }
 

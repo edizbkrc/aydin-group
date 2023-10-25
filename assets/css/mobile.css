@@ -166,5 +166,23 @@ html.debugMode:after {
     display: flex;
   }
 }
+@media screen and (max-width: 576px) {
+  footer .menuList {
+    flex-wrap: wrap;
+    gap: 50px 0;
+  }
+  footer .menuList .menu {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer .menuList {
+    flex-wrap: wrap;
+    gap: 50px 0;
+  }
+  footer .menuList .menu {
+    width: 50%;
+  }
+}
 
 /*# sourceMappingURL=mobile.css.map */
