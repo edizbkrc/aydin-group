@@ -166,6 +166,20 @@ html.debugMode:after {
     display: flex;
   }
 }
+@media screen and (max-width: 576px) {
+  header .wrapper .langs {
+    display: none;
+  }
+  header .wrapper .zhafir {
+    display: none;
+  }
+  header .wrapper .openSearchBtn {
+    display: none;
+  }
+  header .wrapper .openMenuBtn {
+    margin-left: auto;
+  }
+}
 @media screen and (max-width: 768px) {
   header .wrapper .langs {
     display: none;
@@ -203,10 +217,25 @@ html.debugMode:after {
     gap: 50px 0;
   }
   footer .menuList .menu {
-    width: 100%;
+    width: 50%;
+    padding-left: 0;
   }
   footer .subFooter .haitianBrands .logo {
     width: 50%;
+    flex: auto;
+  }
+}
+@media screen and (max-width: 424px) {
+  footer .menuList {
+    flex-wrap: wrap;
+    gap: 50px 0;
+  }
+  footer .menuList .menu {
+    width: 100%;
+    padding-left: 0;
+  }
+  footer .subFooter .haitianBrands .logo {
+    width: 100%;
     flex: auto;
   }
 }

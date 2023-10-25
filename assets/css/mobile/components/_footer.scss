@@ -5,7 +5,8 @@
       gap: 50px 0;
 
       .menu {
-        width: 100%;
+        width: 50%;
+        padding-left: 0;
       }
     }
 
@@ -19,6 +20,31 @@
     }
   }
 }
+
+@include media("screen", "<425px") {
+  footer {
+
+    .menuList {
+      flex-wrap: wrap;
+      gap: 50px 0;
+
+      .menu {
+        width: 100%;
+        padding-left: 0;
+      }
+    }
+
+    .subFooter {
+      .haitianBrands {
+        .logo {
+          width: 100%;
+          flex: auto;
+        }
+      }
+    }
+  }
+}
+
 
 @include media("screen", ">sm", "<=md") {
   footer {
