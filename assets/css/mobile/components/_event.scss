@@ -70,9 +70,7 @@ gap: 60px;
 
 
 @include media("screen", "<md") {
-  .container.customContainer {
-    max-width: 100%;
-  }
+
 }
 
 @include media("screen", "<sm") {
@@ -101,8 +99,17 @@ gap: 60px;
   }
 }
 
-@include media("screen", ">sm", "<md") {
-
+@include media("screen", "<xxl") {
+  .container.customContainer {
+    max-width: 100%;
+  }
+  .page {
+    .pageBanner {
+      .content {
+        width: 100%;
+      }
+    }
+  }
 }
 
 

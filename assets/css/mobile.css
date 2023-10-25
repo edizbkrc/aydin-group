@@ -370,11 +370,6 @@ gap: 60px;
     }
   }
 }*/
-@media screen and (max-width: 767px) {
-  .container.customContainer {
-    max-width: 100%;
-  }
-}
 @media screen and (max-width: 575px) {
   .page .pageBanner .content {
     flex-direction: column;
@@ -392,6 +387,14 @@ gap: 60px;
     width: 100%;
     border-right: none;
     justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 1399px) {
+  .container.customContainer {
+    max-width: 100%;
+  }
+  .page .pageBanner .content {
+    width: 100%;
   }
 }
 
