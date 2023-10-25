@@ -185,6 +185,9 @@ html.debugMode:after {
   }
 }
 @media screen and (max-width: 768px) {
+  footer .menuList .menu {
+    text-align: center;
+  }
   footer .menuList .menu .title::before {
     content: "";
     display: none;
