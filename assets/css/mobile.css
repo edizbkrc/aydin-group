@@ -203,6 +203,9 @@ html.debugMode:after {
   footer .subFooter .haitianBrands {
     gap: 30px 0;
   }
+  footer .subFooter .links {
+    flex-wrap: wrap;
+  }
 }
 
 /*# sourceMappingURL=mobile.css.map */
