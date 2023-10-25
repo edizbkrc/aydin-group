@@ -8,6 +8,15 @@
         width: 100%;
       }
     }
+
+    .subFooter{
+      .haitianBrands{
+        .logo{
+          width: 50%;
+          flex: auto;
+        }
+      }
+    }
   }
 }
 
@@ -19,7 +28,15 @@
 
       .menu {
         width: 50%;
+      }
+    }
 
+    .subFooter{
+      .haitianBrands{
+        .logo{
+          width: 33.33%;
+          flex: auto;
+        }
       }
     }
   }
@@ -37,6 +54,11 @@
             display: none;
           }
         }
+      }
+    }
+    .subFooter{
+      .haitianBrands{
+        gap: 30px 0;
       }
     }
   }
