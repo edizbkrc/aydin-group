@@ -180,6 +180,17 @@ html.debugMode:after {
     margin-left: auto;
   }
 }
+@media screen and (max-width: 469px) {
+  header .wrapper .openMenuBtn {
+    width: 100%;
+    min-width: auto;
+  }
+  header .logo {
+    width: 100%;
+    padding: 20px;
+    min-width: auto;
+  }
+}
 @media screen and (max-width: 768px) {
   header .wrapper .langs {
     display: none;
