@@ -301,6 +301,48 @@ html.debugMode:after {
     flex-wrap: wrap;
   }
 }
+@media screen and (max-width: 1399px) {
+  .container.customContainer {
+    max-width: 100%;
+    padding: 0 100px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .container.customContainer {
+    max-width: 100%;
+    padding: 0 50px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .container.customContainer {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .page .pageBanner.type8 .content {
+    flex-direction: column;
+    width: 100%;
+    padding: 30px;
+    top: 10%;
+  }
+  .page .pageBanner.type8 .content .title {
+    height: auto;
+    width: 100%;
+    padding: 20px 0;
+  }
+  .page .pageBanner.type8 .content .side {
+    height: auto;
+    width: 100%;
+    border-right: none;
+    justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 1399px) {
+  .page .pageBanner.type8 .content {
+    width: 100%;
+  }
+}
 @media screen and (max-width: 624px) {
   .eventList .eventItem {
     flex-direction: column;
@@ -311,31 +353,6 @@ html.debugMode:after {
 @media screen and (max-width: 575px) {
   .eventList {
     padding: 15px;
-  }
-  .page .pageBanner .content {
-    flex-direction: column;
-    width: 100%;
-    padding: 30px;
-    top: 10%;
-  }
-  .page .pageBanner .content .title {
-    height: auto;
-    width: 100%;
-    padding: 20px 0;
-  }
-  .page .pageBanner .content .side {
-    height: auto;
-    width: 100%;
-    border-right: none;
-    justify-content: flex-start;
-  }
-}
-@media screen and (max-width: 1399px) {
-  .container.customContainer {
-    max-width: 100%;
-  }
-  .page .pageBanner .content {
-    width: 100%;
   }
 }
 

@@ -1,0 +1,39 @@
+@include media("screen", "<sm") {
+  .page {
+    .pageBanner {
+      &.type8 {
+        .content {
+          flex-direction: column;
+          width: 100%;
+          padding: 30px;
+          top: 10%;
+
+          .title {
+            height: auto;
+            width: 100%;
+            padding: 20px 0;
+          }
+
+          .side {
+            height: auto;
+            width: 100%;
+            border-right: none;
+            justify-content: flex-start;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media("screen", "<xxl") {
+  .page {
+    .pageBanner {
+      &.type8 {
+        .content {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
