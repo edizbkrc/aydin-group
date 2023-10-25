@@ -301,5 +301,74 @@ html.debugMode:after {
     flex-wrap: wrap;
   }
 }
+/*.eventList {
+  padding: 0 50px;
+  position: relative;
+  .eventItem {
+    border-top: 1px solid #EAF0F9;
+  }
+}
+
+.eventItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+gap: 60px;
+  padding: 15px 0 15px 15px;
+
+  .logo {
+    width: 150px;
+    min-width: 150px;
+    height: 130px;
+
+    img {
+      width: 100%;
+      object-fit: contain;
+      object-position: center;
+      height: 100%;
+    }
+  }
+
+  .content {
+    width: 100%;
+    .title {
+      color: #0E3B85;
+
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 141.5%;
+      margin-bottom: 10px;
+    }
+    .description{
+      color: #0E3B85;
+
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 141.5%;
+    }
+  }
+
+  .goLink {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+    width: 120px;
+    min-width: 120px;
+    color: #0E3B85;
+
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 125.5%;
+
+    .icon {
+      width: 20px;
+      height: 20px;
+      fill: #0E3B85;
+    }
+  }
+}*/
 
 /*# sourceMappingURL=mobile.css.map */

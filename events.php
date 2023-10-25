@@ -1,5 +1,5 @@
 <?php include "inc.header.php"; ?>
-<!--<body class="preload">
+<body class="preload">
 <div class="page">
     <div class="pageBanner type8">
         <div class="background">
@@ -206,7 +206,7 @@
         </div>
     </div>
 </div>
-</body>-->
+</body>
 <?php include "inc.footer.php"; ?>
 
 
