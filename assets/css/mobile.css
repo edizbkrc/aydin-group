@@ -166,9 +166,32 @@ html.debugMode:after {
     display: flex;
   }
 }
+@media screen and (max-width: 768px) {
+  header .wrapper .langs {
+    display: none;
+  }
+  header .wrapper .zhafir {
+    display: none;
+  }
+  header .wrapper .openSearchBtn {
+    display: none;
+  }
+}
 @media screen and (min-width: 769px) {
   header .menu .wrapper {
     display: none;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  header .wrapper .openSearchBtn {
+    width: auto;
+    min-width: auto;
+    padding: 35px;
+  }
+  header .wrapper .openMenuBtn {
+    width: auto;
+    min-width: auto;
+    padding: 15px;
   }
 }
 @media screen and (max-width: 575px) {

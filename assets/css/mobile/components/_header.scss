@@ -1,24 +1,50 @@
 @include media("screen", "<=md") {
-  header{
-    .menu{
+  header {
+    .wrapper {
+      .langs {
+        display: none;
+      }
 
+      .zhafir {
+        display: none;
+      }
+
+      .openSearchBtn {
+        display: none;
+      }
     }
   }
 }
+
 @include media("screen", ">md") {
-  header{
-    .menu{
-.wrapper{
-  display: none;
-}
+  header {
+    .menu {
+      .wrapper {
+        display: none;
+      }
     }
   }
 }
-
 
 
 @include media("screen", ">md", "<=lg") {
+  header {
+    .wrapper {
+      .langs {
+      }
+      .openSearchBtn {
+        width: auto;
+        min-width: auto;
+        padding: 35px;
+      }
 
+      .openMenuBtn{
+        width: auto;
+        min-width: auto;
+        padding: 15px;
+      }
+    }
+  }
 }
 
 
