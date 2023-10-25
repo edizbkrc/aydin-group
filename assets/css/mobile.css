@@ -176,6 +176,9 @@ html.debugMode:after {
   header .wrapper .openSearchBtn {
     display: none;
   }
+  header .wrapper .openMenuBtn {
+    margin-left: auto;
+  }
 }
 @media screen and (min-width: 769px) {
   header .menu .wrapper {
