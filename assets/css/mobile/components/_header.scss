@@ -14,6 +14,10 @@
       }
       .openMenuBtn{
         margin-left: auto;
+
+        span{
+          display: none;
+        }
       }
     }
   }
@@ -23,7 +27,8 @@
   header {
     .wrapper {
       .openMenuBtn{
-        width: 100%;
+        width: auto;
+        padding: 30px;
         min-width: auto;
       }
 

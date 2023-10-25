@@ -1,12 +1,19 @@
 @include media("screen", "<sm") {
   footer {
+
     .menuList {
       flex-wrap: wrap;
       gap: 50px 0;
-
       .menu {
         width: 50%;
         padding-left: 0;
+
+        .title {
+          &::before {
+            content: '';
+            display: none;
+          }
+        }
       }
     }
 
@@ -15,6 +22,8 @@
         .logo {
           width: 50%;
           flex: auto;
+
+
         }
       }
     }
@@ -29,6 +38,7 @@
       gap: 50px 0;
 
       .menu {
+        text-align: center;
         width: 100%;
         padding-left: 0;
       }
@@ -37,7 +47,7 @@
     .subFooter {
       .haitianBrands {
         .logo {
-          width: 100%;
+          width: 50%;
           flex: auto;
         }
       }
@@ -72,19 +82,14 @@
 @include media("screen", "<=md") {
   footer {
     .menuList {
-      .menu {
-        text-align: center;
+    }
 
-        .title {
-          &::before {
-            content: '';
-            display: none;
-          }
-        }
-      }
+    .info{
+      padding: 0 20px 35px;
     }
 
     .subFooter {
+      padding: 0 20px;
       .haitianBrands {
         gap: 30px 0;
       }

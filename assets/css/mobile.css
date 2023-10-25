@@ -179,10 +179,14 @@ html.debugMode:after {
   header .wrapper .openMenuBtn {
     margin-left: auto;
   }
+  header .wrapper .openMenuBtn span {
+    display: none;
+  }
 }
 @media screen and (max-width: 469px) {
   header .wrapper .openMenuBtn {
-    width: 100%;
+    width: auto;
+    padding: 30px;
     min-width: auto;
   }
   header .logo {
@@ -231,6 +235,10 @@ html.debugMode:after {
     width: 50%;
     padding-left: 0;
   }
+  footer .menuList .menu .title::before {
+    content: "";
+    display: none;
+  }
   footer .subFooter .haitianBrands .logo {
     width: 50%;
     flex: auto;
@@ -242,11 +250,12 @@ html.debugMode:after {
     gap: 50px 0;
   }
   footer .menuList .menu {
+    text-align: center;
     width: 100%;
     padding-left: 0;
   }
   footer .subFooter .haitianBrands .logo {
-    width: 100%;
+    width: 50%;
     flex: auto;
   }
 }
@@ -264,12 +273,11 @@ html.debugMode:after {
   }
 }
 @media screen and (max-width: 768px) {
-  footer .menuList .menu {
-    text-align: center;
+  footer .info {
+    padding: 0 20px 35px;
   }
-  footer .menuList .menu .title::before {
-    content: "";
-    display: none;
+  footer .subFooter {
+    padding: 0 20px;
   }
   footer .subFooter .haitianBrands {
     gap: 30px 0;
