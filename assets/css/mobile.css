@@ -166,7 +166,16 @@ html.debugMode:after {
     display: flex;
   }
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 575px) {
+  footer .menuList {
+    flex-wrap: wrap;
+    gap: 50px 0;
+  }
+  footer .menuList .menu {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 768px) {
   footer .menuList {
     flex-wrap: wrap;
     gap: 50px 0;
@@ -176,12 +185,9 @@ html.debugMode:after {
   }
 }
 @media screen and (max-width: 768px) {
-  footer .menuList {
-    flex-wrap: wrap;
-    gap: 50px 0;
-  }
-  footer .menuList .menu {
-    width: 50%;
+  footer .menuList .menu .title::before {
+    content: "";
+    display: none;
   }
 }
 

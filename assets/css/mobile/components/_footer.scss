@@ -1,4 +1,17 @@
-@include media("screen", "<=sm") {
+@include media("screen", "<sm") {
+  footer {
+    .menuList {
+      flex-wrap: wrap;
+      gap: 50px 0;
+
+      .menu {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@include media("screen", ">sm", "<=md") {
   footer {
     .menuList {
       flex-wrap: wrap;
@@ -6,22 +19,26 @@
 
       .menu {
         width: 50%;
+
       }
     }
   }
 }
 
-@include media("screen", "<=md") {
-  footer{
-    .menuList{
-      flex-wrap: wrap;
-      gap: 50px 0;
-      .menu{
-        width: 50%;
+
+@include media("screen","<=md") {
+  footer {
+    .menuList {
+      .menu {
+        .title {
+          &::before {
+            content: '';
+            display: none;
+          }
+        }
       }
     }
   }
-
 }
 
 @include media("screen", ">md", "<=lg") {
