@@ -355,5 +355,14 @@ html.debugMode:after {
     padding: 15px;
   }
 }
+@media screen and (max-width: 575px) {
+  .accordionItem .accordionHeader {
+    font-size: 20px;
+  }
+  .accordionItem .accordionHeader::after {
+    width: 20px;
+    height: 20px;
+  }
+}
 
 /*# sourceMappingURL=mobile.css.map */

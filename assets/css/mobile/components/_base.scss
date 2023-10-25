@@ -19,30 +19,3 @@
   }
 }
 
-@include media("screen", ">=xxl", "<=3xl") {
-
-}
-
-@include media("screen", ">lg") {
-}
-
-@include media("screen", ">sm", "<=md") {
-
-
-}
-
-@include media("screen", ">md", "<=lg") {
-
-}
-
-@include media("screen", ">lg", "<=xl") {
-
-}
-
-@include media("screen", ">=xl") {
-
-}
-
-
-@include media("screen", ">3xl") {
-}
