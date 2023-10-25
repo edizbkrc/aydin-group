@@ -167,6 +167,9 @@ html.debugMode:after {
   }
 }
 @media screen and (max-width: 576px) {
+  header {
+    height: 85px;
+  }
   header .wrapper .langs {
     display: none;
   }
@@ -184,8 +187,11 @@ html.debugMode:after {
   }
 }
 @media screen and (max-width: 469px) {
+  header {
+    height: 70px;
+  }
   header .logo {
-    width: 100%;
+    width: auto;
     padding: 20px;
     min-width: auto;
   }

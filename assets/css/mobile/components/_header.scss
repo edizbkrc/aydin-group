@@ -1,5 +1,6 @@
 @include media("screen", "<=sm") {
   header {
+    height: 85px;
     .wrapper {
       .langs {
         display: none;
@@ -26,8 +27,9 @@
 
 @include media("screen", "<470px") {
   header {
+    height: 70px;
     .logo {
-      width: 100%;
+      width: auto;
       padding: 20px;
       min-width: auto;
     }
