@@ -166,6 +166,11 @@ html.debugMode:after {
     display: flex;
   }
 }
+@media screen and (min-width: 769px) {
+  header .menu .wrapper {
+    display: none;
+  }
+}
 @media screen and (max-width: 575px) {
   footer .menuList {
     flex-wrap: wrap;

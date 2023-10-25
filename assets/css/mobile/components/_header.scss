@@ -1,9 +1,21 @@
 @include media("screen", "<=md") {
+  header{
+    .menu{
 
-
-
-
+    }
+  }
 }
+@include media("screen", ">md") {
+  header{
+    .menu{
+.wrapper{
+  display: none;
+}
+    }
+  }
+}
+
+
 
 @include media("screen", ">md", "<=lg") {
 
