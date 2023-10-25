@@ -25,6 +25,7 @@
   }
 }
 
+
 @include media("screen", "<470px") {
   header {
     height: 70px;
@@ -71,6 +72,7 @@
   }
 }
 
+
 @include media("screen", ">md") {
   header {
     .menu {
@@ -101,17 +103,4 @@
       }
     }
   }
-}
-
-
-@include media("screen", ">=xxl", "<=3xl") {
-
-}
-
-@include media("screen", ">lg", "<=xxl") {
-
-}
-
-@include media("screen", ">=xxl", "<=3xl") {
-
 }

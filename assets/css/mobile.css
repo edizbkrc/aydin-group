@@ -370,5 +370,29 @@ gap: 60px;
     }
   }
 }*/
+@media screen and (max-width: 767px) {
+  .container.customContainer {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 575px) {
+  .page .pageBanner .content {
+    flex-direction: column;
+    width: 100%;
+    padding: 30px;
+    top: 10%;
+  }
+  .page .pageBanner .content .title {
+    height: auto;
+    width: 100%;
+    padding: 20px 0;
+  }
+  .page .pageBanner .content .side {
+    height: auto;
+    width: 100%;
+    border-right: none;
+    justify-content: flex-start;
+  }
+}
 
 /*# sourceMappingURL=mobile.css.map */

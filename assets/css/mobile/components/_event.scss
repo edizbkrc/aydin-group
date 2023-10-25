@@ -69,3 +69,57 @@ gap: 60px;
 }*/
 
 
+@include media("screen", "<md") {
+  .container.customContainer {
+    max-width: 100%;
+  }
+}
+
+@include media("screen", "<sm") {
+  .page {
+    .pageBanner {
+      .content {
+        flex-direction: column;
+        width: 100%;
+        padding: 30px;
+        top: 10%;
+
+        .title {
+          height: auto;
+          width: 100%;
+          padding: 20px 0;
+        }
+
+        .side {
+          height: auto;
+          width: 100%;
+          border-right: none;
+          justify-content: flex-start;
+        }
+      }
+    }
+  }
+}
+
+@include media("screen", ">sm", "<md") {
+
+}
+
+
+@include media("screen", ">sm", "<md") {
+
+}
+
+@include media("screen", ">sm", "<md") {
+
+}
+
+@include media("screen", ">sm", "<md") {
+
+}
+
+
+@include media("screen", ">sm", "<md") {
+
+}
+

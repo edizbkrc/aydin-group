@@ -36,6 +36,7 @@
   }
 }
 
+
 @include media("screen", "<425px") {
   footer {
 
@@ -106,18 +107,4 @@
       }
     }
   }
-}
-
-@include media("screen", ">md", "<=lg") {
-
-}
-
-@include media("screen", ">lg", "<=xl") {
-
-
-}
-
-
-@include media("screen", ">lg", "<=xxl") {
-
 }
