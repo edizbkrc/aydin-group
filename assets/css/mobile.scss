@@ -1,0 +1,13 @@
+@import "breakpoints";
+@include  responsiveTest();
+@import "mobile/components/header";
+@import "mobile/components/footer";
+@import "mobile/components/base";
+
+@import "mobile/pages/index";
+
+
+
+
+
+

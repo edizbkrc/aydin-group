@@ -1,0 +1,30 @@
+.mapInfoWindows {
+  width: 165px;
+  border-radius: 9px;
+  background: #FFF;
+  position: absolute;
+
+  padding: 19px;
+  display: block;
+transform: translate(-100%,-100%);
+  z-index: 11;
+  .windowImage {
+    aspect-ratio: 82/75;
+    width: 82px;
+    border-radius: 9px;
+    overflow: hidden;
+    margin-bottom: 13px;
+
+    img {
+      @include objectFitCover();
+
+    }
+  }
+
+  .windowText {
+    color: #000;
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 155.7%;
+  }
+}

@@ -1,0 +1,55 @@
+.contactWidget {
+  aspect-ratio: 305/417;
+  position: relative;
+
+  img {
+    @include pos(absolute, 0, 0, 0, 0, -1);
+    @include objectFitCover();
+  }
+
+  &:before {
+    content: '';
+    @include pos(absolute, 0, 0, 0, 0, 1);
+    background: linear-gradient(0deg, #0E3B85 9.37%, rgba(217, 217, 217, 0.00) 100%);
+  }
+
+  .content {
+    position: absolute;
+    left: 50%;
+
+    bottom: 0;
+    z-index: 2;
+    max-width: 200px;
+    transform: translateX(-50%);
+    padding-bottom: 50px;
+
+    .text {
+      color: #C8DAF8;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 126%;
+      margin-bottom: 15px;
+    }
+
+    .phone {
+      color: #FFF;
+      font-size: 27px;
+      font-weight: 700;
+
+    }
+
+    hr {
+      border: 0;
+      border-bottom: 1px solid #5271A4;
+      margin: 20px 0;
+    }
+
+    .contactus {
+      color: #FFF;
+      font-size: 18px;
+      font-weight: 400;
+      display: block;text-align: center;
+
+    }
+  }
+}

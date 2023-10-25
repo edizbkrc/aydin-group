@@ -1,0 +1,44 @@
+.videoItem {
+  display: block;
+  aspect-ratio: 960/444;
+  position: relative;
+
+  &:before {
+    content: '';
+    @include getMask("../img/svg/playcircle.svg");
+    background: #fff;
+    width: 6.25%;
+    aspect-ratio: 1/1;
+    position: absolute;
+    left: 50%;
+
+    transform: translateX(-50%);
+    bottom: 14%;
+    z-index: 2;
+  }
+
+  .coverImage {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+
+    img {
+      @include objectFitCover();
+    }
+  }
+
+  &.type2 {
+    aspect-ratio: 720/430;
+
+    &:before {
+      background: #0E3B85;
+      bottom: 40px;
+      left: unset;
+      transform: unset;
+      right: 50px;
+    }
+  }
+}

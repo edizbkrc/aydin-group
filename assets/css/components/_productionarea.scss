@@ -1,0 +1,73 @@
+.productionAreaList {
+  padding: 15px 0 30px;
+
+  .productionArea {
+    margin-bottom: 40px;
+  }
+}
+
+.productionArea {
+  padding: 13px;
+
+  display: flex;
+  gap: 48px;
+
+  .imgArea {
+    aspect-ratio: 293/208;
+    width: 290px;
+    min-width: 290px;
+
+    img {
+      @include objectFitCover();
+
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .title {
+      color: #0E3B85;
+
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 128.5%;
+      margin-bottom: 10px;
+    }
+
+    .description {
+      color: #0E3B85;
+      font-size: 13px;
+      font-weight: 300;
+      line-height: 128.5%;
+      margin-bottom: 30px;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+gap: 20px 0;
+      a {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: #0E3B85;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 128.5%;
+        b{
+          font-weight: 500;
+        }
+        .icon {
+          width: 18px;
+          height: +18px;
+          fill: #0E3B85;
+        }
+      }
+    }
+  }
+
+}
