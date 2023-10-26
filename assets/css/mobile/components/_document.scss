@@ -1,0 +1,7 @@
+@include media("screen", "<md") {
+  .documentsList {
+    .logo{
+      max-height: 40px;
+    }
+  }
+}
