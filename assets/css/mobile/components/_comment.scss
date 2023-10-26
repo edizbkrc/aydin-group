@@ -1,0 +1,9 @@
+@include  media("screen" , "<500px"){
+  .commentItem {
+    padding: 0 20px;
+    .comment {
+      font-size: 20px;
+      line-height: 135.5%;
+    }
+  }
+}

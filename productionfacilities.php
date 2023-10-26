@@ -19,12 +19,12 @@ TESİSİMİZ</span>
         <div class="pageContent">
 
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-sm-6">
                     <a href="" class="galleryItem vertical">
                         <img src="assets/img/gallery1.png" alt="">
                     </a>
                 </div>
-                <div class="col-md-6">
+                <div class="col-sm-6 ">
                     <a href="" class="galleryItem">
                         <img src="assets/img/gallery2.png" alt="">
                     </a>
@@ -32,7 +32,7 @@ TESİSİMİZ</span>
                         <img src="assets/img/gallery3.png" alt="">
                     </a>
                 </div>
-                <div class="col-md-6">
+                <div class="col-sm-6">
                     <a href="" class="galleryItem">
                         <img src="assets/img/gallery4.png" alt="">
                     </a>
@@ -40,7 +40,7 @@ TESİSİMİZ</span>
                         <img src="assets/img/gallery5.png" alt="">
                     </a>
                 </div>
-                <div class="col-md-6">
+                <div class="col-sm-6">
                     <a href="" class="galleryItem vertical">
                         <img src="assets/img/gallery6.png" alt="">
                     </a>

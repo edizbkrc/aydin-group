@@ -22,12 +22,12 @@
 
 
 ## MOBİL
-- [ ] Header
+- [x] Header
 - [ ] Anasayfa
-- [ ] Footer
-- [ ] Kurumsal
-- [ ] Rakamlarla Haitian
-- [ ] Stratejimiz
+- [x] Footer
+- [x] Kurumsal
+- [x] Rakamlarla Haitian
+- [x] Stratejimiz
 - [ ] Misyon ve Vizyon
 - [ ] Üretim Tesisleri
 - [ ] Ürün Detay
@@ -36,7 +36,7 @@
 - [ ] Haber Detay
 - [ ] Çözümler
 - [ ] Çözümler Detay
-- [ ] Etkinlikler
+- [x] Etkinlikler
 - [ ] Dökümanlar
 - [ ] Yatırımcı İlişkileri
 - [ ] İletişim
