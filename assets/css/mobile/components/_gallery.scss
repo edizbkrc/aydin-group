@@ -14,3 +14,18 @@
     margin-bottom: 19px;
   }
 }
+
+@include media("screen",">lg" ,"<xxl") {
+  .owlGallery {
+    padding:0 30px;
+
+    .owl-nav {
+      .owl-prev {
+        left: -30px;
+      }
+      .owl-next {
+        right: -30px;
+      }
+    }
+  }
+}

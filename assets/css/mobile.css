@@ -770,6 +770,17 @@ html.debugMode:after {
     margin-bottom: 19px;
   }
 }
+@media screen and (min-width: 993px) and (max-width: 1399px) {
+  .owlGallery {
+    padding: 0 30px;
+  }
+  .owlGallery .owl-nav .owl-prev {
+    left: -30px;
+  }
+  .owlGallery .owl-nav .owl-next {
+    right: -30px;
+  }
+}
 @media screen and (max-width: 1919px) {
   .newsItem2 .content {
     padding: 40px 20px;

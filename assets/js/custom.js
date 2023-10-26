@@ -169,14 +169,14 @@ $(document).ready(function () {
                 items: 3,
                 nav: false,
             },
-            992: {
+            980: {
                 items: 4,
-                nav: false,
+                nav: true,
             },
 
 
             1200: {
-                items: 3
+                items: 5
             },
             1600: {
                 items: 5
