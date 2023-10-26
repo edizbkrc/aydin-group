@@ -288,6 +288,9 @@ html.debugMode:after {
   }
 }
 @media screen and (max-width: 768px) {
+  footer {
+    margin-top: 30px;
+  }
   footer .info {
     padding: 0 20px 35px;
   }
@@ -400,12 +403,14 @@ html.debugMode:after {
     max-width: 100%;
   }
 }
-@media screen and (max-width: 499px) {
+@media screen and (max-width: 699px) {
   .strategySlogan .text1 {
     font-size: 20px;
   }
   .strategySlogan .text2 {
     font-size: 30px;
+    padding: 0 20px;
+    padding: 0 20px;
   }
   .ourSolutions .subTitle {
     font-size: 25px;
@@ -679,7 +684,7 @@ html.debugMode:after {
     margin-bottom: 20px;
   }
 }
-@media screen and (max-width: 499px) {
+@media screen and (max-width: 699px) {
   .strategyFeatures {
     padding: 0 20px;
   }
