@@ -1,5 +1,6 @@
 @import "breakpoints";
-@include  responsiveTest();
+
+@include responsiveTest();
 @import "mobile/components/header";
 @import "mobile/components/footer";
 @import "mobile/components/base";
@@ -10,6 +11,7 @@
 
 @import "mobile/components/event";
 @import "mobile/components/accordion";
+@import "mobile/components/timeline";
 
 
 
