@@ -320,6 +320,9 @@ html.debugMode:after {
   }
 }
 @media screen and (max-width: 575px) {
+  .page .pageBanner {
+    height: 32vh;
+  }
   .page .pageBanner .content {
     flex-direction: column;
     width: 100%;
@@ -329,16 +332,19 @@ html.debugMode:after {
   .page .pageBanner .content .title {
     height: auto;
     width: 100%;
-    padding: 20px 0 20px 30px;
+    padding: 0;
+    font-size: 31px;
+    text-align: center;
+    justify-content: center;
   }
   .page .pageBanner .content .side {
     height: auto;
     width: 100%;
     border-right: none;
-    justify-content: flex-start;
+    justify-content: center;
     padding-bottom: 20px;
     position: relative;
-    padding-left: 30px;
+    padding-left: 0;
     margin-top: 30px;
   }
   .page .pageBanner .content .side::before {
@@ -485,28 +491,33 @@ html.debugMode:after {
     width: 100%;
     z-index: 1;
     margin-bottom: 30px;
+    margin-top: 30px;
   }
   .timeline .timelineItem:before {
     top: auto;
     right: auto;
     left: 50%;
     transform: translateX(-50%);
-    bottom: -30px;
+    bottom: -40px;
   }
   .timeline .timelineItem:nth-child(even) {
-    margin-top: 120px;
+    margin-top: 30px;
   }
   .timeline .timelineItem:nth-child(even):before {
     left: 50%;
-    top: -30px;
+    bottom: -48px;
   }
-}
-@media screen and (max-width: 575px) {
+  .timeline .timelineItem:nth-last-child(1):before {
+    display: none;
+  }
   .timeLineImg {
     height: 90px;
   }
-  .timeline .timelineItem:nth-child(even) {
-    margin-top: 80px;
+  .videoItem {
+    aspect-ratio: 960/570;
+  }
+  .videoItem::before {
+    width: 10.25%;
   }
 }
 @media screen and (max-width: 767px) {
