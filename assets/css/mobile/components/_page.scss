@@ -74,7 +74,7 @@
           }
         }
       }
-      &.type4{
+      &.type4,{
         height: 18vh;
         .content {
           &::before{
@@ -85,6 +85,13 @@
             span{
               max-width: 100%;
             }
+          }
+        }
+      }
+      &.type5,&.type8{
+        .content{
+          .title{
+            align-items: center;
           }
         }
       }

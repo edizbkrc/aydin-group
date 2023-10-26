@@ -9,29 +9,44 @@
 @include media("screen", "<md") {
   .newsItem2 {
     .content {
-      .title{
+      .title {
         font-size: 22px;
       }
-      .text{
+
+      .text {
         font-size: 15px;
       }
-      .goNews{
-        .icon{
+
+      .goNews {
+        .icon {
           height: 14px;
           width: 14px;
         }
       }
     }
   }
-  .nextNews{
+  .nextNews {
     padding: 0 30px 0 0;
     width: 175px;
   }
 }
 
 @include media("screen", "<800px") {
-  .nextNews{
+  .nextNews {
     padding: 0 30px 0 0;
     width: 100%;
+    position: relative;
+    margin-top: 20px;
+
+    &::before{
+      content: '';
+      position: absolute;
+      background: #0E3B85;
+      left: 0;
+      right: 0;
+      top: -35px;
+      height: 2px;
+
+    }
   }
 }
