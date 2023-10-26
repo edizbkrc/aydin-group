@@ -1,63 +1,4 @@
-@include media("screen", ">sm", "<md") {
-  .strategyWrapper {
-
-    .strategyItem {
-    }
-  }
-
-  .strategyItem {
-
-
-    .icon {
-
-    }
-
-    .text {
-
-    }
-
-    .description {
-
-    }
-
-    img {
-
-    }
-
-    &.blue {
-
-
-      .text {
-
-      }
-
-      .description {
-
-      }
-
-      .icon {
-
-      }
-    }
-
-    &.green {
-
-
-      .text {
-
-      }
-
-      .description {
-
-      }
-
-      .icon {
-
-      }
-    }
-  }
-
-
+@include media("screen", "<md") {
   .strategyFeatures {
     padding: 0 20px ;
 
@@ -84,4 +25,7 @@
     }
   }
 
+  .strategyItem{
+    padding: 55px 20px;
+  }
 }

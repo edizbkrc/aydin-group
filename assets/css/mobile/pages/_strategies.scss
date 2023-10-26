@@ -1,4 +1,4 @@
-@include media("screen", ">sm", "<md") {
+@include media("screen",  "<md") {
   .strategySlogan {
 
 
@@ -9,4 +9,11 @@
     }
   }
 
+  .ourSolutions {
+    padding: 65px 0 120px;
+
+    img{
+      max-width: 100%;
+    }
+  }
 }

@@ -362,10 +362,16 @@ html.debugMode:after {
     width: 100%;
   }
 }
-@media screen and (min-width: 577px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .strategySlogan:before {
     left: 0;
     width: auto;
+  }
+  .ourSolutions {
+    padding: 65px 0 120px;
+  }
+  .ourSolutions img {
+    max-width: 100%;
   }
 }
 @media screen and (max-width: 624px) {
@@ -562,7 +568,7 @@ html.debugMode:after {
     font-size: 43px;
   }
 }
-@media screen and (min-width: 577px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .strategyFeatures {
     padding: 0 20px;
   }
@@ -576,6 +582,9 @@ html.debugMode:after {
   }
   .strategyFeatures .item .text {
     width: 100%;
+  }
+  .strategyItem {
+    padding: 55px 20px;
   }
 }
 
