@@ -16,7 +16,7 @@
         <div class="row">
             <?php for ($i = 1; $i <= 4; $i++) { ?>
 
-                <div class="col-md-6">
+                <div class="col-sm-6">
                     <div class="newsItem2">
                         <div class="imgArea">
                             <img src="assets/img/news<?= $i ?>.png" alt="">
