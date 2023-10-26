@@ -19,9 +19,34 @@
   }
 }
 
+@include media("screen",">md", "<3xl"){
+  .page {
+    .pageBanner {
+      .content {
+       &::before{
+         right: 40%;
+       }
+      }
+    }
+  }
+}
+
+@include media("screen",">md", "<900px"){
+  .page {
+    .pageBanner {
+
+      .content {
+        &::before{
+          right: 30%;
+        }
+      }
+    }
+  }
+}
+
 @include media("screen", "<md") {
   .page {
-    .pageBanner.type5 {
+    .pageBanner,.type6 {
       .descriptonWrapper {
         padding: 20px;
 
@@ -34,10 +59,19 @@
         height: auto;
         margin-bottom: 50px;
 
+        &::before{
+          bottom: 50px;
+        }
+
         .title {
           align-items: center;
-          margin-top: 30px;
+          margin-top: 15px;
           margin-bottom: 30px;
+          padding: 0 20px;
+          font-size: 25px;
+          span{
+            max-width: 100%;
+          }
         }
       }
     }
@@ -62,6 +96,7 @@
           font-size: 31px;
           text-align: center;
           justify-content: center;
+          font-size: 25px;
 
           .date {
             margin: 0 auto;
@@ -93,5 +128,17 @@
   }
 }
 
-
-
+@include media("screen", "<lg") {
+  .page {
+    .pageBanner,.type6 {
+      .content {
+        .title {
+          font-size: 25px;
+          span{
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
+}

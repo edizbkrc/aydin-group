@@ -333,21 +333,39 @@ html.debugMode:after {
     width: 100%;
   }
 }
+@media screen and (min-width: 769px) and (max-width: 1919px) {
+  .page .pageBanner .content::before {
+    right: 40%;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 899px) {
+  .page .pageBanner .content::before {
+    right: 30%;
+  }
+}
 @media screen and (max-width: 767px) {
-  .page .pageBanner.type5 .descriptonWrapper {
+  .page .pageBanner .descriptonWrapper, .page .type6 .descriptonWrapper {
     padding: 20px;
   }
-  .page .pageBanner.type5 .descriptonWrapper .description {
+  .page .pageBanner .descriptonWrapper .description, .page .type6 .descriptonWrapper .description {
     line-height: 160%;
   }
-  .page .pageBanner.type5 .content {
+  .page .pageBanner .content, .page .type6 .content {
     height: auto;
     margin-bottom: 50px;
   }
-  .page .pageBanner.type5 .content .title {
+  .page .pageBanner .content::before, .page .type6 .content::before {
+    bottom: 50px;
+  }
+  .page .pageBanner .content .title, .page .type6 .content .title {
     align-items: center;
-    margin-top: 30px;
+    margin-top: 15px;
     margin-bottom: 30px;
+    padding: 0 20px;
+    font-size: 25px;
+  }
+  .page .pageBanner .content .title span, .page .type6 .content .title span {
+    max-width: 100%;
   }
 }
 @media screen and (max-width: 575px) {
@@ -367,6 +385,7 @@ html.debugMode:after {
     font-size: 31px;
     text-align: center;
     justify-content: center;
+    font-size: 25px;
   }
   .page .pageBanner .content .title .date {
     margin: 0 auto;
@@ -391,6 +410,14 @@ html.debugMode:after {
     background: #EDF1F8;
   }
 }
+@media screen and (max-width: 991px) {
+  .page .pageBanner .content .title, .page .type6 .content .title {
+    font-size: 25px;
+  }
+  .page .pageBanner .content .title span, .page .type6 .content .title span {
+    max-width: 100%;
+  }
+}
 @media screen and (max-width: 767px) {
   .strategySlogan:before {
     left: 0;
@@ -409,7 +436,6 @@ html.debugMode:after {
   }
   .strategySlogan .text2 {
     font-size: 30px;
-    padding: 0 20px;
     padding: 0 20px;
   }
   .ourSolutions .subTitle {
@@ -819,7 +845,7 @@ html.debugMode:after {
     padding: 0 30px 30px;
   }
 }
-@media screen and (max-width: 1399px) {
+@media screen and (max-width: 1919px) {
   .contactWidget {
     margin-bottom: 30px;
   }
