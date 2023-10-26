@@ -1,0 +1,12 @@
+@include media("screen", ">sm", "<md") {
+  .strategySlogan {
+
+
+    &:before {
+
+      left: 0;
+      width: auto;
+    }
+  }
+
+}

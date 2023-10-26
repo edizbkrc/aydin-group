@@ -85,24 +85,6 @@ HAİTİAN</span>
                 </div>
             </div>
             <div class="numberOfHaitianItem">
-                <div class="icon" style="--icon:url(../img/svg/numbersofhaitian3.svg)"></div>
-                <div class="text">
-                    2022 TESLİM EDİLEN
-                </div>
-                <div class="number">
-                    36.000
-                </div>
-            </div>
-            <div class="numberOfHaitianItem">
-                <div class="icon" style="--icon:url(../img/svg/numbersofhaitian4.svg)"></div>
-                <div class="text">
-                    ÜRETİM ALANI
-                </div>
-                <div class="number">
-                    1,120,00 <small> m3</small>
-                </div>
-            </div>
-            <div class="numberOfHaitianItem">
                 <div class="icon" style="--icon:url(../img/svg/numbersofhaitian5.svg)"></div>
                 <div class="text">
                     TOPLAM
