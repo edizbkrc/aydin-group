@@ -632,50 +632,19 @@ html.debugMode:after {
     line-height: 135.5%;
   }
 }
-.galleryItem {
-  display: block;
-  position: relative;
-  aspect-ratio: 468/322;
-  margin-bottom: 30px;
-}
-
-.owlGallery {
-  margin: 100px 0 60px;
-}
-.owlGallery .owl-nav .owl-prev, .owlGallery .owl-nav .owl-next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 39px;
-  height: 39px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.owlGallery .owl-nav .owl-prev .icon, .owlGallery .owl-nav .owl-next .icon {
-  width: 26px;
-  height: 26px;
-  fill: #DCDCDC;
-}
-.owlGallery .owl-nav .owl-prev {
-  left: -100px;
-}
-.owlGallery .owl-nav .owl-prev .icon {
-  transform: rotate(-180deg);
-}
-.owlGallery .owl-nav .owl-next {
-  right: -100px;
-}
-
 @media screen and (max-width: 767px) {
   .galleryItem {
     margin-bottom: 10px;
-    padding-right: 6px;
+  }
+  .col-sm-6 {
+    padding-left: 5px;
+    padding-right: 5px;
   }
 }
-.col-sm-6 {
-  padding-left: 6px;
-  padding-right: 6px;
+@media screen and (min-width: 769px) and (max-width: 1199px) {
+  .galleryItem {
+    margin-bottom: 19px;
+  }
 }
 
 /*# sourceMappingURL=mobile.css.map */
