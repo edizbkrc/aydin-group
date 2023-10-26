@@ -1,38 +1,45 @@
-@include media("screen", "<md") {
+@include media("screen",">560px", "<md") {
   .numbersOfHaitianWrapper {
     .numberOfHaitianItem {
       width: 50%;
 
-      &:nth-child(odd) {
+      &:nth-of-type(3) {
+
+        color: #0E3B85;
+        background: white;
 
         .icon {
-
+          background: #0E3B85;
         }
+      }
+
+      &:nth-of-type(4) {
+
+        color: #fff;
+        background: #0E3B85;
+
+        .icon {
+          background: #fff;
+        }
+      }
+    }
+    .numberOfHaitianItem {
+      .number {
+        font-size: 40px;
       }
     }
   }
 }
 
-
 @include media("screen", "<560px") {
   .numbersOfHaitianWrapper {
     .numberOfHaitianItem {
       width: 100%;
-
-      &:nth-child(odd) {
-
-        .icon {
-        }
-      }
     }
   }
-
   .numberOfHaitianItem {
     .number {
       font-size: 43px;
-
-      small {
-      }
     }
   }
 }

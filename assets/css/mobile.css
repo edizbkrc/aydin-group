@@ -526,9 +526,26 @@ html.debugMode:after {
     padding: 20px;
   }
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 561px) and (max-width: 767px) {
   .numbersOfHaitianWrapper .numberOfHaitianItem {
     width: 50%;
+  }
+  .numbersOfHaitianWrapper .numberOfHaitianItem:nth-of-type(3) {
+    color: #0E3B85;
+    background: white;
+  }
+  .numbersOfHaitianWrapper .numberOfHaitianItem:nth-of-type(3) .icon {
+    background: #0E3B85;
+  }
+  .numbersOfHaitianWrapper .numberOfHaitianItem:nth-of-type(4) {
+    color: #fff;
+    background: #0E3B85;
+  }
+  .numbersOfHaitianWrapper .numberOfHaitianItem:nth-of-type(4) .icon {
+    background: #fff;
+  }
+  .numbersOfHaitianWrapper .numberOfHaitianItem .number {
+    font-size: 40px;
   }
 }
 @media screen and (max-width: 559px) {
