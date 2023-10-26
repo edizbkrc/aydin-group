@@ -155,18 +155,23 @@ $(document).ready(function () {
             0: {
                 center: false,
                 autoWidth: false,
-                dots:false,
-                nav:false,
+                dots: false,
+                nav: false,
                 items: 2,
-            }, 576: {
+            },
+            576: {
                 center: false,
-                autoWidth: true,
+                autoWidth: false,
+                items: 3,
+                nav: false,
             },
             768: {
-                items: 3
+                items: 3,
+                nav: false,
             },
             992: {
-                items: 4
+                items: 4,
+                nav: false,
             },
 
 
