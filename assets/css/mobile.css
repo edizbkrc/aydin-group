@@ -798,10 +798,31 @@ html.debugMode:after {
     fill: #fff;
   }
 }
-@media screen and (max-width: 767px) {
-  .productItem2 .logo {
-    padding: 28px 30px;
-    background: #F9FBFF;
+@media screen and (max-width: 1399px) {
+  .productItem2 .content {
+    padding: 0 30px 30px;
+  }
+}
+@media screen and (max-width: 1399px) {
+  .contactWidget {
+    margin-bottom: 30px;
+  }
+  .contactWidget .content {
+    left: 0;
+    right: 0;
+    padding-bottom: 20px;
+    max-width: 100%;
+    transform: translateX(0%);
+  }
+  .contactWidget .content .text {
+    display: flex;
+    justify-content: center;
+    padding: 0 10px;
+  }
+  .contactWidget .content .phone {
+    display: flex;
+    justify-content: center;
+    padding: 0 10px;
   }
 }
 

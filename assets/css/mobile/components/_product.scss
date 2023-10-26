@@ -1,8 +1,7 @@
-@include media("screen", "<md") {
+@include media("screen", "<xxl") {
   .productItem2 {
-    .logo {
-      padding: 28px 30px;
-      background: #F9FBFF;
-    }
+.content{
+  padding: 0 30px 30px;
+}
   }
 }
