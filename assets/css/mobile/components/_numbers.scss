@@ -1,0 +1,80 @@
+@include media("screen" ,"<md"){
+  .numbersOfHaitianWrapper {
+
+
+    .numberOfHaitianItem {
+      width: 50%;
+      &:nth-child(odd){
+
+        .icon{
+
+        }
+      }
+    }
+    .note{
+
+    }
+  }
+
+  .numberOfHaitianItem {
+
+    .icon {
+
+    }
+
+    .text {
+
+
+
+    }
+
+    .number {
+
+
+      small{
+      }
+
+    }
+  }
+}
+
+
+@include media("screen" ,"<560px"){
+  .numbersOfHaitianWrapper {
+
+
+    .numberOfHaitianItem {
+      width: 100%;
+      &:nth-child(odd){
+
+        .icon{
+
+        }
+      }
+    }
+    .note{
+
+    }
+  }
+
+  .numberOfHaitianItem {
+
+    .icon {
+
+    }
+
+    .text {
+
+
+
+    }
+
+    .number {
+font-size: 43px;
+
+      small{
+      }
+
+    }
+  }
+}

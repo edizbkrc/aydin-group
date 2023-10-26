@@ -509,5 +509,18 @@ html.debugMode:after {
     margin-top: 80px;
   }
 }
+@media screen and (max-width: 767px) {
+  .numbersOfHaitianWrapper .numberOfHaitianItem {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 559px) {
+  .numbersOfHaitianWrapper .numberOfHaitianItem {
+    width: 100%;
+  }
+  .numberOfHaitianItem .number {
+    font-size: 43px;
+  }
+}
 
 /*# sourceMappingURL=mobile.css.map */
