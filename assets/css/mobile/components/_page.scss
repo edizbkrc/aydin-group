@@ -1,7 +1,33 @@
+@include media("screen", "<md") {
+  .page {
+    .pageBanner.type5 {
+      .descriptonWrapper {
+        padding: 20px;
+        .description{
+          line-height: 160%;
+        }
+      }
+
+      .content {
+        height: auto;
+        margin-bottom: 50px;
+        .title{
+          align-items: center;
+          margin-top: 30px;
+        }
+      }
+    }
+    .owl-carousel{
+
+    }
+  }
+}
+
 @include media("screen", "<sm") {
   .page {
     .pageBanner {
       height: 32vh;
+
       .content {
         flex-direction: column;
         width: 100%;
@@ -16,7 +42,7 @@
           text-align: center;
           justify-content: center;
 
-          .date{
+          .date {
             margin: 0 auto;
           }
         }
@@ -46,13 +72,16 @@
   }
 }
 
-
 @include media("screen", "<xxl") {
   .page {
     .pageBanner {
       .content {
         width: 100%;
       }
+    }
+
+    .owl-carousel{
+
     }
   }
 }

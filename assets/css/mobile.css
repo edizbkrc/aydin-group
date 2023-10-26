@@ -319,6 +319,22 @@ html.debugMode:after {
     padding: 0 20px;
   }
 }
+@media screen and (max-width: 767px) {
+  .page .pageBanner.type5 .descriptonWrapper {
+    padding: 20px;
+  }
+  .page .pageBanner.type5 .descriptonWrapper .description {
+    line-height: 160%;
+  }
+  .page .pageBanner.type5 .content {
+    height: auto;
+    margin-bottom: 50px;
+  }
+  .page .pageBanner.type5 .content .title {
+    align-items: center;
+    margin-top: 30px;
+  }
+}
 @media screen and (max-width: 575px) {
   .page .pageBanner {
     height: 32vh;

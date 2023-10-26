@@ -154,7 +154,10 @@ $(document).ready(function () {
         responsive: {
             0: {
                 center: false,
-                autoWidth: true,
+                autoWidth: false,
+                dots:false,
+                nav:false,
+                items: 2,
             }, 576: {
                 center: false,
                 autoWidth: true,
