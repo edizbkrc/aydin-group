@@ -22,7 +22,7 @@
             <div class="documentsList">
                 <img src="assets/img/documentslogo1.png" alt="" class="logo">
                 <div class="row">
-                    <div class="col-md-2 col-sm-3 col-6">
+                    <div class="col-md-3 col-sm-4 col-6">
                         <div class="documentItem2">
                             <a href="" class="download">
                                 <svg class="icon">
@@ -44,7 +44,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-2 col-sm-3 col-6">
+                    <div class="col-md-3 col-sm-4 col-6">
                         <div class="documentItem2">
                             <a href="" class="download">
                                 <svg class="icon">
@@ -71,7 +71,7 @@
             <div class="documentsList">
                 <img src="assets/img/documentslogo2.png" alt="" class="logo">
                 <div class="row">
-                    <div class="col-md-2 col-sm-3 col-6">
+                    <div class="col-md-3 col-sm-4 col-6">
                         <div class="documentItem2">
                             <a href="" class="download">
                                 <svg class="icon">
@@ -101,7 +101,7 @@
                    ŞİRKET DERGİLERİ
                </div>
                 <div class="row">
-                    <div class="col-md-2 col-sm-3 col-6">
+                    <div class="col-md-3 col-sm-4 col-6">
                         <div class="documentItem2">
                             <a href="" class="download">
                                 <svg class="icon">
@@ -123,7 +123,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-2 col-sm-3 col-6">
+                    <div class="col-md-3 col-sm-4 col-6">
                         <div class="documentItem2">
                             <a href="" class="download">
                                 <svg class="icon">
