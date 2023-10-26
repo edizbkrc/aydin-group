@@ -1,0 +1,34 @@
+@include media("screen", "<xxl") {
+
+   .solutionsWrapper {
+     padding-left: 50px;
+     padding-right: 50px;
+   }
+
+   .solutionsItem {
+     .content {
+       padding: 30px 15px;
+       &:before {
+         display: none;
+       }
+     }
+   }
+ }
+
+
+@include media("screen", "<md") {
+
+  .solutionsWrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .solutionsItem {
+    .content {
+      padding: 30px 15px;
+      &:before {
+        display: none;
+      }
+    }
+  }
+}

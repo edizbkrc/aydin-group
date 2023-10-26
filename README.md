@@ -32,8 +32,8 @@
 - [ ] Üretim Tesisleri
 - [ ] Ürün Detay
 - [ ] Ürünler
-- [ ] Haberler
-- [ ] Haber Detay
+- [x] Haberler
+- [x] Haber Detay
 - [ ] Çözümler
 - [ ] Çözümler Detay
 - [x] Etkinlikler
