@@ -144,7 +144,7 @@
    }
  }
 
-@include media("screen", ">md", "<lg") {
+@include media("screen", ">sm", "<lg") {
   .timeline {
     .timelineItem {
       padding: 20px;
