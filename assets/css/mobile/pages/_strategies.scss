@@ -1,19 +1,42 @@
 @include media("screen",  "<md") {
+   .strategySlogan {
+
+
+     &:before {
+
+       left: 0;
+       width: auto;
+     }
+   }
+
+   .ourSolutions {
+     padding: 65px 0 120px;
+
+     img{
+       max-width: 100%;
+     }
+   }
+ }
+
+@include media("screen",  "<500px") {
   .strategySlogan {
-
-
-    &:before {
-
-      left: 0;
-      width: auto;
+    .text1{
+      font-size: 20px;
+    }
+    .text2{
+      font-size: 30px;
     }
   }
-
-  .ourSolutions {
-    padding: 65px 0 120px;
-
-    img{
-      max-width: 100%;
+  .ourSolutions{
+    .subTitle{
+      font-size: 25px;
+    }
+    .title{
+      font-size: 35px;
+    }
+    .text{
+      font-size: 15px;
+      font-weight: 400;
     }
   }
 }

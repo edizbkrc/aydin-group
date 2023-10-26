@@ -374,6 +374,24 @@ html.debugMode:after {
     max-width: 100%;
   }
 }
+@media screen and (max-width: 499px) {
+  .strategySlogan .text1 {
+    font-size: 20px;
+  }
+  .strategySlogan .text2 {
+    font-size: 30px;
+  }
+  .ourSolutions .subTitle {
+    font-size: 25px;
+  }
+  .ourSolutions .title {
+    font-size: 35px;
+  }
+  .ourSolutions .text {
+    font-size: 15px;
+    font-weight: 400;
+  }
+}
 @media screen and (max-width: 624px) {
   .eventList .eventItem {
     flex-direction: column;
@@ -585,6 +603,21 @@ html.debugMode:after {
   }
   .strategyItem {
     padding: 55px 20px;
+  }
+}
+@media screen and (max-width: 499px) {
+  .strategyFeatures {
+    padding: 0 20px;
+  }
+  .strategyFeatures .item {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .strategyFeatures .item .text {
+    font-weight: 400;
+  }
+  .strategyWrapper .strategyItem {
+    width: 100%;
   }
 }
 

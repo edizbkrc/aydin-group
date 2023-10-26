@@ -1,6 +1,6 @@
 @include media("screen", "<md") {
   .strategyFeatures {
-    padding: 0 20px ;
+    padding: 0 20px;
 
     .item {
       flex-wrap: wrap;
@@ -25,7 +25,28 @@
     }
   }
 
-  .strategyItem{
+  .strategyItem {
     padding: 55px 20px;
+  }
+}
+
+
+@include media("screen", "<500px") {
+  .strategyFeatures {
+    padding: 0 20px;
+
+    .item {
+      flex-wrap: wrap;
+      gap: 30px;
+
+      .text{
+        font-weight: 400;
+      }
+    }
+  }
+  .strategyWrapper {
+    .strategyItem {
+      width: 100%;
+    }
   }
 }
