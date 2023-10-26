@@ -17,7 +17,7 @@
     <div class="container customContainer">
         <div class="row">
             <?php for ($i = 1; $i <= 3; $i++) { ?>
-                <div class="col-md-4">
+                <div class="col-lg-4 col-sm-6">
                     <div class="productItem2">
                         <div class="logo">
                             <img src="assets/img/zhafir.png" alt="">

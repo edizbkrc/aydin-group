@@ -321,7 +321,7 @@ html.debugMode:after {
 }
 @media screen and (max-width: 1399px) {
   .page .pageBanner.type5 .descriptonWrapper {
-    padding: 0 50px 0px;
+    padding: 0 50px 50px;
   }
   .page .pageBanner.type5 .descriptonWrapper .description {
     line-height: 160%;
@@ -796,6 +796,12 @@ html.debugMode:after {
     width: 13px;
     height: 13px;
     fill: #fff;
+  }
+}
+@media screen and (max-width: 767px) {
+  .productItem2 .logo {
+    padding: 28px 30px;
+    background: #F9FBFF;
   }
 }
 
