@@ -367,6 +367,18 @@ html.debugMode:after {
   .page .pageBanner .content .title span, .page .type6 .content .title span {
     max-width: 100%;
   }
+  .page .pageBanner.type4, .page .type6.type4 {
+    height: 18vh;
+  }
+  .page .pageBanner.type4 .content::before, .page .type6.type4 .content::before {
+    bottom: 50px;
+  }
+  .page .pageBanner.type4 .content .title, .page .type6.type4 .content .title {
+    align-items: center;
+  }
+  .page .pageBanner.type4 .content .title span, .page .type6.type4 .content .title span {
+    max-width: 100%;
+  }
 }
 @media screen and (max-width: 575px) {
   .page .pageBanner {
@@ -469,13 +481,15 @@ html.debugMode:after {
     max-width: 100%;
   }
 }
-@media screen and (max-width: 569px) {
+@media screen and (max-width: 799px) {
   .newsContentWrapper {
-    flex-direction: column;
+    flex-direction: column-reverse;
     padding: 0 20px;
+    margin-top: 30px;
   }
   .newsContentWrapper .side {
     width: auto;
+    padding-top: 0;
   }
   .newsContentWrapper .wrapper {
     width: auto;
@@ -485,6 +499,11 @@ html.debugMode:after {
   }
   .newsContentWrapper .wrapper .editorContent {
     max-width: 100%;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .newsContentWrapper .wrapper > .row.newsQuoteIcon:after {
+    width: 75px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -772,7 +791,7 @@ html.debugMode:after {
     width: 175px;
   }
 }
-@media screen and (max-width: 499px) {
+@media screen and (max-width: 799px) {
   .nextNews {
     padding: 0 30px 0 0;
     width: 100%;
@@ -787,7 +806,7 @@ html.debugMode:after {
     padding: 30px 15px;
   }
   .solutionsItem .content:before {
-    display: none;
+    left: -15px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -798,6 +817,8 @@ html.debugMode:after {
   .solutionsItem .content {
     padding: 30px 15px;
   }
+}
+@media screen and (max-width: 1199px) {
   .solutionsItem .content:before {
     display: none;
   }

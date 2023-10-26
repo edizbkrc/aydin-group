@@ -25,14 +25,15 @@
 
 }
 
-@include media("screen" , "<570px"){
+@include media("screen" , "<800px"){
   .newsContentWrapper {
-    flex-direction: column;
+    flex-direction: column-reverse;
     padding: 0 20px;
+    margin-top: 30px;
     .side {
       width: auto;
+      padding-top: 0;
     }
-
     .wrapper {
       width: auto;
       > .row {
@@ -50,5 +51,20 @@
       }
     }
   }
+}
 
+@include media("screen" , "<xl"){
+  .newsContentWrapper {
+    .wrapper {
+
+      > .row {
+        &.newsQuoteIcon {
+
+          &:after {
+           width: 75px;
+          }
+        }
+      }
+    }
+  }
 }

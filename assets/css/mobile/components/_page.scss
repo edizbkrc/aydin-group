@@ -46,7 +46,7 @@
 
 @include media("screen", "<md") {
   .page {
-    .pageBanner,.type6 {
+    .pageBanner,.type6, {
       .descriptonWrapper {
         padding: 20px;
 
@@ -71,6 +71,20 @@
           font-size: 25px;
           span{
             max-width: 100%;
+          }
+        }
+      }
+      &.type4{
+        height: 18vh;
+        .content {
+          &::before{
+            bottom: 50px;
+          }
+          .title {
+            align-items: center;
+            span{
+              max-width: 100%;
+            }
           }
         }
       }
