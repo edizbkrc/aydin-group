@@ -65,6 +65,26 @@ HAİTİAN</span>
                 </div>
             </div>
             <div class="numberOfHaitianItem">
+                <div class="icon" style="--icon:url(../img/svg/numbersofhaitian2.svg)"></div>
+                <div class="text">
+                    DÜNYA ÇAPINDA
+                    ÇALIŞAN
+                </div>
+                <div class="number">
+                    7200
+                </div>
+            </div>
+            <div class="numberOfHaitianItem">
+                <div class="icon" style="--icon:url(../img/svg/numbersofhaitian2.svg)"></div>
+                <div class="text">
+                    DÜNYA ÇAPINDA
+                    ÇALIŞAN
+                </div>
+                <div class="number">
+                    7200
+                </div>
+            </div>
+            <div class="numberOfHaitianItem">
                 <div class="icon" style="--icon:url(../img/svg/numbersofhaitian3.svg)"></div>
                 <div class="text">
                     2022 TESLİM EDİLEN
