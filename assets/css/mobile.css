@@ -344,6 +344,7 @@ html.debugMode:after {
   .page .pageBanner.type5 .content .title {
     align-items: center;
     margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
 @media screen and (max-width: 575px) {
@@ -450,6 +451,16 @@ html.debugMode:after {
   }
   .newsContentWrapper .wrapper .editorContent {
     max-width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .investingWrapper .imgArea {
+    aspect-ratio: 959/653;
+    margin-bottom: 20px;
+  }
+  .investingBtn {
+    aspect-ratio: 380/125;
+    padding: 20px;
   }
 }
 @media screen and (max-width: 624px) {

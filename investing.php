@@ -36,7 +36,7 @@
                 <img src="assets/img/investingimg.png" alt="">
             </div>
             <div class="row">
-                <div class="col-md-3">
+                <div class="col-lg-3 col-sm-6">
                     <a href="" class="investingBtn">
                         <div class="icon" style="--icon:url(../img/svg/investing1.svg)"></div>
                         <div class="text">
@@ -45,7 +45,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-md-3">
+                <div class="col-lg-3 col-sm-6">
                     <a href="" class="investingBtn">
                         <div class="icon" style="--icon:url(../img/svg/investing2.svg)"></div>
                         <div class="text">
@@ -54,7 +54,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-md-3">
+                <div class="col-lg-3 col-sm-6">
                     <a href="" class="investingBtn">
                         <div class="icon" style="--icon:url(../img/svg/investing3.svg)"></div>
                         <div class="text">
@@ -63,7 +63,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col-md-3">
+                <div class="col-lg-3 col-sm-6 ">
                     <a href="" class="investingBtn">
                         <div class="icon" style="--icon:url(../img/svg/investing4.svg)"></div>
                         <div class="text">

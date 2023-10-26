@@ -29,15 +29,15 @@
 - [x] Rakamlarla Haitian
 - [x] Stratejimiz
 - [ ] Misyon ve Vizyon
-- [ ] Üretim Tesisleri
+- [] Üretim Tesisleri
 - [ ] Ürün Detay
 - [ ] Ürünler
 - [x] Haberler
 - [x] Haber Detay
-- [ ] Çözümler
-- [ ] Çözümler Detay
+- [x] Çözümler
+- [x] Çözümler Detay
 - [x] Etkinlikler
-- [ ] Dökümanlar
+- [x] Dökümanlar
 - [ ] Yatırımcı İlişkileri
 - [ ] İletişim
  

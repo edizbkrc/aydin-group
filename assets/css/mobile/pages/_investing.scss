@@ -1,0 +1,12 @@
+@include media("screen", "<md") {
+  .investingWrapper {
+    .imgArea {
+      aspect-ratio: 959/653;
+      margin-bottom: 20px;
+    }
+  }
+  .investingBtn {
+    aspect-ratio: 380/125;
+    padding: 20px;
+  }
+}
