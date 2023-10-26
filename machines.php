@@ -63,7 +63,7 @@
         </div>
         <div class="row">
             <?php for ($i = 1; $i <= 2; $i++) { ?>
-                <div class="col-md-4">
+                <div class="col-lg-4 col-sm-6">
                     <div class="productItem2">
                         <div class="logo">
                             <img src="assets/img/zhafir.png" alt="">
@@ -98,7 +98,7 @@
                     </div>
                 </div>
             <?php } ?>
-            <div class="col-md-4">
+            <div class="col-lg-4 col-sm-6">
                 <div class="contactWidget">
                     <img src="assets/img/contactwidget.png" alt="" class="background">
                     <div class="content">
