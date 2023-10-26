@@ -335,10 +335,10 @@ html.debugMode:after {
 }
 @media screen and (min-width: 769px) and (max-width: 1919px) {
   .page .pageBanner .content::before {
-    right: 40%;
+    right: 50%;
   }
 }
-@media screen and (min-width: 769px) and (max-width: 899px) {
+@media screen and (min-width: 769px) and (max-width: 999px) {
   .page .pageBanner .content::before {
     right: 30%;
   }
@@ -411,11 +411,14 @@ html.debugMode:after {
   }
 }
 @media screen and (max-width: 991px) {
-  .page .pageBanner .content .title, .page .type6 .content .title {
+  .page .pageBanner .content .title, .page .type6 .content .title, .page .type2 .content .title {
     font-size: 25px;
   }
-  .page .pageBanner .content .title span, .page .type6 .content .title span {
+  .page .pageBanner .content .title span, .page .type6 .content .title span, .page .type2 .content .title span {
     max-width: 100%;
+  }
+  .page .pageBanner.type2, .page .type6.type2, .page .type2.type2 {
+    height: 17vh;
   }
 }
 @media screen and (max-width: 767px) {
@@ -748,7 +751,7 @@ html.debugMode:after {
     margin-bottom: 19px;
   }
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1919px) {
   .newsItem2 .content {
     padding: 40px 20px;
   }

@@ -24,14 +24,14 @@
     .pageBanner {
       .content {
        &::before{
-         right: 40%;
+         right: 50%;
        }
       }
     }
   }
 }
 
-@include media("screen",">md", "<900px"){
+@include media("screen",">md", "<1000px"){
   .page {
     .pageBanner {
 
@@ -130,7 +130,7 @@
 
 @include media("screen", "<lg") {
   .page {
-    .pageBanner,.type6 {
+    .pageBanner,.type6,.type2 {
       .content {
         .title {
           font-size: 25px;
@@ -138,6 +138,9 @@
             max-width: 100%;
           }
         }
+      }
+      &.type2{
+        height: 17vh;
       }
     }
   }
