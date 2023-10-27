@@ -2,18 +2,6 @@
   header {
     height: 85px;
     .wrapper {
-      .langs {
-        display: none;
-      }
-
-      .zhafir {
-        display: none;
-      }
-
-      .openSearchBtn {
-        display: none;
-      }
-
       .openMenuBtn {
         margin-left: auto;
 
@@ -50,7 +38,6 @@
       }
 
       .openSearchBtn {
-        display: none;
       }
 
       .openMenuBtn {
@@ -76,7 +63,7 @@
 @include media("screen", ">md") {
   header {
     .menu {
-      .wrapper {
+      .mobileWrapper {
         display: none;
       }
     }

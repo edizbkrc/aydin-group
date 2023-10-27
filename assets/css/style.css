@@ -3006,6 +3006,16 @@ header .wrapper .openMenuBtn span, header .mobileWrapper .openMenuBtn span {
   font-weight: 300;
   transition: 0.3s 0.15s ease all;
 }
+header .mobileWrapper {
+  margin-top: 35px;
+  background: #0E3B85;
+}
+header .mobileWrapper .langs {
+  padding: 0;
+}
+header .mobileWrapper .langs a {
+  color: #fff;
+}
 header .searchArea {
   position: absolute;
   right: var(--rightSideWidth);

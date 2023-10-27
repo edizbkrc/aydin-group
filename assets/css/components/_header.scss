@@ -24,7 +24,7 @@ header {
     }
   }
 
-  .wrapper,.mobileWrapper {
+  .wrapper, .mobileWrapper {
     width: 100%;
     display: flex;
     align-items: center;
@@ -54,7 +54,8 @@ header {
       display: flex;
       align-items: center;
       justify-content: center;
-      img{
+
+      img {
         height: 18px;
       }
     }
@@ -70,7 +71,7 @@ header {
       width: var(--headerSearchWidth);
       min-width: var(--headerSearchWidth);
 
-       background: linear-gradient(0deg, #ffff, #ffff 50%, #0E3B85 50%, #0E3B85);
+      background: linear-gradient(0deg, #ffff, #ffff 50%, #0E3B85 50%, #0E3B85);
 
       background-size: 100% 200%;
       transition: 0.3s 0.05s linear all;
@@ -111,6 +112,19 @@ header {
         font-size: 12px;
         font-weight: 300;
         transition: 0.3s 0.15s ease all;
+      }
+    }
+  }
+
+  .mobileWrapper {
+    margin-top: 35px;
+    background: #0E3B85;
+
+    .langs {
+      padding: 0;
+
+      a {
+        color: #fff;
       }
     }
   }
@@ -156,10 +170,11 @@ header {
     pointer-events: none;
     background: linear-gradient(90deg, #ffffff, white 50%, #0E3B85 50%, #0E3B85);
     background-size: 200% 100%;
-    transition: 0.3s linear all ,0s 0.3s ease opacity;
+    transition: 0.3s linear all, 0s 0.3s ease opacity;
     width: 0;
     overflow: hidden;
     white-space: nowrap;
+
     ul {
       display: flex;
       flex-direction: column;
@@ -270,10 +285,11 @@ header {
     .menu {
       opacity: 1;
       pointer-events: auto;
-      transition: width 246.946ms ease 86.8185ms,padding 246.946ms ease 86.8185ms, background-position 0s ease;
+      transition: width 246.946ms ease 86.8185ms, padding 246.946ms ease 86.8185ms, background-position 0s ease;
       background-position: 100% 100%;
       width: calc(var(--rightSideWidth) + var(--headerSearchWidth));
       padding: 45px 30px 50px 102px;
+
       ul {
         opacity: 1;
         transition: 0.3s 0.4s ease all;

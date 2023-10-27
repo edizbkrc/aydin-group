@@ -170,15 +170,6 @@ html.debugMode:after {
   header {
     height: 85px;
   }
-  header .wrapper .langs {
-    display: none;
-  }
-  header .wrapper .zhafir {
-    display: none;
-  }
-  header .wrapper .openSearchBtn {
-    display: none;
-  }
   header .wrapper .openMenuBtn {
     margin-left: auto;
   }
@@ -203,9 +194,6 @@ html.debugMode:after {
   header .wrapper .zhafir {
     display: none;
   }
-  header .wrapper .openSearchBtn {
-    display: none;
-  }
   header .wrapper .openMenuBtn {
     margin-left: auto;
     width: auto;
@@ -221,7 +209,7 @@ html.debugMode:after {
   }
 }
 @media screen and (min-width: 769px) {
-  header .menu .wrapper {
+  header .menu .mobileWrapper {
     display: none;
   }
 }

@@ -112,15 +112,6 @@
                 <a href="">EN</a>
                 <a href="">TR</a>
             </div>
-            <a href="" class="zhafir">
-                <img src="assets/img/zhafir.png" alt="">
-            </a>
-            <div class="openSearchBtn">
-                <svg class="icon">
-                    <use xlink:href="#search"></use>
-                </svg>
-            </div>
-            </div>
         </div>
     </div>
 </header>
