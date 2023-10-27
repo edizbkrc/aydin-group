@@ -530,7 +530,7 @@ html.debugMode:after {
     width: 8%;
   }
 }
-@media screen and (min-width: 577px) and (max-width: 991px) {
+@media screen and (min-width: 769px) and (max-width: 991px) {
   .producContentContainer {
     padding: 30px;
   }
@@ -552,21 +552,72 @@ html.debugMode:after {
   .productPromotion .productPromotionItem {
     padding: 20px;
   }
+  .productPromotion .productPromotionItem .title {
+    line-height: 105%;
+  }
   .productPromotion .content {
     padding: 40px;
   }
   .productPromotion .videoArea .videoItem {
     aspect-ratio: 0;
-    aspect-ratio: 0;
   }
   .productPromotion .videoArea .videoItem .coverImage {
     position: relative;
   }
-  .productPromotion .videoArea .videoItem.type2 {
-    height: 28vh;
+}
+@media screen and (min-width: 577px) and (max-width: 767px) {
+  .producContentContainer {
+    padding: 30px;
+    flex-direction: column-reverse;
   }
-  .productPromotion .videoArea .videoItem.type2::before {
-    width: 8%;
+  .producContentContainer .side {
+    align-items: flex-start;
+    margin-top: 30px;
+    margin-top: 30px;
+  }
+  .productSlider {
+    margin-top: -160px;
+  }
+  .productSlider .navigation {
+    right: 50px;
+  }
+  .productSlider .productItem3 {
+    width: 200px;
+    display: none;
+  }
+  .productSlider .swiper-slide .imgArea img {
+    object-position: left;
+  }
+  .productPromotion {
+    flex-direction: column;
+    padding: 30px;
+  }
+  .productPromotion .content {
+    padding: 0;
+    margin-top: 50px;
+    width: 100%;
+  }
+  .productPromotion .owlProductPromotion .owl-nav {
+    padding-left: 0;
+  }
+  .productPromotion .owlProductPromotion .owl-item .item::before {
+    display: none;
+  }
+  .productPromotion .productPromotionItem {
+    padding: 20px;
+  }
+  .productPromotion .productPromotionItem .title {
+    line-height: 105%;
+  }
+  .productPromotion .videoArea {
+    width: 100%;
+    min-height: 400px;
+  }
+  .productPromotion .videoArea .videoItem {
+    aspect-ratio: 0;
+  }
+  .productPromotion .videoArea .videoItem .coverImage {
+    position: relative;
   }
 }
 /*

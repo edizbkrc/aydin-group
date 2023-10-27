@@ -43,8 +43,7 @@
   }
 }
 
-
-@include media("screen", ">sm", "<lg") {
+@include media("screen", ">md", "<lg") {
 
   .producContentContainer {
     padding: 30px;
@@ -81,6 +80,10 @@
 
     .productPromotionItem {
       padding: 20px;
+
+      .title {
+        line-height: 105%;
+      }
     }
 
     .content {
@@ -90,18 +93,89 @@
     .videoArea {
       .videoItem {
         aspect-ratio: 0;
-        aspect-ratio: 0;
 
         .coverImage {
           position: relative;
         }
+      }
+    }
+  }
+}
 
-        &.type2 {
-          height: 28vh;
+@include media("screen", ">sm", "<md") {
 
-          &::before {
-            width: 8%;
+  .producContentContainer {
+
+    padding: 30px;
+    flex-direction: column-reverse;
+
+    .side {
+      align-items: flex-start;
+      margin-top: 30px;
+      margin-top: 30px;
+    }
+  }
+  .productSlider {
+    margin-top: -160px;
+
+    .navigation{
+      right: 50px;
+    }
+
+    .productItem3 {
+      width: 200px;
+      display: none;
+    }
+
+    .swiper-slide {
+      .imgArea {
+        img {
+          object-position: left;
+        }
+      }
+    }
+  }
+
+
+  .productPromotion {
+    flex-direction: column;
+    padding: 30px;
+
+    .content{
+      padding: 0;
+      margin-top: 50px;
+      width: 100%;
+    }
+
+    .owlProductPromotion {
+      .owl-nav {
+        padding-left: 0;
+      }
+      .owl-item{
+        .item{
+          &::before{
+            display: none;
           }
+        }
+      }
+    }
+
+    .productPromotionItem {
+      padding: 20px;
+
+      .title {
+        line-height: 105%;
+      }
+    }
+
+    .videoArea {
+      width: 100%;
+min-height: 400px;
+      .videoItem {
+        aspect-ratio: 0;
+
+        .coverImage {
+          position: relative;
         }
       }
     }
