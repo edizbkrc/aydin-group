@@ -1,4 +1,4 @@
-@include media("screen", "<md") {
+@include media("screen", "<=md") {
   .accordionItem {
     .accordionBody {
       padding: 0 10px 10px;

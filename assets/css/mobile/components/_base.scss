@@ -1,18 +1,18 @@
-@include media("screen", "<xxl") {
+@include media("screen", "<=xxl") {
   .container.customContainer {
     max-width: 100%;
     padding: 0 100px;
   }
 }
 
-@include media("screen", "<xl") {
+@include media("screen", "<=xl") {
   .container.customContainer {
     max-width: 100%;
     padding: 0 50px;
   }
 }
 
-@include media("screen", "<lg") {
+@include media("screen", "<=lg") {
   .container.customContainer {
     max-width: 100%;
     padding: 0 20px;

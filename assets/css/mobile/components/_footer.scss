@@ -1,4 +1,4 @@
-@include media("screen", "<sm") {
+@include media("screen", "<=sm") {
   footer {
 
     .menuList {
@@ -37,7 +37,7 @@
 }
 
 
-@include media("screen", "<425px") {
+@include media("screen", "<=425px") {
   footer {
 
     .menuList {

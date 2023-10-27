@@ -1,4 +1,4 @@
-@include media("screen", "<md") {
+@include media("screen", "<=md") {
   .galleryItem {
     margin-bottom: 10px;
   }
@@ -9,13 +9,13 @@
 }
 
 
-@include media("screen", ">md", "<xl") {
+@include media("screen", ">md", "<=xl") {
   .galleryItem {
     margin-bottom: 19px;
   }
 }
 
-@include media("screen",">lg" ,"<xxl") {
+@include media("screen",">lg" ,"<=xxl") {
   .owlGallery {
     padding:0 30px;
 

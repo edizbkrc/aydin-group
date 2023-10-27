@@ -1,13 +1,13 @@
-@include media("screen", "<3xl") {
+@include media("screen", "<=3xl") {
   .contactWidget {
     margin-bottom: 30px;
+
     .content {
       left: 0;
       right: 0;
       padding-bottom: 20px;
       max-width: 100%;
       transform: translateX(0%);
-
 
       .text {
         display: flex;

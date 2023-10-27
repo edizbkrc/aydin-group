@@ -1,4 +1,4 @@
-@include media("screen", "<md") {
+@include media("screen", "<=md") {
 
   .customerStoryItem {
     flex-direction: column;

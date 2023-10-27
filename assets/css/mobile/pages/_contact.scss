@@ -1,4 +1,4 @@
-@include media("screen", "<lg") {
+@include media("screen", "<=lg") {
 
   .pageContact {
     &:before {
@@ -16,8 +16,7 @@
   }
 }
 
-
-@include media("screen", "<sm") {
+@include media("screen", "<=sm") {
   .conctactCustomContainer {
     .contactInformation {
       max-width: 100%;

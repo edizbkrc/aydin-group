@@ -1,4 +1,4 @@
-@include media("screen", ">lg", "<xl") {
+@include media("screen", ">lg", "<=xl") {
   .productSlider {
     .navigation
     .productItem3 {
@@ -44,7 +44,7 @@
   }
 }
 
-@include media("screen", ">md", "<lg") {
+@include media("screen", ">md", "<=lg") {
 
   .producContentContainer {
     padding: 30px;
@@ -103,7 +103,7 @@
   }
 }
 
-@include media("screen", ">sm", "<md") {
+@include media("screen", ">sm", "<=md") {
 
   .producContentContainer {
 
@@ -185,7 +185,7 @@
   }
 }
 
-@include media("screen", "<md") {
+@include media("screen", "<=md") {
 
   .page.productdetail {
     #globalNetworkMap {
@@ -278,7 +278,7 @@
   }
 }
 
-@include media("screen", "<sm") {
+@include media("screen", "<=sm") {
   .page.productdetail {
 
     .videoArea {

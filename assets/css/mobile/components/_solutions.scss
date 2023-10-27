@@ -1,4 +1,4 @@
-@include media("screen", "<xxl") {
+@include media("screen", "<=xxl") {
 
   .solutionsWrapper {
     padding-left: 50px;
@@ -16,8 +16,7 @@
   }
 }
 
-
-@include media("screen", "<md") {
+@include media("screen", "<=md") {
 
   .solutionsWrapper {
     padding-left: 20px;
@@ -30,7 +29,7 @@
   }
 }
 
-@include media("screen", "<xl") {
+@include media("screen", "<=xl") {
 
 
   .solutionsItem {

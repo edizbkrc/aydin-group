@@ -1,7 +1,7 @@
 
 
 
-@include media("screen", "<710px") {
+@include media("screen", "<=710px") {
   .eventList {
     .eventItem {
       flex-direction: column;

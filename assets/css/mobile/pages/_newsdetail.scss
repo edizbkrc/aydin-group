@@ -1,4 +1,4 @@
-@include media("screen" , "<md"){
+@include media("screen" , "<=md"){
   .newsContentWrapper {
     padding: 0 30px;
     .side {
@@ -25,7 +25,7 @@
 
 }
 
-@include media("screen" , "<800px"){
+@include media("screen" , "<=800px"){
   .newsContentWrapper {
     flex-direction: column-reverse;
     padding: 0 20px;
@@ -53,7 +53,7 @@
   }
 }
 
-@include media("screen" , "<xl"){
+@include media("screen" , "<=xl"){
   .newsContentWrapper {
     .wrapper {
 

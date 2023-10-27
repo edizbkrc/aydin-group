@@ -1,4 +1,4 @@
-@include media("screen", "<xxl") {
+@include media("screen", "<=xxl") {
   .page {
     .pageBanner {
       &.type5 {
@@ -11,32 +11,35 @@
           }
         }
       }
+    }
+  }
+}
 
+@include media("screen", ">md", "<=3xl") {
+  .page {
+    .pageBanner {
       .content {
         width: 100%;
+
+        &::before {
+          right: 45%;
+        }
       }
     }
   }
 }
 
-@include media("screen",">md", "<3xl"){
+@include media("screen", ">md", "<=1000px") {
   .page {
     .pageBanner {
-      .content {
-       &::before{
-         right: 50%;
-       }
+      &.type10 {
+        .title {
+          width: 45%;
+        }
       }
-    }
-  }
-}
-
-@include media("screen",">md", "<1000px"){
-  .page {
-    .pageBanner {
 
       .content {
-        &::before{
+        &::before {
           right: 30%;
         }
       }
@@ -44,7 +47,7 @@
   }
 }
 
-@include media("screen", "<md") {
+@include media("screen", "<=md") {
   .page {
     .pageBanner, {
       .descriptonWrapper {
@@ -58,8 +61,8 @@
       .content {
         height: auto;
         margin-bottom: 50px;
-
-        &::before{
+        width: 100%;
+        &::before {
           bottom: 50px;
         }
 
@@ -69,29 +72,39 @@
           margin-bottom: 20px;
           padding: 0 20px;
           font-size: 25px;
-          span{
+
+          span {
             max-width: 100%;
           }
         }
       }
-      &.type4,&.type7,&.type6{
+
+      &.type4, &.type7, &.type6, {
         height: 18vh;
+
         .content {
-          &::before{
+          &::before {
             bottom: 50px;
           }
+
           .title {
             align-items: center;
-            span{
+
+            span {
               max-width: 100%;
             }
           }
         }
       }
-      &.type5,&.type8{
-        .content{
-          .title{
+
+      &.type5, &.type8, &.type10,&.type7 {
+        .content {
+          .title {
             align-items: center;
+          }
+
+          .side {
+            border-right: none;
           }
         }
       }
@@ -99,7 +112,7 @@
   }
 }
 
-@include media("screen", "<sm") {
+@include media("screen", "<=sm") {
   .page {
     .pageBanner {
       height: 32vh;
@@ -149,19 +162,21 @@
   }
 }
 
-@include media("screen", "<lg") {
+@include media("screen", "<=lg") {
   .page {
-    .pageBanner,.type6,.type2 {
+    .pageBanner, .type6, .type2 {
       .content {
         .title {
           font-size: 25px;
           margin-bottom: 10px;
-          span{
+
+          span {
             max-width: 100%;
           }
         }
       }
-      &.type2{
+
+      &.type2 {
         height: 17vh;
       }
     }

@@ -1,5 +1,4 @@
-
-@include media("screen", "<sm") {
+@include media("screen", "<=sm") {
    .timeline {
 
      .timelineItem {
@@ -45,11 +44,10 @@
    }
  }
 
-@include media("screen", ">sm", "<lg") {
+@include media("screen", ">sm", "<=lg") {
   .timeline {
     .timelineItem {
       padding: 20px;
-
     }
   }
 }

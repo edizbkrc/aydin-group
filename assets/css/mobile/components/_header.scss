@@ -1,14 +1,20 @@
 @include media("screen", "<=sm") {
   header {
     height: 85px;
+
+    &.searchActive {
+        .searchArea {
+          right: 0;
+        }
+      }
     .wrapper {
       .openMenuBtn {
-        margin-left: auto;
-
         span {
           display: none;
         }
       }
+
+
     }
   }
 }
@@ -17,6 +23,7 @@
 @include media("screen", "<470px") {
   header {
     height: 70px;
+
     .logo {
       width: auto;
       padding: 20px;

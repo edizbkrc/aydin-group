@@ -1,4 +1,4 @@
-@include media("screen", "<md") {
+@include media("screen", "<=md") {
   .investingWrapper {
     .imgArea {
       aspect-ratio: 959/653;
