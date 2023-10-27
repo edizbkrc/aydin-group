@@ -194,8 +194,10 @@ html.debugMode:after {
   header .wrapper .zhafir {
     display: none;
   }
-  header .wrapper .openMenuBtn {
+  header .wrapper .openSearchBtn {
     margin-left: auto;
+  }
+  header .wrapper .openMenuBtn {
     width: auto;
     min-width: auto;
     padding: 30px;
