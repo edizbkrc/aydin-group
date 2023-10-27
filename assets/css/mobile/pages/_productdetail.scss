@@ -139,7 +139,7 @@
 
 }
 
-@include media("screen", "<=md") {
+@include media("screen", ">sm", "<md") {
 
   .producContentContainer {
 
@@ -168,7 +168,7 @@
       left: 50%;
       transform: translateX(-50%);
       bottom: unset;
-      top: 35%;
+      top: 40%;
     }
 
     .productItem3 {
@@ -185,7 +185,103 @@
       .imgArea {
         img {
           object-position: center;
+          object-fit: cover;
+        }
+      }
+    }
+  }
 
+  .productPromotion {
+    flex-direction: column;
+    padding: 30px;
+
+    .videoArea {
+      width: 100%;
+      height: 400px;
+
+      .videoItem {
+        aspect-ratio: unset;
+        height: 100%;
+      }
+    }
+
+    .content {
+      padding: 0;
+      margin-top: 50px;
+      width: 100%;
+    }
+
+    .owlProductPromotion {
+      .owl-nav {
+        padding-left: 0;
+      }
+
+      .owl-item {
+        .item {
+          &::before {
+            display: none;
+          }
+        }
+      }
+
+    }
+
+    .productPromotionItem {
+      padding: 20px;
+
+      .title {
+        line-height: 105%;
+      }
+    }
+  }
+}
+
+@include media("screen", "<=sm") {
+  .producContentContainer {
+
+    .plusText {
+      flex-direction: column;
+    }
+
+    padding: 30px;
+    flex-direction: column-reverse;
+
+    .side {
+      align-items: flex-start;
+      margin-top: 30px;
+      margin-top: 30px;
+    }
+  }
+
+  .productSlider {
+    padding: 130px 0;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column-reverse;
+
+    .navigation {
+      right: auto;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: unset;
+      top: 30%;
+    }
+
+    .productItem3 {
+      width: 300px;
+      margin: 100px auto 0;
+      right: unset;
+      top: unset;
+      bottom: unset;
+      position: relative;
+      padding-bottom: 20px;
+    }
+
+    .swiper-slide {
+      .imgArea {
+        img {
+          object-position: center;
+          object-fit: cover;
         }
       }
     }
@@ -231,24 +327,6 @@
 
       .title {
         line-height: 105%;
-      }
-    }
-  }
-}
-
-@include media("screen", "<=sm") {
-  .productPromotion {
-    .videoArea {
-      height: 160px;
-
-      .videoItem {
-        &.type2 {
-          &:before {
-            right: 10px;
-            width: 14%;
-            bottom: 10px;
-          }
-        }
       }
     }
   }

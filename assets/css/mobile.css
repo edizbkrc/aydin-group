@@ -605,7 +605,7 @@ html.debugMode:after {
     width: 13%;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 577px) and (max-width: 767px) {
   .producContentContainer {
     padding: 30px;
     flex-direction: column-reverse;
@@ -629,7 +629,7 @@ html.debugMode:after {
     left: 50%;
     transform: translateX(-50%);
     bottom: unset;
-    top: 35%;
+    top: 40%;
   }
   .productSlider .productItem3 {
     width: 300px;
@@ -642,6 +642,76 @@ html.debugMode:after {
   }
   .productSlider .swiper-slide .imgArea img {
     object-position: center;
+    object-fit: cover;
+  }
+  .productPromotion {
+    flex-direction: column;
+    padding: 30px;
+  }
+  .productPromotion .videoArea {
+    width: 100%;
+    height: 400px;
+  }
+  .productPromotion .videoArea .videoItem {
+    aspect-ratio: unset;
+    height: 100%;
+  }
+  .productPromotion .content {
+    padding: 0;
+    margin-top: 50px;
+    width: 100%;
+  }
+  .productPromotion .owlProductPromotion .owl-nav {
+    padding-left: 0;
+  }
+  .productPromotion .owlProductPromotion .owl-item .item::before {
+    display: none;
+  }
+  .productPromotion .productPromotionItem {
+    padding: 20px;
+  }
+  .productPromotion .productPromotionItem .title {
+    line-height: 105%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .producContentContainer {
+    padding: 30px;
+    flex-direction: column-reverse;
+  }
+  .producContentContainer .plusText {
+    flex-direction: column;
+  }
+  .producContentContainer .side {
+    align-items: flex-start;
+    margin-top: 30px;
+    margin-top: 30px;
+  }
+  .productSlider {
+    padding: 130px 0;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .productSlider .navigation {
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: unset;
+    top: 30%;
+  }
+  .productSlider .productItem3 {
+    width: 300px;
+    margin: 100px auto 0;
+    right: unset;
+    top: unset;
+    bottom: unset;
+    position: relative;
+    padding-bottom: 20px;
+  }
+  .productSlider .swiper-slide .imgArea img {
+    object-position: center;
+    object-fit: cover;
   }
   .productPromotion {
     flex-direction: column;
@@ -671,16 +741,6 @@ html.debugMode:after {
   }
   .productPromotion .productPromotionItem .title {
     line-height: 105%;
-  }
-}
-@media screen and (max-width: 576px) {
-  .productPromotion .videoArea {
-    height: 160px;
-  }
-  .productPromotion .videoArea .videoItem.type2:before {
-    right: 10px;
-    width: 14%;
-    bottom: 10px;
   }
   .page.productdetail #globalNetworkMap {
     height: 365px;
