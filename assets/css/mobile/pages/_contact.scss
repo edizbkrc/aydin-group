@@ -1,0 +1,151 @@
+@include media("screen", "<lg") {
+
+  .pageContact {
+    &:before {
+      display: none;
+    }
+  }
+  .conctactCustomContainer {
+    flex-direction: column;
+    padding: 20px;
+
+    .contactInformation {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+}
+
+
+@include media("screen", "<sm") {
+  .conctactCustomContainer {
+    .contactInformation {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
+  .p
+
+  #contactSVGMap {
+    height: 225px;
+    margin-top: 30px;
+
+    image {
+      width: 40px;
+    }
+  }
+}
+
+/*
+
+.pageContact {
+  padding: 100px 0;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    transform: translateX(-10%);
+    width: 8vw;
+    aspect-ratio: 1/2;
+    top: 20vh;
+    background: #0E3B85;
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-image: url(../img/svg/contacticon.svg);
+  }
+}
+
+.conctactCustomContainer {
+  padding-left: var(--leftSideWidth);
+  display: flex;
+  margin-bottom: 70px;
+
+  .contactInformation {
+    min-width: 250px;
+    width: 250px;
+
+    .title {
+      color: #0E3B85;
+
+      font-weight: 500;
+      line-height: 128.5%;
+      padding-bottom: 30px;
+      margin-bottom: 30px;
+      border-bottom: 1px solid #DEE8FA;
+    }
+
+    .item {
+      color: #0E3B85;
+      margin-bottom: 30px;
+
+      .subTitle {
+
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 128.5%;
+        margin-bottom: 20px;
+      }
+
+      .address {
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 128.5%;
+        margin-bottom: 20px;
+      }
+
+      a {
+        font-size: 15px;
+        font-weight: 300;
+        color: #0E3B85;
+        line-height: 128.5%;
+        text-decoration: underline !important;
+        display: block;
+      }
+    }
+
+    .item2 {
+      margin-bottom: 15px;
+
+      .icon {
+        width: 18px;
+        height: 18px;
+        fill: #0E3B85;
+        display: block;
+        margin-bottom: 10px;
+      }
+
+      a {
+        color: #0E3B85;
+
+        font-size: 15px;
+        font-weight: 500;
+        line-height: 128.5%;
+      }
+
+      span {
+        color: #0E3B85;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 128.5%;
+      }
+    }
+  }
+
+  .mapArea {
+    width: 100%;
+
+
+  }
+}
+
+#contactSVGMap {
+  height: 690px;
+  position: relative;
+}
+
+
+*/
