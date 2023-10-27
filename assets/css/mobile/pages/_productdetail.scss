@@ -118,7 +118,7 @@
   .productSlider {
     margin-top: -160px;
 
-    .navigation{
+    .navigation {
       right: 50px;
     }
 
@@ -141,7 +141,7 @@
     flex-direction: column;
     padding: 30px;
 
-    .content{
+    .content {
       padding: 0;
       margin-top: 50px;
       width: 100%;
@@ -151,9 +151,10 @@
       .owl-nav {
         padding-left: 0;
       }
-      .owl-item{
-        .item{
-          &::before{
+
+      .owl-item {
+        .item {
+          &::before {
             display: none;
           }
         }
@@ -170,7 +171,8 @@
 
     .videoArea {
       width: 100%;
-min-height: 400px;
+      min-height: 400px;
+
       .videoItem {
         aspect-ratio: 0;
 
@@ -181,6 +183,110 @@ min-height: 400px;
     }
   }
 }
+
+@include media("screen", "<md") {
+
+  .page.productdetail {
+    #globalNetworkMap{
+      image{
+        width: 50px;
+      }
+    }
+  }
+
+  .producContentContainer {
+
+    padding: 30px;
+    flex-direction: column-reverse;
+
+    .side {
+      align-items: flex-start;
+      margin-top: 30px;
+      margin-top: 30px;
+
+      .documentItem1 {
+        width: 55%;
+      }
+    }
+
+    .plusText {
+      flex-direction: column;
+    }
+  }
+  .productSlider {
+    display: none;
+  }
+
+
+  .productPromotion {
+    flex-direction: column;
+    padding: 30px;
+    margin-bottom: 200px;
+
+    .content {
+      padding: 0;
+      margin-top: 50px;
+      width: 100%;
+    }
+
+    .owlProductPromotion {
+      .owl-nav {
+        padding-left: 0;
+      }
+
+      .owl-item {
+        .item {
+          &::before {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .plusText {
+      flex-direction: column;
+    }
+
+    .productPromotionItem {
+      padding: 20px;
+
+      .title {
+        line-height: 105%;
+      }
+    }
+
+    .videoArea {
+      width: 100%;
+
+      .videoItem {
+        aspect-ratio: 0;
+
+        &.type2 {
+          &::before {
+            bottom: 2px;
+            right: 10px;
+            width: 13%;
+          }
+        }
+
+        .coverImage {
+          position: relative;
+        }
+      }
+    }
+  }
+}
+
+@include media("screen", "<sm") {
+  .page.productdetail {
+    #globalNetworkMap{
+      image{
+        width: 40px;
+      }
+    }
+  }
+}
+
 
 /*
 .page {

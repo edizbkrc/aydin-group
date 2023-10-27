@@ -66,7 +66,7 @@
         .title {
           align-items: center;
           margin-top: 15px;
-          margin-bottom: 30px;
+          margin-bottom: 20px;
           padding: 0 20px;
           font-size: 25px;
           span{
@@ -74,7 +74,7 @@
           }
         }
       }
-      &.type4,{
+      &.type4,&.type7{
         height: 18vh;
         .content {
           &::before{
@@ -155,6 +155,7 @@
       .content {
         .title {
           font-size: 25px;
+          margin-bottom: 10px;
           span{
             max-width: 100%;
           }

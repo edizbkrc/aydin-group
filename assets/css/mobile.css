@@ -348,23 +348,23 @@ html.debugMode:after {
   .page .pageBanner .content .title, .page .type6 .content .title {
     align-items: center;
     margin-top: 15px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     padding: 0 20px;
     font-size: 25px;
   }
   .page .pageBanner .content .title span, .page .type6 .content .title span {
     max-width: 100%;
   }
-  .page .pageBanner.type4, .page .type6.type4 {
+  .page .pageBanner.type4, .page .pageBanner.type7, .page .type6.type4, .page .type6.type7 {
     height: 18vh;
   }
-  .page .pageBanner.type4 .content::before, .page .type6.type4 .content::before {
+  .page .pageBanner.type4 .content::before, .page .pageBanner.type7 .content::before, .page .type6.type4 .content::before, .page .type6.type7 .content::before {
     bottom: 50px;
   }
-  .page .pageBanner.type4 .content .title, .page .type6.type4 .content .title {
+  .page .pageBanner.type4 .content .title, .page .pageBanner.type7 .content .title, .page .type6.type4 .content .title, .page .type6.type7 .content .title {
     align-items: center;
   }
-  .page .pageBanner.type4 .content .title span, .page .type6.type4 .content .title span {
+  .page .pageBanner.type4 .content .title span, .page .pageBanner.type7 .content .title span, .page .type6.type4 .content .title span, .page .type6.type7 .content .title span {
     max-width: 100%;
   }
   .page .pageBanner.type5 .content .title, .page .pageBanner.type8 .content .title, .page .type6.type5 .content .title, .page .type6.type8 .content .title {
@@ -416,6 +416,7 @@ html.debugMode:after {
 @media screen and (max-width: 991px) {
   .page .pageBanner .content .title, .page .type6 .content .title, .page .type2 .content .title {
     font-size: 25px;
+    margin-bottom: 10px;
   }
   .page .pageBanner .content .title span, .page .type6 .content .title span, .page .type2 .content .title span {
     max-width: 100%;
@@ -618,6 +619,73 @@ html.debugMode:after {
   }
   .productPromotion .videoArea .videoItem .coverImage {
     position: relative;
+  }
+}
+@media screen and (max-width: 767px) {
+  .page.productdetail #globalNetworkMap image {
+    width: 50px;
+  }
+  .producContentContainer {
+    padding: 30px;
+    flex-direction: column-reverse;
+  }
+  .producContentContainer .side {
+    align-items: flex-start;
+    margin-top: 30px;
+    margin-top: 30px;
+  }
+  .producContentContainer .side .documentItem1 {
+    width: 55%;
+  }
+  .producContentContainer .plusText {
+    flex-direction: column;
+  }
+  .productSlider {
+    display: none;
+  }
+  .productPromotion {
+    flex-direction: column;
+    padding: 30px;
+    margin-bottom: 200px;
+  }
+  .productPromotion .content {
+    padding: 0;
+    margin-top: 50px;
+    width: 100%;
+  }
+  .productPromotion .owlProductPromotion .owl-nav {
+    padding-left: 0;
+  }
+  .productPromotion .owlProductPromotion .owl-item .item::before {
+    display: none;
+  }
+  .productPromotion .plusText {
+    flex-direction: column;
+  }
+  .productPromotion .productPromotionItem {
+    padding: 20px;
+  }
+  .productPromotion .productPromotionItem .title {
+    line-height: 105%;
+  }
+  .productPromotion .videoArea {
+    width: 100%;
+  }
+  .productPromotion .videoArea .videoItem {
+    aspect-ratio: 0;
+  }
+  .productPromotion .videoArea .videoItem.type2::before {
+    bottom: 2px;
+    right: 10px;
+    width: 13%;
+  }
+  .productPromotion .videoArea .videoItem .coverImage {
+    position: relative;
+  }
+}
+@media screen and (max-width: 575px) {
+  .page.productdetail #globalNetworkMap image {
+    width: 40px;
   }
 }
 /*
