@@ -92,11 +92,18 @@
     }
 
     .videoArea {
+      height: 270px;
+
       .videoItem {
         aspect-ratio: 0;
+        height: 100%;
 
-        .coverImage {
-          position: relative;
+        &.type2{
+          &:before{
+            bottom: 15px;
+            right: 20px;
+            width: 13%;
+          }
         }
       }
     }
@@ -120,6 +127,7 @@
       margin-top: 30px;
     }
   }
+
   .productSlider {
     margin-top: -160px;
 
@@ -140,7 +148,6 @@
       }
     }
   }
-
 
   .productPromotion {
     flex-direction: column;

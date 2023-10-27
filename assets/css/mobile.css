@@ -571,11 +571,17 @@ html.debugMode:after {
   .productPromotion .content {
     padding: 40px;
   }
+  .productPromotion .videoArea {
+    height: 270px;
+  }
   .productPromotion .videoArea .videoItem {
     aspect-ratio: 0;
+    height: 100%;
   }
-  .productPromotion .videoArea .videoItem .coverImage {
-    position: relative;
+  .productPromotion .videoArea .videoItem.type2:before {
+    bottom: 15px;
+    right: 20px;
+    width: 13%;
   }
 }
 @media screen and (max-width: 768px) {
