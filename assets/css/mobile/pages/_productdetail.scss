@@ -1,9 +1,21 @@
 @include media("screen", ">lg", "<=xl") {
 
   .productSlider {
-    .swiper-container{
+
+    .swiper-container {
       margin-top: 50px;
+
+      .navigation {
+        bottom: 20px;
+        right: 330px;
+
+        .seperator {
+          background: transparent;
+
+        }
+      }
     }
+
     .productItem3 {
       width: 255px;
 
@@ -52,9 +64,21 @@
   }
 
   .productSlider {
-    .swiper-container{
+
+    .navigation {
+      bottom: 0px;
+      right: 330px;
+
+      .seperator {
+        background: transparent;
+
+      }
+    }
+
+    .swiper-container {
       margin-top: 60px;
     }
+
     .productItem3 {
       width: 200px;
 
@@ -102,8 +126,8 @@
         aspect-ratio: 0;
         height: 100%;
 
-        &.type2{
-          &:before{
+        &.type2 {
+          &:before {
             bottom: 15px;
             right: 20px;
             width: 13%;
@@ -136,29 +160,32 @@
   .productSlider {
     padding: 130px 0;
     margin-top: 0;
+    display: flex;
+    flex-direction: column-reverse;
 
     .navigation {
       right: auto;
-      left: 15%;
-      bottom: -5px;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: unset;
+      top: 35%;
     }
 
     .productItem3 {
-      width: 250px;
-      margin-top: 30px;
-      right: 30px;
-      top: auto;
-      bottom: 0;
-
+      width: 300px;
+      margin: 100px auto 0;
+      right: unset;
+      top: unset;
+      bottom: unset;
+      position: relative;
       padding-bottom: 20px;
     }
 
     .swiper-slide {
       .imgArea {
         img {
-          object-position: left;
-          position: absolute;
-          left: -15%;
+          object-position: center;
+
         }
       }
     }
