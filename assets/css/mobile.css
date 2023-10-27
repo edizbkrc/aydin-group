@@ -347,9 +347,10 @@ html.debugMode:after {
     height: auto;
     margin-bottom: 50px;
     width: 100%;
+    height: 60%;
   }
   .page .pageBanner .content::before {
-    bottom: 50px;
+    bottom: 0;
   }
   .page .pageBanner .content .title {
     align-items: center;
@@ -521,13 +522,16 @@ html.debugMode:after {
   }
 }
 @media screen and (min-width: 993px) and (max-width: 1200px) {
-  .productSlider .navigation .productItem3 {
+  .productSlider .swiper-container {
+    margin-top: 50px;
+  }
+  .productSlider .productItem3 {
     width: 255px;
   }
-  .productSlider .navigation .productItem3 .productName {
+  .productSlider .productItem3 .productName {
     padding: 0 20px;
   }
-  .productSlider .navigation .productItem3 .goProduct {
+  .productSlider .productItem3 .goProduct {
     margin: 17px 20px;
   }
   .productSlider .swiper-slide .imgArea img {
@@ -546,6 +550,9 @@ html.debugMode:after {
 @media screen and (min-width: 769px) and (max-width: 992px) {
   .producContentContainer {
     padding: 30px;
+  }
+  .productSlider .swiper-container {
+    margin-top: 60px;
   }
   .productSlider .productItem3 {
     width: 200px;
@@ -598,17 +605,26 @@ html.debugMode:after {
     margin-top: 30px;
   }
   .productSlider {
-    margin-top: -160px;
+    padding: 130px 0;
+    margin-top: 0;
   }
   .productSlider .navigation {
-    right: 50px;
+    right: auto;
+    left: 15%;
+    bottom: -5px;
   }
   .productSlider .productItem3 {
-    width: 200px;
-    display: none;
+    width: 250px;
+    margin-top: 30px;
+    right: 30px;
+    top: auto;
+    bottom: 0;
+    padding-bottom: 20px;
   }
   .productSlider .swiper-slide .imgArea img {
     object-position: left;
+    position: absolute;
+    left: -15%;
   }
   .productPromotion {
     flex-direction: column;

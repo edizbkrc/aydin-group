@@ -1,7 +1,7 @@
 <?php include "inc.header.php"; ?>
 <body class="preload">
 <div class="page">
-    <div class="pageBanner type10">
+    <div class="pageBanner ">
         <div class="background">
             <img src="assets/img/missionbanner.png" alt="">
         </div>
