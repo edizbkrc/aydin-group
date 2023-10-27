@@ -121,20 +121,20 @@ $(document).ready(function () {
 
         responsive: {
             0: {
+                items:1,
                 center: false,
-                autoWidth: true,
+                autoWidth: false,
             }, 576: {
                 center: false,
-                autoWidth: true,
+                autoWidth: false,
+                items:2,
             },
             768: {
                 items: 3
             },
             992: {
-                items: 4
+                items: 3
             },
-
-
             1200: {
                 items: 3
             },
