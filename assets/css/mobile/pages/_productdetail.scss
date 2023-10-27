@@ -1,5 +1,6 @@
 @include media("screen", ">lg", "<xl") {
   .productSlider {
+    .navigation
     .productItem3 {
       width: 255px;
 
@@ -259,7 +260,7 @@
       width: 100%;
 
       .videoItem {
-        aspect-ratio: 0;
+        aspect-ratio: unset;
 
         &.type2 {
           &::before {
@@ -284,7 +285,7 @@
       width: 100%;
 
       .videoItem {
-        aspect-ratio: 0;
+        aspect-ratio: unset;
 
         &.type2 {
           &::before {

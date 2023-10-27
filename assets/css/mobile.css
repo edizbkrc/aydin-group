@@ -332,42 +332,42 @@ html.debugMode:after {
   }
 }
 @media screen and (max-width: 767px) {
-  .page .pageBanner .descriptonWrapper, .page .type6 .descriptonWrapper {
+  .page .pageBanner .descriptonWrapper {
     padding: 20px;
   }
-  .page .pageBanner .descriptonWrapper .description, .page .type6 .descriptonWrapper .description {
+  .page .pageBanner .descriptonWrapper .description {
     line-height: 160%;
   }
-  .page .pageBanner .content, .page .type6 .content {
+  .page .pageBanner .content {
     height: auto;
     margin-bottom: 50px;
   }
-  .page .pageBanner .content::before, .page .type6 .content::before {
+  .page .pageBanner .content::before {
     bottom: 50px;
   }
-  .page .pageBanner .content .title, .page .type6 .content .title {
+  .page .pageBanner .content .title {
     align-items: center;
     margin-top: 15px;
     margin-bottom: 20px;
     padding: 0 20px;
     font-size: 25px;
   }
-  .page .pageBanner .content .title span, .page .type6 .content .title span {
+  .page .pageBanner .content .title span {
     max-width: 100%;
   }
-  .page .pageBanner.type4, .page .pageBanner.type7, .page .type6.type4, .page .type6.type7 {
+  .page .pageBanner.type4, .page .pageBanner.type7, .page .pageBanner.type6 {
     height: 18vh;
   }
-  .page .pageBanner.type4 .content::before, .page .pageBanner.type7 .content::before, .page .type6.type4 .content::before, .page .type6.type7 .content::before {
+  .page .pageBanner.type4 .content::before, .page .pageBanner.type7 .content::before, .page .pageBanner.type6 .content::before {
     bottom: 50px;
   }
-  .page .pageBanner.type4 .content .title, .page .pageBanner.type7 .content .title, .page .type6.type4 .content .title, .page .type6.type7 .content .title {
+  .page .pageBanner.type4 .content .title, .page .pageBanner.type7 .content .title, .page .pageBanner.type6 .content .title {
     align-items: center;
   }
-  .page .pageBanner.type4 .content .title span, .page .pageBanner.type7 .content .title span, .page .type6.type4 .content .title span, .page .type6.type7 .content .title span {
+  .page .pageBanner.type4 .content .title span, .page .pageBanner.type7 .content .title span, .page .pageBanner.type6 .content .title span {
     max-width: 100%;
   }
-  .page .pageBanner.type5 .content .title, .page .pageBanner.type8 .content .title, .page .type6.type5 .content .title, .page .type6.type8 .content .title {
+  .page .pageBanner.type5 .content .title, .page .pageBanner.type8 .content .title {
     align-items: center;
   }
 }
@@ -509,13 +509,13 @@ html.debugMode:after {
   }
 }
 @media screen and (min-width: 993px) and (max-width: 1199px) {
-  .productSlider .productItem3 {
+  .productSlider .navigation .productItem3 {
     width: 255px;
   }
-  .productSlider .productItem3 .productName {
+  .productSlider .navigation .productItem3 .productName {
     padding: 0 20px;
   }
-  .productSlider .productItem3 .goProduct {
+  .productSlider .navigation .productItem3 .goProduct {
     margin: 17px 20px;
   }
   .productSlider .swiper-slide .imgArea img {
@@ -673,7 +673,7 @@ html.debugMode:after {
     width: 100%;
   }
   .productPromotion .videoArea .videoItem {
-    aspect-ratio: 0;
+    aspect-ratio: unset;
   }
   .productPromotion .videoArea .videoItem.type2::before {
     bottom: 30px;
@@ -689,7 +689,7 @@ html.debugMode:after {
     width: 100%;
   }
   .page.productdetail .videoArea .videoItem {
-    aspect-ratio: 0;
+    aspect-ratio: unset;
   }
   .page.productdetail .videoArea .videoItem.type2::before {
     bottom: 2px;
@@ -749,7 +749,7 @@ html.debugMode:after {
     font-size: 20px;
     padding: 25px;
   }
-  .accordionItem .accordionHeader::after {
+  .accordionItem .accordionHeader:after {
     width: 20px;
     height: 20px;
     right: 25px;
@@ -1033,7 +1033,7 @@ html.debugMode:after {
     max-height: 40px;
   }
 }
-@media screen and (min-width: 1201px) and (max-width: 1399px) {
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
   .missionItem {
     background: #0E3B85;
     position: relative;
@@ -1100,30 +1100,59 @@ html.debugMode:after {
     line-height: 137%;
   }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 993px) and (max-width: 1200px) {
   .missionItem {
-    aspect-ratio: 0;
-    position: relative;
+    aspect-ratio: 1439/545;
+  }
+  .missionItem .imgArea:after {
+    left: 30%;
+  }
+  .missionItem .imgArea:before {
+    left: 30%;
+  }
+  .missionItem .content {
+    right: 3%;
+    left: 25%;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .missionItem {
+    aspect-ratio: 1439/630;
+  }
+  .missionItem .imgArea:after {
+    left: 10%;
+  }
+  .missionItem .imgArea:before {
+    left: 10%;
+  }
+  .missionItem .content {
+    right: 3%;
+    left: 15%;
+  }
+  .missionItem .content .title {
+    font-size: 45px;
+  }
+  .missionItem .content .description {
+    font-size: 18px;
+    line-height: 130%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .missionItem {
+    aspect-ratio: unset;
+    padding: 20px;
   }
   .missionItem .imgArea {
     position: relative;
-    left: 0;
     width: 100%;
-    max-height: 440px;
   }
-  .missionItem .content {
-    position: absolute;
-    left: auto;
-    text-align: right;
-    right: 0;
-    top: 0;
-    padding: 30px 20px;
-  }
-}
-@media screen and (max-width: 767px) {
-  .missionItem .imgArea::after {
-    content: "";
+  .missionItem .imgArea:after, .missionItem .imgArea:before {
     display: none;
+  }
+  .missionItem .imgArea .gradient {
+    top: 100px;
+    background: linear-gradient(0deg, #0E3B85 29.13%, rgba(14, 59, 133, 0) 100%);
+    width: 100%;
   }
   .missionItem .content {
     position: relative;
