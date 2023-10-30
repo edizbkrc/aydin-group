@@ -648,6 +648,9 @@ html.debugMode:after {
     flex-direction: column;
     padding: 30px;
   }
+  .productPromotion .owlProductPromotion .owl-item .item {
+    transform: scale(1);
+  }
   .productPromotion .videoArea {
     width: 100%;
     height: 400px;
@@ -717,6 +720,9 @@ html.debugMode:after {
     flex-direction: column;
     padding: 30px;
   }
+  .productPromotion .owlProductPromotion .owl-item .item {
+    transform: scale(1);
+  }
   .productPromotion .videoArea {
     width: 100%;
     height: 400px;
@@ -752,6 +758,19 @@ html.debugMode:after {
 @media screen and (min-width: 389px) and (max-width: 576px) {
   .productPromotion .videoArea {
     height: 260px;
+  }
+}
+@media screen and (min-width: 1201px) and (max-width: 1920px) {
+  .productSlider .navigation {
+    bottom: 160px;
+    right: 305px;
+    gap: 10px;
+  }
+  .productSlider .navigation .seperator {
+    display: none;
+  }
+  .productSlider .productItem3 {
+    width: 270px;
   }
 }
 @media screen and (max-width: 992px) {

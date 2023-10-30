@@ -195,6 +195,14 @@
     flex-direction: column;
     padding: 30px;
 
+    .owlProductPromotion {
+      .owl-item {
+        .item {
+          transform: scale(1);
+        }
+      }
+    }
+
     .videoArea {
       width: 100%;
       height: 400px;
@@ -291,6 +299,14 @@
     flex-direction: column;
     padding: 30px;
 
+    .owlProductPromotion {
+      .owl-item {
+        .item {
+          transform: scale(1);
+        }
+      }
+    }
+
     .videoArea {
       width: 100%;
       height: 400px;
@@ -349,6 +365,33 @@
   .productPromotion {
     .videoArea {
       height: 260px;
+    }
+  }
+}
+
+@include media("screen", ">xl", "<=3xl") {
+  .productSlider {
+
+    .navigation {
+      bottom: 160px;
+      right: 305px;
+      gap: 10px;
+
+      .seperator {
+        display: none;
+      }
+    }
+
+    .productItem3 {
+      width: 270px;
+    }
+
+    .swiper-slide {
+      .imgArea {
+        img {
+
+        }
+      }
     }
   }
 }
