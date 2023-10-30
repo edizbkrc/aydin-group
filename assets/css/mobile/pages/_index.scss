@@ -1,2 +1,25 @@
 @include media("screen", "<=md") {
+
+  section.mainProductMap{
+    .wrapper{
+      .owlProductMap{
+          .item{
+            width: 100%;
+          }
+        }
+      }
+    .productMapArea{
+      .imgArea{
+        .marker{
+          width: 36px;
+          height: 36px;
+
+          &:after{
+            width: 43px;
+            height: 43px;
+          }
+        }
+      }
+    }
+  }
 }

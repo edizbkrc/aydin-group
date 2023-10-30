@@ -90,16 +90,18 @@ $(document).ready(function () {
         responsive: {
             0: {
                 center: false,
-                autoWidth: true,
+                autoWidth: false,
+                items:1,
             }, 576: {
                 center: false,
-                autoWidth: true,
+                autoWidth: false,
+                items:1,
             },
             768: {
-                items: 3
+                items: 2
             },
             992: {
-                items: 4
+                items: 2
             },
 
 
@@ -194,16 +196,17 @@ $(document).ready(function () {
         responsive: {
             0: {
                 center: false,
-                autoWidth: true,
+                autoWidth: false,
             }, 576: {
                 center: false,
-                autoWidth: true,
+                autoWidth: false,
             },
             768: {
-                autoWidth: true
+                autoWidth: false,
+                items:2,
             },
             992: {
-                autoWidth: true
+                autoWidth: false
             },
 
 

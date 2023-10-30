@@ -144,7 +144,7 @@
   .producContentContainer {
 
     .plusText {
-      flex-direction: column;
+      flex-wrap: wrap;
     }
 
     padding: 30px;
@@ -168,17 +168,11 @@
       left: 50%;
       transform: translateX(-50%);
       bottom: unset;
-      top: 40%;
+      top: 80%;
     }
 
     .productItem3 {
-      width: 300px;
-      margin: 100px auto 0;
-      right: unset;
-      top: unset;
-      bottom: unset;
-      position: relative;
-      padding-bottom: 20px;
+     display: none;
     }
 
     .swiper-slide {
@@ -198,7 +192,7 @@
     .owlProductPromotion {
       .owl-item {
         .item {
-          transform: scale(1);
+          transform: scale(0.9);
         }
       }
     }
@@ -248,8 +242,9 @@
   .producContentContainer {
 
     .plusText {
-      flex-direction: column;
+      flex-wrap: wrap;
     }
+
 
     padding: 30px;
     flex-direction: column-reverse;
@@ -272,17 +267,11 @@
       left: 50%;
       transform: translateX(-50%);
       bottom: unset;
-      top: 30%;
+      top: 75%;
     }
 
     .productItem3 {
-      width: 300px;
-      margin: 100px auto 0;
-      right: unset;
-      top: unset;
-      bottom: unset;
-      position: relative;
-      padding-bottom: 20px;
+      display: none;
     }
 
     .swiper-slide {
@@ -314,6 +303,14 @@
       .videoItem {
         aspect-ratio: 0;
         height: 100%;
+
+        &.type2 {
+          &:before {
+            bottom: 10px;
+            right: 10px;
+            width: 13%;
+          }
+        }
       }
     }
 

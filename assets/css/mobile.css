@@ -438,6 +438,19 @@ html.debugMode:after {
     height: 17vh;
   }
 }
+@media screen and (max-width: 768px) {
+  section.mainProductMap .wrapper .owlProductMap .item {
+    width: 100%;
+  }
+  section.mainProductMap .productMapArea .imgArea .marker {
+    width: 36px;
+    height: 36px;
+  }
+  section.mainProductMap .productMapArea .imgArea .marker:after {
+    width: 43px;
+    height: 43px;
+  }
+}
 @media screen and (max-width: 767px) {
   .strategySlogan:before {
     left: 0;
@@ -611,7 +624,7 @@ html.debugMode:after {
     flex-direction: column-reverse;
   }
   .producContentContainer .plusText {
-    flex-direction: column;
+    flex-wrap: wrap;
   }
   .producContentContainer .side {
     align-items: flex-start;
@@ -629,16 +642,10 @@ html.debugMode:after {
     left: 50%;
     transform: translateX(-50%);
     bottom: unset;
-    top: 40%;
+    top: 80%;
   }
   .productSlider .productItem3 {
-    width: 300px;
-    margin: 100px auto 0;
-    right: unset;
-    top: unset;
-    bottom: unset;
-    position: relative;
-    padding-bottom: 20px;
+    display: none;
   }
   .productSlider .swiper-slide .imgArea img {
     object-position: center;
@@ -649,7 +656,7 @@ html.debugMode:after {
     padding: 30px;
   }
   .productPromotion .owlProductPromotion .owl-item .item {
-    transform: scale(1);
+    transform: scale(0.9);
   }
   .productPromotion .videoArea {
     width: 100%;
@@ -683,7 +690,7 @@ html.debugMode:after {
     flex-direction: column-reverse;
   }
   .producContentContainer .plusText {
-    flex-direction: column;
+    flex-wrap: wrap;
   }
   .producContentContainer .side {
     align-items: flex-start;
@@ -701,16 +708,10 @@ html.debugMode:after {
     left: 50%;
     transform: translateX(-50%);
     bottom: unset;
-    top: 30%;
+    top: 75%;
   }
   .productSlider .productItem3 {
-    width: 300px;
-    margin: 100px auto 0;
-    right: unset;
-    top: unset;
-    bottom: unset;
-    position: relative;
-    padding-bottom: 20px;
+    display: none;
   }
   .productSlider .swiper-slide .imgArea img {
     object-position: center;
@@ -730,6 +731,11 @@ html.debugMode:after {
   .productPromotion .videoArea .videoItem {
     aspect-ratio: 0;
     height: 100%;
+  }
+  .productPromotion .videoArea .videoItem.type2:before {
+    bottom: 10px;
+    right: 10px;
+    width: 13%;
   }
   .productPromotion .content {
     padding: 0;
