@@ -2,12 +2,23 @@
   header {
     height: 85px;
 
+    .logo{
+      width: 100%;
+    }
+
     &.searchActive {
         .searchArea {
           right: 0;
         }
       }
     .wrapper {
+
+      .openSearchBtn{
+        min-width: auto;
+        width: auto;
+        padding: 0 10px;
+      }
+
       .openMenuBtn {
         span {
           display: none;
@@ -25,7 +36,7 @@
     height: 70px;
 
     .logo {
-      width: auto;
+      width: 100%;
       padding: 20px;
       min-width: auto;
     }
@@ -46,12 +57,13 @@
 
       .openSearchBtn {
         margin-left: auto;
+        padding: 15px;
       }
 
       .openMenuBtn {
         width: auto;
         min-width: auto;
-        padding: 30px;
+        padding: 10px;
       }
     }
 

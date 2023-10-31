@@ -7,6 +7,20 @@
 }
 
 @include media("screen", "<=md") {
+  .newsItem1{
+    aspect-ratio:720/670;
+    .newsContent{
+      width: 100%;
+      left:0;
+      top: 0;
+      padding:0 20px;
+
+      .title{
+        font-size: 22px;
+        line-height: 120%;
+      }
+    }
+  }
   .newsItem2 {
     .content {
       .title {
@@ -47,6 +61,37 @@
       top: -35px;
       height: 2px;
 
+    }
+  }
+}
+
+@include media("screen",">xl" ,"<=3xl") {
+  .newsItem1{
+    .newsContent{
+      width: 75%;
+      padding:0 20px;
+      top: 10%;
+
+      .title{
+        font-size: 28px;
+        line-height: 120%;
+      }
+    }
+  }
+}
+
+@include media("screen",">lg" ,"<=xl") {
+  .newsItem1{
+    aspect-ratio: 720/540;
+    .newsContent{
+      width: 100%;
+      top: 5%;
+      padding:0 20px;
+
+      .title{
+        font-size: 28px;
+        line-height: 120%;
+      }
     }
   }
 }

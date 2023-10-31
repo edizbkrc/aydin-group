@@ -38,10 +38,20 @@ $(document).ready(function () {
     var mainNews = new Swiper('section.mainNews .swiper-container', {
         loop: true,
         centeredSlides: true,
-        slidesPerView: 2, spaceBetween: 20,
+        slidesPerView: 1, spaceBetween: 20,
         autoplay: {
             delay: 60000,
             disableOnInteraction: false
+        },
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+                centeredSlides: false,
+            },
+            685: {
+                slidesPerView: 2,
+                centeredSlides: false,
+            },
         },
     });
     var owlMainProducts = $('.owlMainProducts');
@@ -55,27 +65,26 @@ $(document).ready(function () {
         responsive: {
             0: {
                 center: false,
-                autoWidth: true,
+                autoWidth: false,
+                items:1,
             }, 576: {
                 center: false,
                 autoWidth: true,
             },
             768: {
-                items: 3
+                items: 2
             },
             992: {
-                items: 4
+                items: 2
             },
-
-
             1200: {
                 items: 3
             },
             1600: {
-                items: 3
+                items: 4
             },
             2000: {
-                items: 10
+                items: 4
             },
         },
     });
@@ -197,9 +206,11 @@ $(document).ready(function () {
             0: {
                 center: false,
                 autoWidth: false,
+                items:1,
             }, 576: {
                 center: false,
                 autoWidth: false,
+                items:1,
             },
             768: {
                 autoWidth: false,
@@ -211,7 +222,9 @@ $(document).ready(function () {
 
 
             1200: {
-                autoWidth: true
+                autoWidth: false,
+                items:4,
+                margin:10,
             },
             1600: {
                 autoWidth: true

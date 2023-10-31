@@ -1,9 +1,9 @@
 <?php include "inc.header.php"; ?>
 <body class="preload">
-<section class="mainSlider">
+<!--<section class="mainSlider">
     <div class="swiper-container">
         <div class="swiper-wrapper">
-            <?php for ($i = 0; $i <= 4; $i++) { ?>
+            <?php /*for ($i = 0; $i <= 4; $i++) { */?>
                 <div class="swiper-slide">
                     <div class="side">
                         <div class="text">
@@ -34,7 +34,7 @@
                             <div class="description">
                                 Özel yapım elektrikli servo sürücü sistemleri, yeni bir invertör nesliyle birlikte,
                                 yüksek hassasiyet ve dinamiklerle yüksek performans ve benzersiz bir fiyat/performans
-                                oranı sağlar. <?= $i ?>
+                                oranı sağlar. <?/*= $i */?>
                             </div>
                             <a href="" class="view">
                                 Ürünü Detaylı İncele
@@ -48,7 +48,7 @@
                         </div>
                     </div>
                 </div>
-            <?php } ?>
+            <?php /*} */?>
         </div>
         <div class="navigation">
             <div class="next navBtn">
@@ -64,7 +64,7 @@
             </div>
         </div>
     </div>
-</section>
+</section>-->
 <section class="mainProducts">
     <div class="content">
         <div class="title">

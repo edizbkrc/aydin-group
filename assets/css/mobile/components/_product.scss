@@ -1,7 +1,25 @@
 @include media("screen", "<=xxl") {
+  .productItem1 {
+    .productName {
+      padding: 0 0 0 80px;
+      font-size: 16px;
+    }
+
+    .goProduct {
+      left: 15px;
+      bottom: 33px;
+
+    }
+
+    .productImage {
+      transform: unset;
+    }
+  }
+
   .productItem2 {
     .content {
       padding: 0 30px 30px;
     }
   }
+
 }

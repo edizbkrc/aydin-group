@@ -170,8 +170,16 @@ html.debugMode:after {
   header {
     height: 85px;
   }
+  header .logo {
+    width: 100%;
+  }
   header.searchActive .searchArea {
     right: 0;
+  }
+  header .wrapper .openSearchBtn {
+    min-width: auto;
+    width: auto;
+    padding: 0 10px;
   }
   header .wrapper .openMenuBtn span {
     display: none;
@@ -182,7 +190,7 @@ html.debugMode:after {
     height: 70px;
   }
   header .logo {
-    width: auto;
+    width: 100%;
     padding: 20px;
     min-width: auto;
   }
@@ -196,11 +204,12 @@ html.debugMode:after {
   }
   header .wrapper .openSearchBtn {
     margin-left: auto;
+    padding: 15px;
   }
   header .wrapper .openMenuBtn {
     width: auto;
     min-width: auto;
-    padding: 30px;
+    padding: 10px;
   }
   header .mobileWrapper {
     margin-top: 30px;
@@ -438,17 +447,233 @@ html.debugMode:after {
     height: 17vh;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 576px) {
+  section.mainSlider .swiper-slide {
+    display: flex;
+    flex-direction: column;
+  }
+  section.mainSlider .swiper-slide .side {
+    width: auto;
+    min-width: 100%;
+    height: auto;
+    padding: 20px;
+    justify-content: flex-start;
+  }
+  section.mainSlider .swiper-slide .side .text {
+    writing-mode: unset;
+    transform: rotate(0);
+  }
+  section.mainSlider .swiper-slide .wrapper .content {
+    position: relative;
+    flex-wrap: wrap;
+    left: unset;
+    right: unset;
+    top: unset;
+    padding: 20px;
+  }
+  section.mainSlider .swiper-slide .wrapper .content .text {
+    flex-direction: column;
+  }
+  section.mainSlider .navigation .navBtn:hover.next .icon {
+    left: 5px;
+  }
+  section.mainSlider .navigation .navBtn:hover.prev .icon {
+    left: -5px;
+  }
+  section.mainProducts {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  section.mainProducts .owlMainProducts .owl-item {
+    padding: 0 20px;
+  }
+  section.mainProducts .content {
+    width: 100%;
+    padding-left: 20px;
+  }
+  section.mainGlobalNetwork .titleArea {
+    padding: 0 20px;
+  }
+  section.mainGlobalNetwork .areaList {
+    flex-wrap: wrap;
+    padding: 10px;
+    gap: 15px;
+  }
+  #globalNetworkMap {
+    height: 300px;
+    padding: 10px;
+  }
+  #globalNetworkMap image {
+    height: 40px;
+  }
+  .haitianBrands {
+    gap: 30px;
+    justify-content: center;
+    padding: 20px;
+  }
+  .haitianBrands .logo {
+    flex: unset;
+  }
+  .haitianBrands .logo img {
+    height: 30px;
+  }
+  section.mainPromotionArea {
+    padding: 20px 0;
+    position: relative;
+  }
+  section.mainPromotionArea .backgroundImage {
+    aspect-ratio: unset;
+    height: 300px;
+    margin-bottom: -88%;
+  }
+  section.mainPromotionArea .experienceArea {
+    position: unset;
+    padding: 20px;
+  }
+  section.mainPromotionArea .experienceArea .description {
+    text-align: center;
+  }
+  section.mainPromotionArea .experienceArea .experience50 {
+    flex-direction: column;
+  }
+  section.mainPromotionArea .experienceArea .experience50 img {
+    height: 150px;
+  }
+  section.mainPromotionArea .experienceArea .experience50 .text {
+    display: flex;
+    flex-direction: column;
+    gap: 46px;
+  }
+  section.mainPromotionArea .experienceArea .description {
+    color: #0E3B85;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 162.7%;
+  }
+  section.mainPromotionArea .experienceArea .meetHaitian {
+    position: unset;
+  }
+  section.mainPromotionArea .experienceArea .meetHaitian .iconArea {
+    width: 41px;
+    height: 41px;
+  }
+  section.mainPromotionArea .experienceArea .meetHaitian .iconArea .icon {
+    height: 13px;
+    width: 13px;
+  }
+  section.mainPromotionArea .experienceArea .photo {
+    position: unset;
+    object-fit: none;
+    transform: unset;
+  }
+  section.mainPromotionArea .experienceArea .trailer {
+    position: unset;
+  }
+  section.mainProductMap {
+    flex-direction: column;
+  }
+  section.mainProductMap .wrapper {
+    padding: 10px;
+    width: 100%;
+  }
+  section.mainProductMap .wrapper .titleArea {
+    text-align: center;
+    padding: 20px;
+  }
+  section.mainProductMap .wrapper .owlProductMap {
+    margin: 0;
+    position: relative;
+    margin-bottom: 70px;
+  }
+  section.mainProductMap .wrapper .owlProductMap .owl-item {
+    padding: 10px;
+  }
+  section.mainProductMap .wrapper .owlProductMap .owl-nav {
+    padding-left: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
   section.mainProductMap .wrapper .owlProductMap .item {
+    width: 100%;
+    margin: 0 auto;
+  }
+  section.mainProductMap .wrapper .owlProductMap .item .productMapCard {
+    left: 20px;
+  }
+  section.mainProductMap .productMapArea {
     width: 100%;
   }
   section.mainProductMap .productMapArea .imgArea .marker {
-    width: 36px;
-    height: 36px;
+    width: 26px;
+    height: 26px;
   }
   section.mainProductMap .productMapArea .imgArea .marker:after {
-    width: 43px;
-    height: 43px;
+    width: 31px;
+    height: 31px;
+  }
+  section.mainFounder {
+    flex-direction: column-reverse;
+    height: auto;
+    margin-top: 30px;
+  }
+  section.mainFounder .milestones {
+    width: 100%;
+    margin-bottom: 30px;
+    padding-bottom: 40px;
+    position: relative;
+  }
+  section.mainFounder .milestones .milestonesText {
+    padding: 0 10px;
+    text-align: center;
+  }
+  section.mainFounder .milestones .owlMilestones .owl-nav {
+    padding-left: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+  }
+  section.mainFounder .milestones .owlMilestones .owl-item {
+    right: 20px;
+  }
+  section.mainFounder .milestones .owlMilestones .owl-item .item:before {
+    display: none;
+  }
+  section.mainFounder .founder {
+    width: 100%;
+    padding: 20px 20px 0;
+  }
+  section.mainFounder .founder .description {
+    font-size: 18px;
+  }
+  section.mainFounder .founder .mrzhang {
+    position: relative;
+    transform: unset;
+  }
+}
+@media screen and (max-width: 1400px) {
+  section.mainProductMap .wrapper .owlProductMap .item {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1401px) and (max-width: 1920px) {
+  section.mainProductMap .wrapper .owlProductMap .item {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  section.mainPromotionArea .backgroundImage {
+    aspect-ratio: 1449/500;
+  }
+  .productMapCard {
+    font-size: 20px;
+  }
+  section.mainProducts .content {
+    min-width: 30%;
+  }
+  section.mainFounder .founder .mrzhang {
+    height: 350px;
   }
 }
 @media screen and (max-width: 767px) {
@@ -978,6 +1203,19 @@ html.debugMode:after {
   }
 }
 @media screen and (max-width: 768px) {
+  .newsItem1 {
+    aspect-ratio: 720/670;
+  }
+  .newsItem1 .newsContent {
+    width: 100%;
+    left: 0;
+    top: 0;
+    padding: 0 20px;
+  }
+  .newsItem1 .newsContent .title {
+    font-size: 22px;
+    line-height: 120%;
+  }
   .newsItem2 .content .title {
     font-size: 22px;
   }
@@ -1008,6 +1246,31 @@ html.debugMode:after {
     right: 0;
     top: -35px;
     height: 2px;
+  }
+}
+@media screen and (min-width: 1201px) and (max-width: 1920px) {
+  .newsItem1 .newsContent {
+    width: 75%;
+    padding: 0 20px;
+    top: 10%;
+  }
+  .newsItem1 .newsContent .title {
+    font-size: 28px;
+    line-height: 120%;
+  }
+}
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .newsItem1 {
+    aspect-ratio: 720/540;
+  }
+  .newsItem1 .newsContent {
+    width: 100%;
+    top: 5%;
+    padding: 0 20px;
+  }
+  .newsItem1 .newsContent .title {
+    font-size: 28px;
+    line-height: 120%;
   }
 }
 @media screen and (max-width: 1400px) {
@@ -1078,6 +1341,17 @@ html.debugMode:after {
   }
 }
 @media screen and (max-width: 1400px) {
+  .productItem1 .productName {
+    padding: 0 0 0 80px;
+    font-size: 16px;
+  }
+  .productItem1 .goProduct {
+    left: 15px;
+    bottom: 33px;
+  }
+  .productItem1 .productImage {
+    transform: unset;
+  }
   .productItem2 .content {
     padding: 0 30px 30px;
   }

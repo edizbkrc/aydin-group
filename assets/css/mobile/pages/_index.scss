@@ -1,25 +1,405 @@
-@include media("screen", "<=md") {
+@include media("screen", "<=sm") {
 
-  section.mainProductMap{
-    .wrapper{
-      .owlProductMap{
-          .item{
-            width: 100%;
+  section.mainSlider {
+
+    .swiper-slide {
+      display: flex;
+      flex-direction: column;
+
+      .side {
+        width: auto;
+        min-width: 100%;
+        height: auto;
+        padding: 20px;
+        justify-content: flex-start;
+
+        .text {
+          writing-mode: unset;
+          transform: rotate(0);
+
+          b {
+          }
+
+          span {
           }
         }
       }
-    .productMapArea{
-      .imgArea{
-        .marker{
-          width: 36px;
-          height: 36px;
 
-          &:after{
-            width: 43px;
-            height: 43px;
+      .wrapper {
+        .content {
+          position: relative;
+          flex-wrap: wrap;
+          left: unset;
+          right: unset;
+          top: unset;
+          padding: 20px;
+
+          .text {
+            flex-direction: column;
+
+            b, span, small {
+              .plus {
+              }
+            }
+
+            b {
+            }
+
+            span {
+            }
+
+            small {
+            }
+          }
+
+          .description {
+          }
+
+          .view {
+            .icon {
+            }
+          }
+        }
+
+        .productImage {
+        }
+
+        &:after {
+        }
+      }
+
+      &.swiper-slide-active {
+        .wrapper {
+          .content {
+            .text {
+              b {
+              }
+
+              span {
+              }
+
+              small {
+              }
+            }
+
+            .description {
+            }
+
+            .view {
+            }
+          }
+        }
+      }
+    }
+
+    .navigation {
+      .navBtn {
+        .icon {
+        }
+
+        &.prev {
+          .icon {
+          }
+        }
+
+        &:hover {
+          &.next {
+            .icon {
+              left: 5px;
+
+            }
+          }
+
+          &.prev {
+
+            .icon {
+              left: -5px;
+            }
+          }
+        }
+      }
+
+      .seperator {
+      }
+    }
+  }
+
+  section.mainProducts {
+    flex-direction: column;
+margin-top: 30px;
+    .owlMainProducts {
+      .owl-item {
+        padding: 0 20px;
+      }
+    }
+
+    .content {
+      width: 100%;
+      padding-left: 20px;
+    }
+  }
+
+  section.mainGlobalNetwork {
+    .titleArea{
+      padding: 0 20px;
+    }
+    .areaList {
+      flex-wrap: wrap;
+      padding: 10px;
+      gap: 15px;
+    }
+  }
+
+  #globalNetworkMap {
+    height: 300px;
+    padding: 10px;
+
+    image{
+      height: 40px;
+    }
+  }
+
+  .haitianBrands {
+    gap: 30px;
+    justify-content: center;
+    padding: 20px;
+
+    .logo {
+      flex: unset;
+
+      img {
+        height: 30px;
+      }
+    }
+  }
+
+  section.mainPromotionArea {
+    padding: 20px 0;
+    position: relative;
+
+    .backgroundImage {
+      aspect-ratio: unset;
+      height: 300px;
+      margin-bottom: -88%;
+    }
+
+    .experienceArea {
+      position: unset;
+      padding: 20px;
+
+      .description {
+        text-align: center;
+
+      }
+
+      .experience50 {
+        flex-direction: column;
+
+        img{
+          height: 150px;
+        }
+
+        .text {
+          display: flex;
+          flex-direction: column;
+          gap: 46px;
+
+        }
+      }
+
+      .description {
+        color: #0E3B85;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 162.7%;
+      }
+
+      .meetHaitian {
+        position: unset;
+
+        .iconArea {
+          width: 41px;
+          height: 41px;
+
+          .icon {
+            height: 13px;
+            width: 13px;
+          }
+        }
+      }
+
+      .photo {
+        position: unset;
+        object-fit: none;
+        transform: unset;
+      }
+
+      .trailer {
+        position: unset;
+      }
+    }
+  }
+
+  section.mainProductMap {
+    flex-direction: column;
+
+    .wrapper {
+      padding: 10px;
+      width: 100%;
+
+      .titleArea {
+        text-align: center;
+        padding: 20px;
+      }
+
+      .owlProductMap {
+        margin: 0;
+        position: relative;
+        margin-bottom: 70px;
+
+        .owl-item {
+          padding: 10px
+        }
+
+
+        .owl-nav {
+          padding-left: 0;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+        }
+
+        .item {
+          width: 100%;
+          margin: 0 auto;
+
+          .productMapCard {
+            left: 20px;
+          }
+        }
+      }
+    }
+
+    .productMapArea {
+      width: 100%;
+
+      .imgArea {
+        .marker {
+          width: 26px;
+          height: 26px;
+
+          &:after {
+            width: 31px;
+            height: 31px;
           }
         }
       }
     }
   }
+
+  section.mainFounder {
+    flex-direction: column-reverse;
+    height: auto;
+    margin-top: 30px;
+
+    .milestones {
+      width: 100%;
+      margin-bottom: 30px;
+      padding-bottom: 40px;
+      position: relative;
+
+      .milestonesText {
+        padding: 0 10px;
+        text-align: center;
+      }
+
+      .owlMilestones {
+
+        .owl-nav {
+          padding-left: 0;
+          position: absolute;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: -10px;
+        }
+
+        .owl-item {
+          right: 20px;
+
+          .item {
+            &:before {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    .founder {
+      width: 100%;
+      padding: 20px 20px 0;
+
+      .description {
+        font-size: 18px;
+      }
+
+      .mrzhang {
+        position: relative;
+        transform: unset;
+      }
+    }
+  }
 }
+
+@include media("screen", "<=xxl"){
+
+  section.mainProductMap{
+    .wrapper{
+      .owlProductMap{
+        .item{
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+@include media("screen", ">xxl", "<=3xl"){
+
+  section.mainProductMap{
+    .wrapper{
+      .owlProductMap{
+        .item{
+          width: 90%;
+        }
+      }
+    }
+  }
+}
+
+@include media("screen", ">lg", "<=xl"){
+
+  section.mainPromotionArea{
+    .backgroundImage{
+      aspect-ratio:1449/500;
+    }
+  }
+  .productMapCard{
+    font-size: 20px;
+  }
+
+  section.mainProducts{
+    .content{
+      min-width: 30%;
+    }
+  }
+
+  section.mainFounder{
+    .founder{
+      .mrzhang{
+        height: 350px;
+      }
+    }
+  }
+}
+

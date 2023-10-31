@@ -22,22 +22,22 @@
 
 
 ## MOBİL
-- [x] Header
+- [ ] Header
 - [ ] Anasayfa
-- [x] Footer
-- [x] Kurumsal
-- [x] Rakamlarla Haitian
-- [x] Stratejimiz
+- [ ] Footer
+- [ ] Kurumsal
+- [ ] Rakamlarla Haitian
+- [ ] Stratejimiz
 - [ ] Misyon ve Vizyon
-- [] Üretim Tesisleri
+- [ ] Üretim Tesisleri
 - [ ] Ürün Detay
 - [ ] Ürünler
-- [x] Haberler
-- [x] Haber Detay
-- [x] Çözümler
-- [x] Çözümler Detay
-- [x] Etkinlikler
-- [x] Dökümanlar
+- [ ] Haberler
+- [ ] Haber Detay
+- [ ] Çözümler
+- [ ] Çözümler Detay
+- [ ] Etkinlikler
+- [ ] Dökümanlar
 - [ ] Yatırımcı İlişkileri
 - [ ] İletişim
  
