@@ -2513,4 +2513,38 @@
 
 header {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 35px;
+}
+header .menuRight {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0 20px;
+}
+header .menuRight .btnRequest {
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  background: #4D4D4D;
+  padding: 19px 48px;
+  border-radius: 12px;
+}
+header .menuRight .burgerMenu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  fill: #444444;
+  color: #444444;
+  gap: 10px;
+}
+header .menuRight .burgerMenu .icon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+header .menuRight .burgerMenu .langueSelect {
+  font-weight: 600;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

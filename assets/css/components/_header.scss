@@ -1,3 +1,42 @@
-header{
+header {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 35px;
+
+    .menuRight {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 0 20px;
+
+        .btnRequest {
+            border: none;
+            color: #fff;
+            font-weight: 600;
+            background: #4D4D4D;
+            padding: 19px 48px;
+            border-radius: 12px;
+        }
+
+        .burgerMenu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            fill: #444444;
+            color: #444444;
+            gap: 10px;
+
+            .icon {
+                width: 40px;
+                height: 40px;
+                cursor: pointer;
+            }
+
+            .langueSelect {
+                font-weight: 600;
+                cursor: pointer;
+            }
+        }
+    }
 }
