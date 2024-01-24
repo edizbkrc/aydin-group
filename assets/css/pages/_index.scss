@@ -23,6 +23,11 @@ section.mainSlider {
         }
     }
 
+    .mySwiper2 {
+        border-radius: 12px;
+        overflow: hidden;
+    }
+
     .swiperthumbArea {
         display: flex;
         align-items: center;
@@ -64,6 +69,7 @@ section.mainSlider {
     }
 
 
+
 }
 
 section.mainDescription {
@@ -71,7 +77,7 @@ section.mainDescription {
     margin: 0 auto;
     max-width: 1380px;
     text-align: center;
-    opacity: .5;
-    color: #444444;
+    margin-bottom: 130px;
+    color: rgba($color: #444444, $alpha: .5);
     font-weight: 400;
 }

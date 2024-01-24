@@ -2,16 +2,24 @@
     font-family: 'Poppins', sans-serif !important;
     text-decoration: none !important;
 }
+.icon{
+    width: 24px;
+    height: 24px;
+}
 
-body{
-    height: 200vh;
+img {
+    display: block;
+}
+
+body {
+    height: 500vh;
 }
 
 .container-fluid {
     max-width: 1705px;
 }
 
-.customSwiper{
+.customSwiper {
     margin-left: 0;
     min-width: 504px;
     max-width: 504px;
@@ -26,7 +34,7 @@ body{
     text-align: start;
     display: flex;
     align-items: center;
-    @include userSelect();    
+    @include userSelect();
 }
 
 .custom-swiper-slide {

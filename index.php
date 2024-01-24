@@ -18,7 +18,7 @@
             <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
                 <div class="swiper-wrapper">
                     <?php for ($i = 0; $i < 38; $i++) { ?>
-                        <div class="swiper-slide">
+                        <div class="swiper-slide custom">
                             <img src="assets/img/mainsliderimg1.png" />
                         </div>
                     <?php } ?>
@@ -74,6 +74,112 @@
             interdum.
 
         </div>
+    </section>
+
+    <section class="mainProductDetailCards">
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="productCard1">
+                        <div class="title">Proje Detayları</div>
+                        <div class="content">42 Adet : 5+1 Daire
+                            <span> (3 araçlık kapalı otopark)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="productCard1">
+                        <div class="content">
+                            42 Adet : 4+1 Daire
+                            <span>(2 araçlık kapalı otopark)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="productCard1">
+                        <div class="content">
+                            12 Adet : 3+1 Daire
+                            <span>(1 araçlık kapalı otopark)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-grid10-lg-2">
+                    <div class="productCard2">
+                        <svg class="icon">
+                            <use xlink:href="assets/img/svg/iconset.svg#location"></use>
+                        </svg>
+                        <div class="content">
+                            <div class="subTitle">Bölge:</div>
+                            <div class="subContent">Konya / Meram</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-grid10-lg-2">
+                    <div class="productCard2">
+                        <svg class="icon">
+                            <use xlink:href="assets/img/svg/iconset.svg#time"></use>
+                        </svg>
+                        <div class="doubleContent">
+                            <div class="content">
+                                <div class="subTitle">Başlangıç</div>
+                                <div class="subContent">2022 / 3</div>
+                            </div>
+                            <div class="content">
+                                <div class="subTitle">Bitiş</div>
+                                <div class="subContent">2022 / 4</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-grid10-lg-2">
+                    <div class="productCard2">
+                        <svg class="icon">
+                            <use xlink:href="assets/img/svg/iconset.svg#home"></use>
+                        </svg>
+                        <div class="content">
+                            <div class="subTitle">Konut Sayısı</div>
+                            <div class="subContent">96</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-grid10-lg-2">
+                    <div class="productCard2">
+                        <svg class="icon">
+                            <use xlink:href="assets/img/svg/iconset.svg#basket"></use>
+                        </svg>
+                        <div class="content">
+                            <div class="subTitle">Ticari Üniteler</div>
+                            <div class="subContent">1.500 m²</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-grid10-lg-2">
+                    <div class="productCard2">
+                        <svg class="icon">
+                            <use xlink:href="assets/img/svg/iconset.svg#flag"></use>
+                        </svg>
+                        <div class="doubleContent">
+                            <div class="content">
+                                <div class="subTitle">İnşaat Alanı</div>
+                                <div class="subContent">32.000 m²</div>
+                            </div>
+                            <div class="content">
+                                <div class="subTitle">Arsa Alanı</div>
+                                <div class="subContent">11.600 m²</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projectReports">
+        
     </section>
 
 

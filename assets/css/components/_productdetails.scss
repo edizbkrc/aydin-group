@@ -1,0 +1,82 @@
+section.mainProductDetailCards {
+    margin-bottom: 80px;
+    .productCard1 {
+        background-color: #F6F6F6;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-start;
+        color: #444444;
+        gap: 20px;
+        min-height: 90px;
+        max-height: 170px;
+        border-radius: 12px;
+        margin-bottom: 25px;
+
+        .title {
+            font-size: 24px;
+            font-weight: 600;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            font-weight: 400;
+            line-height: 24px;
+        }
+    }
+
+    .productCard2 {
+        background-color: #F6F6F6;
+        padding:40px 40px 40px 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        color: #444444;
+        gap: 20px;
+        min-height: 90px;
+        max-height: 170px;
+        border-radius: 12px;
+        margin-bottom: 25px;
+
+        .doubleContent {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            position: relative;
+
+            .content {
+                &:nth-last-child(1) {
+                    &:before {
+                        content: '';
+                        height: 100%;
+                        width: .5px;
+                        position: absolute;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        background: rgba($color: #707070, $alpha: .5);
+                    }
+                }
+            }
+        }
+
+        .content {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+
+            .subTitle {
+                font-weight: 600;
+                white-space: nowrap;
+            }
+
+            .subContent {
+                color: rgba($color: #444444, $alpha: .5);
+                font-weight: 400;
+            }
+        }
+    }
+}
