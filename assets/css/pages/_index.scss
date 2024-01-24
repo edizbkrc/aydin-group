@@ -1,4 +1,6 @@
 section.mainSlider {
+    margin-bottom: 150px;
+
     .sliderTop {
         display: flex;
         justify-content: space-between;
@@ -62,4 +64,14 @@ section.mainSlider {
     }
 
 
+}
+
+section.mainDescription {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1380px;
+    text-align: center;
+    opacity: .5;
+    color: #444444;
+    font-weight: 400;
 }

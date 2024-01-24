@@ -37,6 +37,17 @@
   }
 }
 
+@mixin make-col2($size: false, $columns: $grid-columns) {
+  @if $size {
+    flex: 0 0 auto;
+    width: percentage(divide($size, 10));
+
+  } @else {
+    flex: 1 1 0;
+    max-width: 100%;
+  }
+}
+
 @mixin make-col-auto() {
   flex: 0 0 auto;
   width: auto;
@@ -99,7 +110,12 @@
       @if $columns > 0 {
         @for $i from 1 through $columns {
           .col#{$infix}-#{$i} {
+
             @include make-col($i, $columns);
+          }
+          .col-grid10#{$infix}-#{$i} {
+
+            @include make-col2($i, $columns);
           }
         }
 
@@ -107,6 +123,7 @@
         @for $i from 0 through ($columns - 1) {
           @if not ($infix == "" and $i == 0) { // Avoid emitting useless .offset-0
             .offset#{$infix}-#{$i} {
+
               @include make-col-offset($i, $columns);
             }
           }

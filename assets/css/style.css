@@ -2700,6 +2700,9 @@ header.sideactive .menuRight .rightBigSidebar .sidebarArrow {
   z-index: 10;
 }
 
+section.mainSlider {
+  margin-bottom: 150px;
+}
 section.mainSlider .sliderTop {
   display: flex;
   justify-content: space-between;
@@ -2752,4 +2755,14 @@ section.mainSlider .swiperthumbArea .custom-swiper-next:after {
 section.mainSlider .swiperthumbArea .custom-swiper-prev {
   right: 0;
   left: 25px;
+}
+
+section.mainDescription {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1380px;
+  text-align: center;
+  opacity: 0.5;
+  color: #444444;
+  font-weight: 400;
 }/*# sourceMappingURL=style.css.map */
