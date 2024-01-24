@@ -2512,11 +2512,53 @@
   text-decoration: none !important;
 }
 
+body {
+  height: 200vh;
+}
+
+.container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+  max-width: 1705px;
+}
+
+.customSwiper {
+  margin-left: 0;
+  min-width: 504px;
+  max-width: 504px;
+}
+
+.swiper-pagination {
+  color: #444444;
+  font-size: 28px;
+  font-weight: 600;
+  position: relative;
+  height: 58px;
+  text-align: start;
+  display: flex;
+  align-items: center;
+  -webkit-touch-callout: none;
+  user-select: none;
+}
+
+.custom-swiper-slide {
+  max-width: 58px;
+  max-height: 58px;
+  min-height: 58px;
+  min-width: 58px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.custom-swiper-slide img {
+  min-height: 58px;
+  max-width: 58px;
+  object-fit: cover;
+}
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 30px 35px;
+  margin-bottom: 60px;
 }
 header .menuRight {
   display: flex;
@@ -2656,4 +2698,58 @@ header.sideactive .menuRight .rightBigSidebar .sidebar {
 header.sideactive .menuRight .rightBigSidebar .sidebarArrow {
   bottom: 0;
   z-index: 10;
+}
+
+section.mainSlider .sliderTop {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+section.mainSlider .sliderTop h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #444444;
+}
+section.mainSlider .sliderTop .sliderLinks {
+  display: flex;
+  gap: 40px;
+}
+section.mainSlider .sliderTop .sliderLinks a {
+  font-weight: 600;
+  color: #444444;
+}
+section.mainSlider .swiperthumbArea {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 30px;
+  gap: 30px;
+}
+section.mainSlider .swiperthumbArea .custom-swiper-next,
+section.mainSlider .swiperthumbArea .custom-swiper-prev {
+  background: #464344;
+  border-radius: 30px;
+  height: auto;
+  width: auto;
+  position: relative;
+  padding: 10px 12.5px;
+}
+section.mainSlider .swiperthumbArea .custom-swiper-next:after,
+section.mainSlider .swiperthumbArea .custom-swiper-prev:after {
+  content: "";
+  background-image: url(../img/svg/arrow1.svg);
+  width: 20px;
+  height: 14px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+section.mainSlider .swiperthumbArea .custom-swiper-next {
+  right: 0;
+}
+section.mainSlider .swiperthumbArea .custom-swiper-next:after {
+  transform: rotate(180deg);
+}
+section.mainSlider .swiperthumbArea .custom-swiper-prev {
+  right: 0;
+  left: 25px;
 }/*# sourceMappingURL=style.css.map */

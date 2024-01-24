@@ -3,9 +3,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 30px 35px;
-
-
-
+    margin-bottom: 60px;
 
     .menuRight {
         display: flex;
@@ -50,7 +48,7 @@ header {
             top: 0;
             bottom: 0;
             right: 0;
-            width:100%;
+            width: 100%;
             padding-top: 10px;
             opacity: 0;
             pointer-events: none;

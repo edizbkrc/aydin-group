@@ -1,4 +1,45 @@
-*{
+* {
     font-family: 'Poppins', sans-serif !important;
     text-decoration: none !important;
+}
+
+body{
+    height: 200vh;
+}
+
+.container-fluid {
+    max-width: 1705px;
+}
+
+.customSwiper{
+    margin-left: 0;
+    min-width: 504px;
+    max-width: 504px;
+}
+
+.swiper-pagination {
+    color: #444444;
+    font-size: 28px;
+    font-weight: 600;
+    position: relative;
+    height: 58px;
+    text-align: start;
+    display: flex;
+    align-items: center;
+    @include userSelect();    
+}
+
+.custom-swiper-slide {
+    max-width: 58px;
+    max-height: 58px;
+    min-height: 58px;
+    min-width: 58px;
+    border-radius: 12px;
+    overflow: hidden;
+
+    img {
+        min-height: 58px;
+        max-width: 58px;
+        object-fit: cover;
+    }
 }
