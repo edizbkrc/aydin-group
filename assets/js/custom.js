@@ -5,12 +5,12 @@ $(document).ready(function () {
 
 });
 
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".swiperTabs", {
     spaceBetween: 5,
     slidesPerView: 8,
-    
+
 });
-var swiper2 = new Swiper(".mySwiper2", {
+var swiper2 = new Swiper(".swiperMain", {
     spaceBetween: 10,
     navigation: {
         nextEl: ".swiper-button-next",
@@ -23,4 +23,16 @@ var swiper2 = new Swiper(".mySwiper2", {
     thumbs: {
         swiper: swiper,
     },
+});
+
+
+var swiper = new Swiper(".swiperContracts", {
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+
+    },
+    spaceBetween: 20,
+    slidesPerView: 7,
+    loop: true,
 });

@@ -3009,6 +3009,12 @@ body {
   object-fit: cover;
 }
 
+.colZero {
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -3083,11 +3089,9 @@ header .menuRight .rightBigSidebar .sidebar {
   /*  background-image: url(../img/sidebarbg.png);
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center;*/
-  -webkit-mask-size: contain;
-  -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position: center;
-  -webkit-mask-image: url(../img/sidebarbg.png);
+  background-position: center;
+      @include getMask();
+      -webkit-mask-image: url(../img/sidebarbg.png);*/
   background: #444444;
   fill: #fff;
   width: 23vw;
@@ -3157,6 +3161,30 @@ header.sideactive .menuRight .rightBigSidebar .sidebarArrow {
   z-index: 10;
 }
 
+.headerJustBurgerMenu header .menuRight .btnRequest {
+  display: none;
+}
+.headerJustBurgerMenu header .menuRight .burgerMenu .langueSelect {
+  display: none;
+}
+
+section.mainHead {
+  padding-top: 27%;
+}
+section.mainHead .headBg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+section.mainHead .headBg img {
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
+}
 section.mainSlider {
   margin-bottom: 150px;
 }
@@ -3226,6 +3254,72 @@ section.mainDescription {
   margin-bottom: 130px;
   color: rgba(68, 68, 68, 0.5);
   font-weight: 400;
+}
+
+section.projectReports {
+  color: #444444;
+}
+section.projectReports .projectArea {
+  background: #F6F6F6;
+  padding: 45px 0 70px;
+}
+section.projectReports .projectArea .title {
+  padding: 0 25px 50px;
+  font-weight: 600;
+  font-size: 24px;
+}
+section.projectReports .projectArea .col-lg-3:nth-last-child(1) .projectReportCards1,
+section.projectReports .projectArea .col-lg-4:nth-last-child(1) .projectReportCards1 {
+  border-right: 0;
+}
+section.projectReports .projectArea .projectReportCards1 {
+  padding: 70px 0 0 50px;
+  border-top: 1px solid #C9E4EF;
+  border-right: 1px solid #C9E4EF;
+  max-height: 210px;
+  min-height: 140px;
+}
+section.projectReports .projectArea .projectReportCards1 .content {
+  line-height: 24px;
+}
+section.projectReports .projectArea .projectReportCards1 .content b {
+  font-weight: bold;
+}
+section.projectReports .projectArea .projectReportCards1.projectCardBorderBottom {
+  border-bottom: 1px solid #C9E4EF;
+}
+section.projectReports .projectArea .swiperContracts {
+  max-width: 93%;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+section.projectReports .projectArea .swiperContracts .swiperNavs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-top: 70px;
+}
+section.projectReports .projectArea .swiperContracts .swiperNavs .custom-swiper-prev-2,
+section.projectReports .projectArea .swiperContracts .swiperNavs .custom-swiper-next-2 {
+  background: #464344;
+  border-radius: 30px;
+  height: auto;
+  width: auto;
+  position: relative;
+  padding: 10px 12.5px;
+}
+section.projectReports .projectArea .swiperContracts .swiperNavs .custom-swiper-prev-2:after,
+section.projectReports .projectArea .swiperContracts .swiperNavs .custom-swiper-next-2:after {
+  content: "";
+  background-image: url(../img/svg/arrow1.svg);
+  width: 20px;
+  height: 14px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+section.projectReports .projectArea .swiperContracts .swiperNavs .custom-swiper-next-2:after {
+  transform: rotate(180deg);
 }
 
 section.mainProductDetailCards {

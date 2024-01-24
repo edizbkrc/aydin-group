@@ -1,0 +1,168 @@
+section.mainSlider {
+    margin-bottom: 150px;
+
+    .sliderTop {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+
+        h2 {
+            font-size: 28px;
+            font-weight: 600;
+            color: #444444;
+        }
+
+        .sliderLinks {
+            display: flex;
+            gap: 40px;
+
+            a {
+                font-weight: 600;
+                color: #444444;
+            }
+        }
+    }
+
+    .mySwiper2 {
+        border-radius: 12px;
+        overflow: hidden;
+    }
+
+    .swiperthumbArea {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 30px;
+        gap: 30px;
+
+        .custom-swiper-next,
+        .custom-swiper-prev {
+            background: #464344;
+            border-radius: 30px;
+            height: auto;
+            width: auto;
+            position: relative;
+            padding: 10px 12.5px;
+
+            &:after {
+                content: "";
+                background-image: url(../img/svg/arrow1.svg);
+                width: 20px;
+                height: 14px;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }
+
+        .custom-swiper-next {
+            right: 0;
+
+            &:after {
+                transform: rotate(180deg);
+            }
+        }
+
+        .custom-swiper-prev {
+            right: 0;
+            left: 25px;
+        }
+    }
+
+
+
+}
+
+section.mainDescription {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1380px;
+    text-align: center;
+    margin-bottom: 130px;
+    color: rgba($color: #444444, $alpha: .5);
+    font-weight: 400;
+}
+
+
+section.projectReports {
+    color: #444444;
+
+    .projectArea {
+        background: #F6F6F6;
+        padding: 45px 0 70px;
+
+        .title {
+            padding: 0 25px 50px;
+            font-weight: 600;
+            font-size: 24px;
+
+        }
+
+        .col-lg-3,
+        .col-lg-4 {
+            &:nth-last-child(1) {
+                .projectReportCards1 {
+                    border-right: 0;
+                }
+            }
+        }
+
+        .projectReportCards1 {
+            padding: 70px 0 0 50px;
+            border-top: 1px solid #C9E4EF;
+            border-right: 1px solid #C9E4EF;
+            max-height: 210px;
+            min-height: 140px;
+
+            .content {
+                line-height: 24px;
+
+                b {
+                    font-weight: bold;
+                }
+            }
+
+            &.projectCardBorderBottom {
+                border-bottom: 1px solid #C9E4EF;
+            }
+        }
+
+        .swiperContracts {
+            max-width: 93%;
+            margin: 0 auto;
+            margin-top: 60px;
+
+            .swiperNavs {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 25px;
+                margin-top: 70px;
+
+                .custom-swiper-prev-2,
+                .custom-swiper-next-2 {
+                    background: #464344;
+                    border-radius: 30px;
+                    height: auto;
+                    width: auto;
+                    position: relative;
+                    padding: 10px 12.5px;
+
+                    &:after {
+                        content: "";
+                        background-image: url(../img/svg/arrow1.svg);
+                        width: 20px;
+                        height: 14px;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                    }
+                }
+
+                .custom-swiper-next-2 {
+                    &:after {
+                        transform: rotate(180deg);
+                    }   
+                }
+            }
+        }
+    }
+}
