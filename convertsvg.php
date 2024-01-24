@@ -12,6 +12,12 @@ $includeFiles = [
     "location",
     "time",
     "burgericon",
+    "close",
+    "instagram",
+    "facebook",
+    "twitter",
+    "youtube",
+    "linkedin",
 ];
 
 $spriteGenerator = new SvgSpriteGenerator($sourceDir, $outputFile, $excludeFiles, $includeFiles);

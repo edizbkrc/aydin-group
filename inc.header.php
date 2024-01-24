@@ -25,24 +25,57 @@
 
 </head>
 
-<header>
+<header >
     <a href="" class="logo">
         <img src="assets/img/svg/logo.svg" alt="">
     </a>
     <div class="menuRight">
         <button type="button" class="btnRequest">TALEP FORMU</button>
         <div class="burgerMenu">
-            <svg class="icon">
+            <svg class="icon sidebarToggle">
                 <use xlink:href="assets/img/svg/iconset.svg#burgericon"></use>
             </svg>
             <div class="langueSelect">
                 TR
             </div>
         </div>
+        <div class="rightBigSidebar">
+            <div class="sidebarArrow"> 
+                <img class="" src="assets/img/sidebarmenuarrow.png" alt="">
+            </div>
+            <div class="sidebar">
+                <svg class="icon sidebarToggle">
+                    <use xlink:href="assets/img/svg/iconset.svg#close"></use>
+                </svg>
+                <div class="headerLinks">
+                    <ul>
+                        <li class="headerMainLinks">
+                            <a href="">anasayfa</a>
+                        </li>
+                        <li class="headerMainLinks">
+                            <a href="">kurumsal</a>
+                            <ul>
+                                <li><a href="">hakkımızda</a></li>
+                                <li><a href="">değerlerimiz</a></li>
+                                <li><a href="">hedefler</a></li>
+                                <li><a href="">sürdürülebilirlik</a></li>
+                                <li><a href="">medya merkezi</a></li>
+                            </ul>
+                        </li>
+                        <li class="headerMainLinks">
+                            <a href="">projeler</a>
+                            <ul>
+                                <li><a href="">devam eden</a></li>
+                                <li><a href="">tamamlanan</a></li>
+                            </ul>
+                        </li>
+                        <li class="headerMainLinks">
+                            <a href="">iletişim</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
     </div>
 </header>
-
-
-
-
-
