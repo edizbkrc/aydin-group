@@ -2968,9 +2968,6 @@ img {
   display: block;
 }
 
-body {
-  height: 500vh;
-}
 body.headerJustBurgerMenu {
   background: #ECEFF3;
 }
@@ -3199,6 +3196,21 @@ header.sideactive .menuRight .rightBigSidebar .sidebarArrow {
 }
 .headerJustBurgerMenu header .menuRight .burgerMenu .langueSelect {
   display: none;
+}
+
+.footerTop {
+  margin-top: 300px;
+}
+.footerTop .title {
+  font-size: 148px;
+  font-weight: 600px;
+  text-align: center;
+  color: rgba(123, 123, 123, 0.15);
+  letter-spacing: -14px;
+}
+
+footer {
+  margin-bottom: 200px;
 }
 
 section.mainHead {

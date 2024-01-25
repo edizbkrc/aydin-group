@@ -1,4 +1,31 @@
+<div class="footerTop">
+    <div class="title">40 yıldır tecrübe & güvenle</div>
+</div>
+</div>
 <footer>
+    <div class="container-fluid">
+    </div>
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <script src="assets/js/jquery-3.6.1.min.js"></script>
 <script src="assets/plugins/swiper/swiper-bundle.js"></script>
@@ -10,4 +37,7 @@
 
 <script src="assets/js/photomarker.js?v=<?= rand() ?>"></script>
 <script src="assets/js/custom.js?v=<?= rand() ?>"></script>
+
+</body>
+
 </html>
