@@ -2,7 +2,8 @@
     font-family: 'Poppins', sans-serif !important;
     text-decoration: none !important;
 }
-.icon{
+
+.icon {
     width: 24px;
     height: 24px;
 }
@@ -13,6 +14,46 @@ img {
 
 body {
     height: 500vh;
+
+    &.headerJustBurgerMenu {
+        background: #ECEFF3;
+    }
+}
+
+.swiperNavs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    margin-top: 70px;
+
+
+
+    .custom-swiper-prev-2,
+    .custom-swiper-next-2 {
+        background: #464344;
+        border-radius: 30px;
+        height: auto;
+        width: auto;
+        position: relative;
+        padding: 13.5px 17.5px;
+        transition: .3s ease all;
+
+        &:after {
+            content: "";
+            background-image: url(../img/svg/arrow1.svg);
+            width: 20px;
+            height: 14px;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+    }
+
+    .custom-swiper-next-2 {
+        &:after {
+            transform: rotate(180deg);
+        }
+    }
 }
 
 .container-fluid {
@@ -52,7 +93,7 @@ body {
     }
 }
 
-.colZero{
+.colZero {
     padding-left: 0;
     padding-right: 0;
     margin: 0;

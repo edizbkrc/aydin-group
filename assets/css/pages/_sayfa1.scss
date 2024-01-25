@@ -1,0 +1,255 @@
+section.mainSlider {
+    margin-bottom: 150px;
+
+
+
+    .mySwiper2 {
+        border-radius: 12px;
+        overflow: hidden;
+    }
+
+    .swiperthumbArea {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 30px;
+        gap: 30px;
+
+        .custom-swiper-next,
+        .custom-swiper-prev {
+            background: #464344;
+            border-radius: 30px;
+            height: auto;
+            width: auto;
+            position: relative;
+            padding: 10px 12.5px;
+
+            &:after {
+                content: "";
+                background-image: url(../img/svg/arrow1.svg);
+                width: 20px;
+                height: 14px;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }
+
+        .custom-swiper-next {
+            right: 0;
+
+            &:after {
+                transform: rotate(180deg);
+            }
+        }
+
+        .custom-swiper-prev {
+            right: 0;
+            left: 25px;
+        }
+    }
+
+
+
+}
+
+section.mainDescription {
+    display: flex;
+    margin: 0 auto;
+    max-width: 1380px;
+    text-align: center;
+    margin-bottom: 130px;
+    color: rgba($color: #444444, $alpha: .5);
+    font-weight: 400;
+}
+
+section.projectReports {
+    color: #444444;
+    margin-bottom: 120px;
+
+    .projectArea {
+        background: #F6F6F6;
+        padding: 45px 0 70px;
+
+        .title {
+            padding: 0 25px 50px;
+            font-weight: 600;
+            font-size: 24px;
+
+        }
+
+        .col-lg-3,
+        .col-lg-4 {
+            &:nth-last-child(1) {
+                .projectReportCards1 {
+                    border-right: 0;
+                }
+            }
+        }
+
+        .projectReportCards1 {
+            padding: 70px 0 0 50px;
+            border-top: 1px solid #C9E4EF;
+            border-right: 1px solid #C9E4EF;
+            max-height: 210px;
+            min-height: 140px;
+
+            .content {
+                line-height: 24px;
+
+                b {
+                    font-weight: bold;
+                }
+            }
+
+            &.projectCardBorderBottom {
+                border-bottom: 1px solid #C9E4EF;
+            }
+        }
+
+        .swiperContracts {
+            max-width: 93%;
+            margin: 0 auto;
+            margin-top: 60px;
+        }
+    }
+}
+
+section.roadMap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #444444;
+    text-align: center;
+    margin-bottom: 175px;
+
+    .container-fluid {
+        max-width: 1190px;
+    }
+
+    .title {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+
+    .subTitle {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .roadStages {
+        font-size: 48px;
+        font-weight: bold;
+        text-align: end;
+        position: relative;
+        padding-bottom: 25px;
+
+        &:before {
+            content: '';
+            width: 100%;
+            height: 6px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba($color: #444444, $alpha: .10);
+            border-radius: 12px;
+        }
+
+        &:after {
+            content: '';
+            width: 85%;
+            height: 6px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            background: #3A98D4;
+            border-radius: 12px;
+        }
+    }
+}
+
+section.projectStages {
+    .container-fluid {
+        max-width: 1190px;
+    }
+
+    .projectStagesInfo {
+        color: #444444;
+        margin-bottom: 40px;
+
+        .cardInfo {
+            padding-top: 45px;
+            height: 100%;
+            position: relative;
+
+
+            &:after {
+                content: '';
+                width: 1px;
+                height: 100%;
+                background: #707070;
+                left: 50%;
+                transform: translateX(calc(-50% - 15px));
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                z-index: -1;
+            }
+
+            .content {
+                padding: 20px 0 40px 30px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                background: #fff;
+
+                .info {
+                    font-weight: 600;
+
+                }
+
+                .date {
+                    color: #7B7B7B;
+                    font-weight: 400;
+
+                }
+            }
+        }
+
+        .card {
+            background: #F6F6F6;
+            padding: 65px 80px 65px 50px;
+            border-radius: 12px;
+
+            .content {
+                line-height: 24px;
+                font-weight: 400;
+                color: rgba($color: #444444, $alpha: .52);
+
+                &.imagesContent {
+
+                    .stageImages {
+                        margin-top: 85px;
+                        display: flex;
+                        gap: 10px;
+
+                        img {
+                            max-width: 58px;
+                            max-height: 58px;
+                            min-width: 58px;
+                            object-fit: cover;
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                .videoWrapper {
+                    margin-top: 50px;
+                    padding: 0 10px 0 40px;
+                }
+            }
+        }
+    }
+}

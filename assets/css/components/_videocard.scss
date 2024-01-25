@@ -1,0 +1,69 @@
+.videoCard {
+    display: flex;
+    border-radius: 12px;
+    overflow: hidden;
+    position: relative;
+
+    &:after {
+        content: '';
+        opacity: .3;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background: rgb(0, 0, 0);
+        background: linear-gradient(253deg, rgba(0, 0, 0, 1) 0%, rgba(19, 19, 19, 0.67) 100%);
+        top: 0;
+        right: 0;
+        transition: .3s ease all;
+    }
+
+    &:before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 85px;
+        height: 100px;
+        background-image: url(../img/videostarticon.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        transition: .15s ease all;
+        opacity: .8;
+    }
+
+    &:hover {
+        &:after {
+            opacity: 0;
+        }
+
+        &:before {
+            opacity: 1;
+            width: 95px;
+            height: 110px;
+        }
+    }
+
+    .coverImage {
+        img {
+            @include objectFitCover();
+        }
+
+        &:after {
+            content: '';
+            opacity: .3;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            background: rgb(0, 0, 0);
+            background: linear-gradient(253deg, rgba(0, 0, 0, 1) 0%, rgba(19, 19, 19, 0.67) 100%);
+            top: 0;
+            right: 0;
+            transition: .3s ease all;
+        }
+    }
+}

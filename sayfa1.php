@@ -275,5 +275,163 @@
         </div>
     </section>
 
+    <section class="roadMap">
+        <div class="container-fluid">
+            <h2 class="title">Nish Meram / Proje Süreci & Yol Haritası</h2>
+            <div class="subTitle">Ön Görülen Teslim Tarihi: 08.08.2024</div>
+
+            <div class="roadStages">
+                85%
+            </div>
+        </div>
+    </section>
+
+    <section class="projectStages">
+        <div class="container-fluid">
+            <div class="projectStagesInfo">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="cardInfo">
+                            <div class="content">
+                                <div class="info">Proje Başlangıcı</div>
+                                <div class="date">02.02.2022</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="card">
+                            <div class="content">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque suscipit diam ac enim
+                                dignissim, vitae posuere eros aliquam. Sed at dui quis est maximus lobortis a id risus.
+                                Curabitur vel ligula quis orci ornare commodo in at ligula. Sed quis scelerisque magna,
+                                quis commodo erat. Nam et laoreet sapien, id vulputate justo. Sed ullamcorper, neque in
+                                gravida placerat, risus metus ultrices leo, at placerat tortor odio rutrum sem. Nullam
+                                gravida nisl nec convallis dignissim. Vestibulum aliquam
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projectStagesInfo">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="cardInfo">
+                            <div class="content">
+                                <div class="info">Temel Kazımı</div>
+                                <div class="date">02.02.2022</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="card">
+                            <div class="content imagesContent">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque suscipit diam ac enim
+                                dignissim, vitae posuere eros aliquam. Sed at dui quis est maximus lobortis a id risus.
+                                Curabitur vel ligula quis orci ornare commodo in at ligula. Sed quis scelerisque magna,
+                                quis commodo erat. Nam et laoreet sapien, id vulputate justo. Sed ullamcorper, neque in
+                                gravida placerat, risus metus ultrices leo, at placerat tortor odio rutrum sem. Nullam
+                                gravida nisl nec convallis dignissim. Vestibulum aliquam
+
+                                <div class="stageImages">
+
+                                    <a data-fancybox="gallery" data-src="https://lipsum.app/id/2/1600x1200">
+                                        <img src="assets/img/stagescardimg1.png " alt="">
+                                    </a>
+
+                                    <a data-fancybox="gallery" data-src="https://lipsum.app/id/3/1600x1200">
+                                        <img src="assets/img/stagescardimg2.png " alt="">
+                                    </a>
+
+                                    <a data-fancybox="gallery" data-src="https://lipsum.app/id/4/1600x1200">
+                                        <img src="assets/img/stagescardimg3.png " alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projectStagesInfo">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="cardInfo">
+                            <div class="content">
+                                <div class="info">Sıva</div>
+                                <div class="date">02.02.2022</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="card">
+                            <div class="content">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque suscipit diam ac enim
+                                dignissim, vitae posuere eros aliquam. Sed at dui quis est maximus lobortis a id risus.
+                                Curabitur vel ligula quis orci ornare commodo in at ligula. Sed quis scelerisque magna,
+                                quis commodo erat. Nam et laoreet sapien, id vulputate justo. Sed ullamcorper, neque in
+                                gravida placerat, risus metus ultrices leo, at placerat tortor odio rutrum sem. Nullam
+                                gravida nisl nec convallis dignissim. Vestibulum aliquam
+
+                                <div class="videoWrapper">
+                                    <a href="https://www.youtube.com/watch?v=2CTvgZ0-z40" class="videoCard">
+                                        <div class="coverImage">
+                                            <img src="assets/img/video.png" alt="">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projectStagesInfo">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="cardInfo">
+                            <div class="content">
+                                <div class="info">Alçı</div>
+                                <div class="date">02.02.2022</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="card">
+                            <div class="content">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque suscipit diam ac enim
+                                dignissim, vitae posuere eros aliquam. Sed at dui quis est maximus lobortis a id risus.
+                                Curabitur vel ligula quis orci ornare commodo in at ligula. Sed quis scelerisque magna,
+                                quis commodo erat. Nam et laoreet sapien, id vulputate justo. Sed ullamcorper, neque in
+                                gravida placerat, risus metus ultrices leo, at placerat tortor odio rutrum sem. Nullam
+                                gravida nisl nec convallis dignissim. Vestibulum aliquam
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="projectStagesInfo">
+                <div class="row">
+                    <div class="col-lg-2">
+                        <div class="cardInfo">
+                            <div class="content">
+                                <div class="info">Elektrik </div>
+                                <div class="date">02.02.2022</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-10">
+                        <div class="card">
+                            <div class="content">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque suscipit diam ac enim
+                                dignissim, vitae posuere eros aliquam. Sed at dui quis est maximus lobortis a id risus.
+                                Curabitur vel ligula quis orci ornare commodo in at ligula. Sed quis scelerisque magna,
+                                quis commodo erat. Nam et laoreet sapien, id vulputate justo. Sed ullamcorper, neque in
+                                gravida placerat, risus metus ultrices leo, at placerat tortor odio rutrum sem. Nullam
+                                gravida nisl nec convallis dignissim. Vestibulum aliquam
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <?php include "inc.footer.php"; ?>

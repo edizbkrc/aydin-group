@@ -1,17 +1,147 @@
-section.mainHead{
-    padding-top: 27%;
-    .headBg{
+section.mainHead {
+    padding-top: 30%;
+    color: #444444;
+
+    .headBg {
         position: absolute;
         left: 0;
         right: 0;
         top: 0;
         bottom: 0;
         z-index: -1;
-        img{
+
+        img {
+            @include objectFitCover();
+        }
+
+        &:before {
+            content: '';
+            background: rgb(193, 203, 216);
+            background: linear-gradient(180deg, rgba(193, 203, 216, 1) 0%, rgba(255, 255, 255, 0) 100%);
+            position: absolute;
+            top: 100%;
+            width: 100%;
+            height: 500px;
+        }
+
+        &:after {
+            content: '';
+            background: rgb(193, 203, 216);
+            background: linear-gradient(0deg, rgba(193, 203, 216, 1) 0%, rgba(255, 255, 255, 0) 100%);
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 370px;
+        }
+    }
+
+    .title {
+        text-align: center;
+        font-size: 26px;
+        font-weight: 600;
+    }
+
+    .otherLinks {
+        background: #fff;
+        border-radius: 29px;
+        z-index: 2;
+        display: flex;
+        position: relative;
+        max-width: 30%;
+        margin: 0 auto;
+        justify-content: space-between;
+        padding: 21px 60px;
+        font-weight: 600;
+        margin-top: 50px;
+
+
+
+        a {
+            color: #828282;
+            position: relative;
+            cursor: pointer;
+
+            &:hover {
+                color: #444444;
+
+                &:before {
+                    opacity: 1;
+                    left: 0;
+                    width: 100%;
+                    right: 0;
+                }
+            }
+
+            &:before {
+                content: '';
+                position: absolute;
+                background: #3A98D4;
+                left: 50%;
+                width: 0;
+                right: 50%;
+                bottom: -8px;
+                height: 3px;
+                border-radius: 6px;
+                opacity: 0;
+                transition: .3s ease all;
+            }
+
+            &.active {
+                color: #444444;
+
+                &:before {
+                    opacity: 1;
+                    left: 0;
+                    width: 100%;
+                    right: 0;
+                }
+            }
+        }
+    }
+
+    .headerSpiral {
+        position: absolute;
+        max-width: 100%;
+        top: 32%;
+        left: 0;
+        right: 0;
+
+        img {
             @include objectFitCover();
         }
     }
-    .title{
+}
 
+section.homesSlides {
+    margin-top: 200px;
+
+    .swiperHomes {
+        .swiper-slide-grey {
+            img {
+                @include objectFitCover();
+                filter: grayscale(1);
+                transition: .3s ease all;
+            }
+
+            &:hover {
+                img {
+                    filter: grayscale(0);
+                }
+            }
+
+            .content {
+                margin-top: 15px;
+                display: flex;
+                flex-direction: column;
+                color: #444444;
+                font-size: 14px;
+                font-weight: 400;
+
+                b {
+                    font-weight: 600;
+                    font-size: 16px;
+                }
+            }
+        }
     }
 }

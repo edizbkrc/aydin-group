@@ -1,0 +1,21 @@
+.sliderTop {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    h2 {
+        font-size: 28px;
+        font-weight: 600;
+        color: #444444;
+    }
+
+    .sliderLinks {
+        display: flex;
+        gap: 40px;
+
+        a {
+            font-weight: 600;
+            color: #444444;
+        }
+    }
+}
