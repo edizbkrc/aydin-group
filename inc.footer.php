@@ -1,11 +1,12 @@
-<div class="footerTop">
-    <div class="title">40 yıldır tecrübe & güvenle</div>
-</div>
-</div>
 <footer>
     <div class="container-fluid">
+        <div class="footerTop">
+            <div class="title">40 yıldır tecrübe & güvenle</div>
+        </div>
+        <div class="content">
+            
+        </div>
     </div>
-
 </footer>
 
 

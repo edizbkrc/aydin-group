@@ -2968,6 +2968,10 @@ img {
   display: block;
 }
 
+body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
 body.headerJustBurgerMenu {
   background: #ECEFF3;
 }
@@ -3051,13 +3055,14 @@ header {
   align-items: center;
   padding: 30px 35px;
   margin-bottom: 60px;
+  overflow: hidden;
+  max-width: 100%;
 }
 header .menuRight {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   gap: 0 20px;
-  overflow: hidden;
 }
 header .menuRight .btnRequest {
   border: none;
@@ -3084,92 +3089,94 @@ header .menuRight .burgerMenu .icon {
 header .menuRight .burgerMenu .langueSelect {
   font-weight: 600;
   cursor: pointer;
+  -webkit-touch-callout: none;
+  user-select: none;
 }
-header .menuRight .rightBigSidebar {
-  display: flex;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  width: 100%;
-  padding-top: 10px;
-  opacity: 0;
-  pointer-events: none;
-  transition: 0.3s ease all;
-  overflow: hidden;
-  justify-content: flex-end;
-  z-index: 15;
-}
-header .menuRight .rightBigSidebar .sidebarArrow {
-  width: 460px;
-  height: 436px;
-  position: absolute;
-  right: 18vw;
-  transform: translate(35%);
-  bottom: -100%;
-  transition: 0.3s ease all;
-}
-header .menuRight .rightBigSidebar .sidebarArrow img {
-  width: 100%;
-  height: 100%;
-  object-position: center;
-  object-fit: cover;
-}
-header .menuRight .rightBigSidebar .sidebar {
-  /*  background-image: url(../img/sidebarbg.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-      @include getMask();
-      -webkit-mask-image: url(../img/sidebarbg.png);*/
-  background: #444444;
+header .menuRight .sidebar {
+  padding: 0px 120px 0 105px;
   fill: #fff;
-  width: 23vw;
-  height: 88vh;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   transform: translateX(100%);
   transition: 0.3s ease all;
+  position: absolute;
+  z-index: 15;
+  top: 10px;
+  right: 0;
+  height: 88vh;
 }
-header .menuRight .rightBigSidebar .sidebar .icon {
+header .menuRight .sidebar:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-mask-image: url(../img/svg/menumask.svg);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  background: #343434;
+  z-index: -1;
+  -webkit-mask-size: auto 100%;
+  border-top-left-radius: 16px;
+}
+header .menuRight .sidebar:before {
+  content: "";
+  position: absolute;
+  right: 50%;
+  bottom: 0;
+  aspect-ratio: 460/435;
+  width: 100%;
+  background-image: url(../img/sidebarmenuarrow.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s ease all;
+  transform: translate(-100%, 30vh);
+}
+header .menuRight .sidebar .icon {
   width: 40px;
   height: 40px;
   cursor: pointer;
   margin-top: 10px;
-  padding: 15px 30px 0 0;
+  position: absolute;
+  top: 15px;
+  right: 30px;
 }
-header .menuRight .rightBigSidebar .sidebar .headerLinks {
+header .menuRight .sidebar .headerLinks {
   margin-top: 90px;
   height: 100%;
   margin: 70px auto 0;
 }
-header .menuRight .rightBigSidebar .sidebar .headerLinks ul {
+header .menuRight .sidebar .headerLinks ul {
   display: flex;
   flex-direction: column;
   gap: 40px;
 }
-header .menuRight .rightBigSidebar .sidebar .headerLinks ul .headerMainLinks {
+header .menuRight .sidebar .headerLinks ul .headerMainLinks {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-header .menuRight .rightBigSidebar .sidebar .headerLinks ul .headerMainLinks:nth-last-child(2) {
+header .menuRight .sidebar .headerLinks ul .headerMainLinks:nth-last-child(2) {
   margin-top: 10px;
 }
-header .menuRight .rightBigSidebar .sidebar .headerLinks ul .headerMainLinks:nth-last-child(1) {
+header .menuRight .sidebar .headerLinks ul .headerMainLinks:nth-last-child(1) {
   margin-top: 35px;
 }
-header .menuRight .rightBigSidebar .sidebar .headerLinks ul .headerMainLinks a {
+header .menuRight .sidebar .headerLinks ul .headerMainLinks a {
   color: #fff;
   font-size: 24px;
   font-weight: 600;
 }
-header .menuRight .rightBigSidebar .sidebar .headerLinks ul .headerMainLinks ul {
+header .menuRight .sidebar .headerLinks ul .headerMainLinks ul {
   gap: 5px;
   padding-left: 20px;
 }
-header .menuRight .rightBigSidebar .sidebar .headerLinks ul .headerMainLinks ul li a {
+header .menuRight .sidebar .headerLinks ul .headerMainLinks ul li a {
   font-size: 16px;
   font-weight: 400;
 }
@@ -3179,16 +3186,16 @@ header.sideactive .menuRight .burgerMenu {
 header.sideactive .menuRight .btnRequest {
   pointer-events: none;
 }
-header.sideactive .menuRight .rightBigSidebar {
+header.sideactive .menuRight .sidebar {
+  transform: translateX(0);
   opacity: 1;
   pointer-events: auto;
 }
-header.sideactive .menuRight .rightBigSidebar .sidebar {
-  transform: translateX(0);
-}
-header.sideactive .menuRight .rightBigSidebar .sidebarArrow {
-  bottom: 0;
-  z-index: 10;
+header.sideactive .menuRight .sidebar:before {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(0);
+  transition-duration: 0.7s;
 }
 
 .headerJustBurgerMenu header .menuRight .btnRequest {
@@ -3198,19 +3205,38 @@ header.sideactive .menuRight .rightBigSidebar .sidebarArrow {
   display: none;
 }
 
-.footerTop {
-  margin-top: 300px;
+footer {
+  position: relative;
+  padding-top: 70%;
+  margin-top: 90px;
 }
-.footerTop .title {
+footer .footerTop {
+  left: 0;
+  right: 0;
+  z-index: 3;
+  position: absolute;
+  top: 0;
+}
+footer .footerTop .title {
   font-size: 148px;
-  font-weight: 600px;
+  font-weight: 600;
   text-align: center;
   color: rgba(123, 123, 123, 0.15);
-  letter-spacing: -14px;
+  letter-spacing: -12px;
 }
-
-footer {
-  margin-bottom: 200px;
+footer:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/footerbg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: 0.1;
 }
 
 section.mainHead {

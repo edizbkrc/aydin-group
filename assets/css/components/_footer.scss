@@ -1,15 +1,39 @@
-.footerTop {
-    margin-top: 300px;
-
-    .title {
-        font-size: 148px;
-        font-weight: 600px;
-        text-align: center;
-        color: rgba($color: #7B7B7B, $alpha: .15);
-        letter-spacing: -14px;
-    }
-}
-
 footer {
-    margin-bottom: 200px;
+    position: relative;
+    padding-top: 70%;
+
+    margin-top: 90px;
+
+    .footerTop {
+        left: 0;
+        right: 0;
+        z-index: 3;
+        position: absolute;
+        top: 0;
+        .title {
+            font-size: 148px;
+            font-weight: 600;
+            text-align: center;
+            color: rgba($color: #7B7B7B, $alpha: .15);
+            letter-spacing: -12px;
+        }
+    }
+
+    .content {}
+
+    &:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/footerbg.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        z-index: .1;
+    }
+
 }
