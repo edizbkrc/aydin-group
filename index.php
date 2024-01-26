@@ -24,7 +24,7 @@
     <section class="videoArea">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-md-5">
                     <div class="content">
                         <div class="title">Başarımızı bağlı olduğumuz
                             değerlerimize borçluyuz.</div>
@@ -59,7 +59,7 @@
                         <buttom type="button" class="btnNext">devamı</buttom>
                     </div>
                 </div>
-                <div class="col-lg-8">
+                <div class="col-lg-8 col-md-7">
                         <a href="https://www.youtube.com/watch?v=2CTvgZ0-z40" class="videoCard">
                             <div class="coverImage">
                                 <img src="assets/img/video.png" alt="">

@@ -47,6 +47,7 @@
     }
 
     .coverImage {
+        width: 100%;
         img {
             @include objectFitCover();
         }

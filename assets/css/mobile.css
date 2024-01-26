@@ -1,1 +1,299 @@
-/*# sourceMappingURL=mobile.css.map */
+.displayResposive {
+  display: none;
+}
+@media screen and (min-width: 1px) and (max-width: 576px) {
+  .displayResposive.show-xs {
+    display: block;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  .displayResposive.show-sm {
+    display: block;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  .displayResposive.show-md {
+    display: block;
+  }
+}
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  .displayResposive.show-lg {
+    display: block;
+  }
+}
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+  .displayResposive.show-xl {
+    display: block;
+  }
+}
+@media screen and (min-width: 1401px) and (max-width: 1920px) {
+  .displayResposive.show-xxl {
+    display: block;
+  }
+}
+@media screen and (min-width: 1921px) {
+  .displayResposive.show-3xl {
+    display: block;
+  }
+}
+
+html.debugMode:before {
+  z-index: 10000;
+  content: "";
+  position: fixed;
+  right: 5px;
+  top: 5px;
+  background: red;
+  color: #fff;
+  display: none;
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+html.debugMode:after {
+  z-index: 10000;
+  content: "";
+  position: fixed;
+  right: 40px;
+  top: 5px;
+  background: blue;
+  color: #fff;
+  display: none;
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+@media screen and (min-width: 1px) {
+  html.debugMode:after {
+    content: "xs";
+    display: flex;
+  }
+}
+@media screen and (min-width: 577px) {
+  html.debugMode:after {
+    content: "sm";
+    display: flex;
+  }
+}
+@media screen and (min-width: 769px) {
+  html.debugMode:after {
+    content: "md";
+    display: flex;
+  }
+}
+@media screen and (min-width: 993px) {
+  html.debugMode:after {
+    content: "lg";
+    display: flex;
+  }
+}
+@media screen and (min-width: 1201px) {
+  html.debugMode:after {
+    content: "xl";
+    display: flex;
+  }
+}
+@media screen and (min-width: 1401px) {
+  html.debugMode:after {
+    content: "xxl";
+    display: flex;
+  }
+}
+@media screen and (min-width: 1921px) {
+  html.debugMode:after {
+    content: "3xl";
+    display: flex;
+  }
+}
+@media screen and (min-width: 2561px) {
+  html.debugMode:after {
+    content: "4xl";
+    display: flex;
+  }
+}
+@media screen and (max-width: 2559px) {
+  html.debugMode:before {
+    content: "4xl";
+    display: flex;
+  }
+}
+@media screen and (max-width: 1919px) {
+  html.debugMode:before {
+    content: "3xl";
+    display: flex;
+  }
+}
+@media screen and (max-width: 1399px) {
+  html.debugMode:before {
+    content: "xxl";
+    display: flex;
+  }
+}
+@media screen and (max-width: 1199px) {
+  html.debugMode:before {
+    content: "xl";
+    display: flex;
+  }
+}
+@media screen and (max-width: 991px) {
+  html.debugMode:before {
+    content: "lg";
+    display: flex;
+  }
+}
+@media screen and (max-width: 767px) {
+  html.debugMode:before {
+    content: "md";
+    display: flex;
+  }
+}
+@media screen and (max-width: 575px) {
+  html.debugMode:before {
+    content: "sm";
+    display: flex;
+  }
+}
+@media screen and (max-width: -1px) {
+  html.debugMode:before {
+    content: "xs";
+    display: flex;
+  }
+}
+@media screen and (max-width: 576px) {
+  section.mainHead {
+    padding-top: 55%;
+  }
+  section.mainHead .otherLinks {
+    max-width: 100%;
+    flex-wrap: wrap;
+    padding: 20px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  section.mainHead .title {
+    font-size: 20px;
+  }
+  section.videoArea {
+    margin-top: 130px;
+  }
+  section.videoArea .content {
+    margin-bottom: 50px;
+  }
+  section.videoArea .content .title {
+    font-size: 20px;
+  }
+  section.videoArea .content .description {
+    max-width: 100%;
+  }
+  section.videoArea .content .btnNext {
+    width: 177px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  section.mainHead .otherLinks {
+    max-width: 70%;
+    flex-wrap: wrap;
+    padding: 20px 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+  section.videoArea {
+    margin-top: 180px;
+  }
+  section.videoArea .content {
+    margin-bottom: 50px;
+  }
+  section.videoArea .content .title {
+    font-size: 25px;
+  }
+  section.videoArea .content .description {
+    max-width: 100%;
+  }
+  section.videoArea .content .btnNext {
+    width: 177px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  section.mainHead {
+    padding-top: 25%;
+  }
+  section.mainHead .otherLinks {
+    max-width: 70%;
+    flex-wrap: wrap;
+    padding: 20px 50px;
+    align-items: center;
+    gap: 15px;
+  }
+  section.videoArea {
+    margin-top: 180px;
+  }
+  section.videoArea .content .title {
+    font-size: 21px;
+  }
+  section.videoArea .content .description {
+    max-width: 90%;
+  }
+  section.videoArea .content .btnNext {
+    width: 177px;
+  }
+}
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  section.mainHead {
+    padding-top: 25%;
+  }
+  section.mainHead .otherLinks {
+    max-width: 60%;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+  }
+}
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+  section.mainHead {
+    padding-top: 20%;
+  }
+  section.mainHead .otherLinks {
+    max-width: 50%;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+  }
+}
+@media screen and (min-width: 1401px) and (max-width: 1920px) {
+  section.mainHead {
+    padding-top: 20%;
+  }
+  section.mainHead .otherLinks {
+    max-width: 30%;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+  }
+}
+@media screen and (min-width: 2001px) {
+  section.mainHead {
+    padding-top: 20%;
+  }
+  section.mainHead .otherLinks {
+    max-width: 30%;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+  }
+}
+@media screen and (min-width: 1px) and (max-width: 576px) {
+  .sliderTop {
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+}/*# sourceMappingURL=mobile.css.map */
