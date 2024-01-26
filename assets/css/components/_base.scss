@@ -15,7 +15,7 @@ img {
 body {
     overflow-x: hidden;
     max-width: 100%;
-    &.headerJustBurgerMenu {
+    &.greyBg {
         background: #ECEFF3;
     }
 }
@@ -57,7 +57,7 @@ body {
 }
 
 .container-fluid {
-    max-width: 1705px;
+    max-width: 88.80%;
 }
 
 .customSwiper {

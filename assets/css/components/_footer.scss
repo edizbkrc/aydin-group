@@ -1,13 +1,12 @@
 footer {
     position: relative;
     padding-top: 70%;
-
+    padding-bottom: 300px;
     margin-top: 90px;
 
     .footerTop {
         left: 0;
         right: 0;
-        z-index: 3;
         position: absolute;
         top: 0;
         .title {

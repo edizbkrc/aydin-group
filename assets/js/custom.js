@@ -49,9 +49,26 @@ var swiper = new Swiper(".swiperHomes", {
         prevEl: ".swiper-button-prev",
 
     },
+    breakpoints: {
+        '0': {
+            slidesPerView: 1,
+ 
+        },
+        '480': {
+            slidesPerView: 2,
+ 
+        },
+        '658': {
+            slidesPerView: 3,
+        },
+        '1024': {
+            slidesPerView: 4,
+        },
+    },
     spaceBetween: 8,
     slidesPerView: 4,
     loop: true,
+
 });
 
 

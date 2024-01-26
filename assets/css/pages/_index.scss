@@ -105,6 +105,7 @@ section.mainHead {
         top: 32%;
         left: 0;
         right: 0;
+        z-index: -1;
 
         img {
             @include objectFitCover();
@@ -143,5 +144,53 @@ section.homesSlides {
                 }
             }
         }
+    }
+}
+
+section.videoArea {
+    margin-top: 300px;
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        
+        .title{
+            font-size: 28px;
+            font-weight: 600;
+            color: #444444;
+            line-height: 34px;
+        }
+
+        .description {
+            @include maxLine(17);
+            max-width: 50%;
+            font-weight: 400;
+            line-height: 24px;
+            color: rgba($color: #444444, $alpha: .52);
+        }
+
+        .btnNext {
+            padding: 17.5px 0;
+            border-radius: 30px;
+            background: #464344;
+            transition: .3s ease all;
+            display: flex;
+            cursor: pointer;
+            color: #fff;
+            font-weight: 600;
+            margin-top: 25px;
+            width: 117px;
+            text-align: center;
+            justify-content: center;
+
+            &:hover{
+                background: #3A98D4;
+            }
+        }
+    }
+
+    .videoCard{
+        max-height: 628px;
     }
 }
