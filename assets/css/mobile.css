@@ -170,6 +170,9 @@ html.debugMode:after {
   section.mainHead {
     padding-top: 55%;
   }
+  section.mainHead .leftWhiteBg {
+    display: none;
+  }
   section.mainHead .otherLinks {
     max-width: 100%;
     flex-wrap: wrap;
@@ -198,6 +201,9 @@ html.debugMode:after {
   }
 }
 @media screen and (min-width: 577px) and (max-width: 768px) {
+  section.mainHead .leftWhiteBg {
+    display: none;
+  }
   section.mainHead .otherLinks {
     max-width: 70%;
     flex-wrap: wrap;
@@ -288,6 +294,25 @@ html.debugMode:after {
     flex-wrap: wrap;
     align-items: center;
     gap: 15px;
+  }
+}
+@media screen and (max-width: 576px) {
+  section.experience {
+    padding-top: 60% !important;
+  }
+  section.experience .content .title {
+    font-size: 22px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  section.experience {
+    padding-top: 40% !important;
+  }
+  section.experience .content .title {
+    font-size: 22px;
+  }
+  section.experience .content .title:after {
+    left: -25px;
   }
 }
 @media screen and (min-width: 1px) and (max-width: 576px) {

@@ -3626,7 +3626,7 @@ section.projectStages .projectStagesInfo .card .content .videoWrapper {
 }
 
 section.experience {
-  padding: 0;
+  padding: 0 !important;
 }
 section.experience .headBg:before {
   display: none;
