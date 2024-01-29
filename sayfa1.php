@@ -81,7 +81,7 @@
 
         <div class="container-fluid">
             <div class="row">
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-sm-6">
                     <div class="productCard1">
                         <div class="title">Proje Detayları</div>
                         <div class="content">42 Adet : 5+1 Daire
@@ -89,7 +89,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-sm-6">
                     <div class="productCard1">
                         <div class="content">
                             42 Adet : 4+1 Daire
@@ -97,7 +97,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-lg-4 col-sm-6">
                     <div class="productCard1">
                         <div class="content">
                             12 Adet : 3+1 Daire
@@ -108,7 +108,7 @@
             </div>
             <div class="row">
 
-                <div class="col-grid10-lg-2">
+                <div class="col-grid10-xl-2 col-lg-3 col-md-4 col-sm-6">
                     <div class="productCard2">
                         <svg class="icon">
                             <use xlink:href="assets/img/svg/iconset.svg#location"></use>
@@ -119,7 +119,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-grid10-lg-2">
+                <div class="col-grid10-xl-2 col-lg-3 col-md-4 col-sm-6">
                     <div class="productCard2">
                         <svg class="icon">
                             <use xlink:href="assets/img/svg/iconset.svg#time"></use>
@@ -136,7 +136,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-grid10-lg-2">
+                <div class="col-grid10-xl-2 col-lg-3 col-md-4 col-sm-6">
                     <div class="productCard2">
                         <svg class="icon">
                             <use xlink:href="assets/img/svg/iconset.svg#home"></use>
@@ -147,7 +147,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-grid10-lg-2">
+                <div class="col-grid10-xl-2 col-lg-3 col-md-4 col-sm-6">
                     <div class="productCard2">
                         <svg class="icon">
                             <use xlink:href="assets/img/svg/iconset.svg#basket"></use>
@@ -158,7 +158,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-grid10-lg-2">
+                <div class="col-grid10-xl-2 col-lg-3 col-md-4 col-sm-6">
                     <div class="productCard2">
                         <svg class="icon">
                             <use xlink:href="assets/img/svg/iconset.svg#flag"></use>
@@ -185,7 +185,7 @@
                 <h2 class="title">Proje Raporları</h2>
 
                 <div class="row colZero">
-                    <div class="col-lg-3 colZero">
+                    <div class="col-lg-4 col-xl-3 col-sm-6 colZero">
                         <div class="projectReportCards1">
                             <div class="content">
                                 <b>Beton Sınıfı</b><br>
@@ -194,7 +194,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 colZero">
+                    <div class="col-lg-4 col-xl-3 col-sm-6 colZero">
                         <div class="projectReportCards1">
                             <div class="content">
                                 <b>Çelik Sınıfı</b><br>
@@ -204,7 +204,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 colZero">
+                    <div class="col-lg-4 col-xl-3 col-sm-6 colZero">
                         <div class="projectReportCards1">
                             <div class="content">
                                 <b>Yerel Zemin Sınıfı</b><br>
@@ -214,7 +214,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 colZero">
+                    <div class="col-lg-4 col-xl-3 col-sm-6 colZero">
                         <div class="projectReportCards1">
                             <div class="content">
                                 <b>Deprem Tasarım Sınıfı</b><br>
@@ -225,7 +225,7 @@
                     </div>
                 </div>
                 <div class="row colZero">
-                    <div class="col-lg-4 colZero">
+                    <div class="col-lg-4 col-sm-6 colZero">
                         <div class="projectReportCards1 projectCardBorderBottom">
                             <div class="content">
                                 <b> Bina Kullanım Sınıfı / <br>
@@ -235,7 +235,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 colZero">
+                    <div class="col-lg-4 col-sm-6 colZero">
                         <div class="projectReportCards1 projectCardBorderBottom">
                             <div class="content">
                                 <b>Temel Tipi</b><br>
@@ -243,7 +243,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 colZero">
+                    <div class="col-lg-4 col-sm-6 colZero">
                         <div class="projectReportCards1 projectCardBorderBottom">
                             <div class="content">
                                 <b>Kalıp Tipi</b><br>
@@ -259,7 +259,7 @@
                     <div class="swiper-wrapper">
                         <?php for ($i = 0; $i < 38; $i++) { ?>
                             <div class="swiper-slide">
-                                <a href="">
+                                <a href="" class="contactsSlideItem">
                                     <img src="assets/img/contract.png" />
                                 </a>
                             </div>

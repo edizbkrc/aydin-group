@@ -1,7 +1,7 @@
 <?php include "inc.header.php"; ?>
 
 <body class="preload headerJustBurgerMenu">
-    <section class="mainHead experience">
+    <section class="mainHead experience headFixed">
         <div class="container-fluid">
             <div class="headBg">
                 <img src="assets/img/headerbglights.png" alt="">

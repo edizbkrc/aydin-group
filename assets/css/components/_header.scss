@@ -51,13 +51,14 @@ header {
             display: flex;
             flex-direction: column;
             align-items: flex-end;
-            transform: translateX(100%);
             transition: .3s ease all;
             position: absolute;
             z-index: 15;
             top: 10px;
             right: 0;
             height: 88vh;
+            opacity: 0;
+            pointer-events: none;
 
             &:after {
                 content: "";
@@ -166,6 +167,7 @@ header {
                 transform: translateX(0);
                 opacity: 1;
                 pointer-events: auto;
+                
 
                 &:before {
                     opacity: 1;

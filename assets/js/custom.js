@@ -32,9 +32,26 @@ var swiper = new Swiper(".swiperContracts", {
         prevEl: ".swiper-button-prev",
 
     },
+    breakpoints: {
+        '0': {
+            slidesPerView: 2,
+        },
+        '480': {
+            slidesPerView: 3,
+        
+        },
+        '658': {
+            slidesPerView: 4,
+        },
+        '1024': {
+            slidesPerView: 7,
+        },
+    },
     spaceBetween: 20,
     slidesPerView: 7,
     loop: true,
+
+
 });
 
 $("body").on("click", ".links", function (button) {
@@ -52,11 +69,11 @@ var swiper = new Swiper(".swiperHomes", {
     breakpoints: {
         '0': {
             slidesPerView: 1,
- 
+
         },
         '480': {
             slidesPerView: 2,
- 
+
         },
         '658': {
             slidesPerView: 3,

@@ -26,7 +26,7 @@
 </head>
 
 <header >
-    <a href="" class="logo">
+    <a href="index.php" class="logo">
         <img src="assets/img/svg/logo.svg" alt="">
     </a>
     <div class="menuRight">
@@ -40,7 +40,7 @@
             </div>
         </div>
 
-      <!--   <div class="sidebar">
+        <div class="sidebar"> 
             <svg class="icon sidebarToggle">
                 <use xlink:href="assets/img/svg/iconset.svg#close"></use>
             </svg>
@@ -71,7 +71,7 @@
                     </li>
                 </ul>
             </div>
-        </div> -->
+        </div> 
 
     </div>
 </header>

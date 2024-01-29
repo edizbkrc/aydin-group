@@ -3,5 +3,10 @@
         flex-direction: column;
         gap: 15px;
         margin-bottom: 20px;
+
+        .sliderLinks {
+            gap: 15px;
+            flex-wrap: wrap;
+        }
     }
 }

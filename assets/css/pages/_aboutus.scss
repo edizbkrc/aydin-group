@@ -1,11 +1,26 @@
 section.experience {
     padding: 0 !important;
 
+    &.headFixed {
+        .headBg{
+            position: fixed;
+        }
+        &:before{
+            position: fixed;
+        }
+        .leftWhiteBg{
+            position: fixed;
+        }
+    }
+
     .headBg {
         &:before {
             display: none;
         }
+
+
     }
+
 
     &:before {
         content: '';

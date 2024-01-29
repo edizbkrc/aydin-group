@@ -13,7 +13,6 @@ img {
 }
 
 body {
-    overflow-x: hidden;
     max-width: 100%;
     &.greyBg {
         background: #ECEFF3;
@@ -26,8 +25,6 @@ body {
     align-items: center;
     gap: 25px;
     margin-top: 70px;
-
-
 
     .custom-swiper-prev-2,
     .custom-swiper-next-2 {
@@ -62,7 +59,7 @@ body {
 
 .customSwiper {
     margin-left: 0;
-    min-width: 504px;
+    width: 100%;
     max-width: 504px;
 }
 

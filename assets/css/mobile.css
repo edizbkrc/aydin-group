@@ -321,4 +321,8 @@ html.debugMode:after {
     gap: 15px;
     margin-bottom: 20px;
   }
+  .sliderTop .sliderLinks {
+    gap: 15px;
+    flex-wrap: wrap;
+  }
 }/*# sourceMappingURL=mobile.css.map */
