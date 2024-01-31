@@ -60,11 +60,12 @@
                     </div>
                 </div>
                 <div class="col-lg-8 col-md-7">
-                        <a href="https://www.youtube.com/watch?v=2CTvgZ0-z40" class="videoCard">
-                            <div class="coverImage">
-                                <img src="assets/img/video.png" alt="">
-                            </div>
-                        </a>                </div>
+                    <a href="https://www.youtube.com/watch?v=2CTvgZ0-z40" class="videoCard">
+                        <div class="coverImage">
+                            <img src="assets/img/video.png" alt="">
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -83,41 +84,45 @@
                 <div class="swiper-wrapper">
                     <?php for ($i = 0; $i < 4; $i++) { ?>
                         <div class="swiper-slide swiper-slide-grey">
-                            <a href="">
+                            <a href="" class="homePageCard">
                                 <img src="assets/img/homesslide1.png" />
+
+                                <div class="content">
+                                    <b> Koru Inventum</b>
+                                    Devam Eden Proje
+                                </div>
                             </a>
-                            <div class="content">
-                                <b> Koru Inventum</b>
-                                Devam Eden Proje
-                            </div>
                         </div>
                         <div class="swiper-slide swiper-slide-grey">
-                            <a href="">
+                            <a href="" class="homePageCard">
                                 <img src="assets/img/homesslide2.png" />
+
+                                <div class="content">
+                                    <b> Koru Inventum</b>
+                                    Devam Eden Proje
+                                </div>
                             </a>
-                            <div class="content">
-                                <b> Koru Inventum</b>
-                                Devam Eden Proje
-                            </div>
                         </div>
 
                         <div class="swiper-slide swiper-slide-grey">
-                            <a href="">
+                            <a href="" class="homePageCard">
                                 <img src="assets/img/homesslide3.png" />
+
+                                <div class="content">
+                                    <b> Koru Inventum</b>
+                                    Devam Eden Proje
+                                </div>
                             </a>
-                            <div class="content">
-                                <b> Koru Inventum</b>
-                                Devam Eden Proje
-                            </div>
                         </div>
                         <div class="swiper-slide swiper-slide-grey">
-                            <a href="">
+                            <a href="" class="homePageCard">
                                 <img src="assets/img/homesslide4.png" />
+
+                                <div class="content">
+                                    <b> Koru Inventum</b>
+                                    Devam Eden Proje
+                                </div>
                             </a>
-                            <div class="content">
-                                <b> Koru Inventum</b>
-                                Devam Eden Proje
-                            </div>
                         </div>
                     <?php } ?>
                 </div>

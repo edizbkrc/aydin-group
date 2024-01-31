@@ -274,17 +274,6 @@ html.debugMode:after {
     gap: 15px;
   }
 }
-@media screen and (min-width: 1401px) and (max-width: 1920px) {
-  section.mainHead {
-    padding-top: 20%;
-  }
-  section.mainHead .otherLinks {
-    max-width: 30%;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 15px;
-  }
-}
 @media screen and (min-width: 2001px) {
   section.mainHead {
     padding-top: 20%;

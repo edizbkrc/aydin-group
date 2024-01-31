@@ -1,24 +1,127 @@
 footer {
     position: relative;
-    padding-top: 70%;
-    padding-bottom: 300px;
     margin-top: 90px;
+    padding-bottom: 15%;
+    padding-top: 55%;
 
     .footerTop {
         left: 0;
         right: 0;
         position: absolute;
         top: 0;
+
         .title {
             font-size: 148px;
             font-weight: 600;
             text-align: center;
             color: rgba($color: #7B7B7B, $alpha: .15);
             letter-spacing: -12px;
+            position: relative;
+            z-index: -1;
         }
     }
 
-    .content {}
+    .content {
+        .footerMenus {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+
+            .footerLinks {
+                display: flex;
+                gap: 140px;
+
+                .title {
+                    color: #3A98D4;
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                    display: flex;
+                }
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+
+                    li {
+
+                        a {
+                            color: #444444;
+                            font-weight: 400;
+                            transition: .3s ease all;
+                        }
+
+                        &:hover {
+                            a {
+                                color: #3A98D4;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .adress {
+                max-width: 320px;
+                text-align: end;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                font-size: 14px;
+                color: #444444;
+                line-height: 24px;
+                font-weight: 400;
+
+                img {
+                    width: 175px;
+                    height: 75px;
+                    margin-top: 25px;
+                }
+            }
+        }
+
+        .footerBottom {
+            .social {
+
+                gap: 21px;
+                display: flex;
+                justify-content: center;
+
+                .icon {
+                    height: 17px;
+                    fill: #444444;
+                }
+
+                .facebook {
+                    width: 8.5px;
+
+                }
+
+                .twitter {
+                    width: 19.5px;
+                }
+
+                .instagram {
+                    width: 17px;
+                }
+
+                .linkedin {
+                    width: 18px;
+                }
+
+                .youtube {
+                    width: 22px;
+                }
+            }
+
+            .copyright {
+                font-size: 14px;
+                font-weight: 400;
+                color: #444444;
+                text-align: center;
+                margin-top: 40px;
+            }
+        }
+    }
 
     &:after {
         content: '';
@@ -32,7 +135,6 @@ footer {
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        z-index: .1;
+        z-index: -1;
     }
-
 }

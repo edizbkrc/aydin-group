@@ -140,20 +140,7 @@
     }
 }
 
-@include media("screen", ">xxl", "<=3xl") {
-    section.mainHead {
-        padding-top: 20%;
 
-        .otherLinks {
-            max-width: 30%;
-            flex-wrap: wrap;
-
-
-            align-items: center;
-            gap: 15px;
-        }
-    }
-}
 
 @include media("screen", ">2000px") {
     section.mainHead {

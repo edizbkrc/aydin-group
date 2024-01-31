@@ -48,8 +48,10 @@
 
     .coverImage {
         width: 100%;
+
         img {
             @include objectFitCover();
+            aspect-ratio: 1117/628;
         }
 
         &:after {

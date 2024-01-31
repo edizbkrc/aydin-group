@@ -259,8 +259,8 @@
                     <div class="swiper-wrapper">
                         <?php for ($i = 0; $i < 38; $i++) { ?>
                             <div class="swiper-slide">
-                                <a href="" class="contactsSlideItem">
-                                    <img src="assets/img/contract.png" />
+                                <a data-fancybox="gallery" data-src="assets/img/contract.png">
+                                    <img src="assets/img/contract.png" width="200" height="150" alt="" />
                                 </a>
                             </div>
                         <?php } ?>

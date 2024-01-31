@@ -23,6 +23,8 @@ section.mainSlider {
             width: auto;
             position: relative;
             padding: 10px 12.5px;
+            top: 0;
+            margin-top: 0;
 
             &:after {
                 content: "";
@@ -112,13 +114,18 @@ section.projectReports {
             margin: 0 auto;
             margin-top: 60px;
 
-
-            .contactsSlideItem {
+            .swiper-slide {
                 width: 100%;
                 display: flex;
 
                 img {
                     @include objectFitContain();
+                }
+
+                .gallery{
+                    img{
+                        @include objectFitCover;
+                    }
                 }
             }
         }
