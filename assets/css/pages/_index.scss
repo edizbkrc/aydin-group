@@ -116,11 +116,12 @@ section.homesSlides {
     margin-top: 200px;
 
     .swiperHomes {
-        .swiper-slide-grey {
+        .homePageCard {
             img {
                 @include objectFitCover();
                 filter: grayscale(1);
                 transition: .3s ease all;
+                aspect-ratio: 420/600;
             }
 
             &:hover {

@@ -3007,6 +3007,8 @@ body.greyBg {
 
 .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
   max-width: 88.8%;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .customSwiper {
@@ -3050,6 +3052,28 @@ body.greyBg {
   margin: 0;
 }
 
+.customTabContent {
+  position: relative;
+}
+
+.customTabContent .tab {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.customTabContent .tab.active {
+  position: relative;
+  opacity: 1;
+  pointer-events: auto;
+  overflow: unset;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -3058,6 +3082,15 @@ header {
   margin-bottom: 60px;
   overflow: hidden;
   max-width: 100%;
+}
+header .logo {
+  aspect-ratio: 175/75;
+}
+header .logo img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
 }
 header .menuRight {
   display: flex;
@@ -3104,9 +3137,13 @@ header .menuRight .sidebar {
   z-index: 15;
   top: 10px;
   right: 0;
-  height: 88vh;
   opacity: 0;
   pointer-events: none;
+  aspect-ratio: 445/1026;
+  height: 100%;
+  max-width: 90vw;
+  max-height: 88vh;
+  padding: 100px 30px 0 50px;
 }
 header .menuRight .sidebar:after {
   content: "";
@@ -3117,12 +3154,12 @@ header .menuRight .sidebar:after {
   left: 0;
   -webkit-mask-image: url(../img/svg/menumask.svg);
   -webkit-mask-repeat: no-repeat;
-  -webkit-mask-position: center;
+  -webkit-mask-position: right;
   background: #343434;
   z-index: -1;
   -webkit-mask-size: auto 100%;
   border-top-left-radius: 16px;
-  aspect-ratio: 445/1020;
+  width: 100%;
 }
 header .menuRight .sidebar:before {
   content: "";
@@ -3210,8 +3247,8 @@ header.sideactive .menuRight .sidebar:before {
 
 footer {
   position: relative;
-  margin-top: 90px;
-  padding-bottom: 15%;
+  margin-top: 110px;
+  padding-bottom: 240px;
   padding-top: 55%;
 }
 footer .footerTop {
@@ -3237,6 +3274,7 @@ footer .content .footerMenus {
 footer .content .footerMenus .footerLinks {
   display: flex;
   gap: 140px;
+  flex-wrap: wrap;
 }
 footer .content .footerMenus .footerLinks .title {
   color: #3A98D4;
@@ -3310,6 +3348,7 @@ footer:after {
   bottom: 0;
   left: 0;
   right: 0;
+  top: 0;
   width: 100%;
   height: 100%;
   background-image: url(../img/footerbg.png);
@@ -3317,6 +3356,7 @@ footer:after {
   background-position: center;
   background-size: cover;
   z-index: -1;
+  aspect-ratio: 1920/1700;
 }
 
 section.mainHead {
@@ -3429,18 +3469,19 @@ section.mainHead .headerSpiral img {
 section.homesSlides {
   margin-top: 200px;
 }
-section.homesSlides .swiperHomes .swiper-slide-grey img {
+section.homesSlides .swiperHomes .homePageCard img {
   width: 100%;
   height: 100%;
   object-position: center;
   object-fit: cover;
   filter: grayscale(1);
   transition: 0.3s ease all;
+  aspect-ratio: 420/600;
 }
-section.homesSlides .swiperHomes .swiper-slide-grey:hover img {
+section.homesSlides .swiperHomes .homePageCard:hover img {
   filter: grayscale(0);
 }
-section.homesSlides .swiperHomes .swiper-slide-grey .content {
+section.homesSlides .swiperHomes .homePageCard .content {
   margin-top: 15px;
   display: flex;
   flex-direction: column;
@@ -3448,7 +3489,7 @@ section.homesSlides .swiperHomes .swiper-slide-grey .content {
   font-size: 14px;
   font-weight: 400;
 }
-section.homesSlides .swiperHomes .swiper-slide-grey .content b {
+section.homesSlides .swiperHomes .homePageCard .content b {
   font-weight: 600;
   font-size: 16px;
 }
@@ -3513,8 +3554,18 @@ section.mainSlider .swiperthumbArea {
   margin-top: 30px;
   gap: 30px;
 }
-section.mainSlider .swiperthumbArea .custom-swiper-next,
-section.mainSlider .swiperthumbArea .custom-swiper-prev {
+section.mainSlider .swiperthumbArea .swiper-thumb-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+section.mainSlider .swiperthumbArea .swiper-thumb-menu .swiper-prev-next {
+  display: flex;
+  gap: 5px;
+}
+section.mainSlider .swiperthumbArea .swiper-thumb-menu .swiper-prev-next .custom-swiper-next,
+section.mainSlider .swiperthumbArea .swiper-thumb-menu .swiper-prev-next .custom-swiper-prev {
   background: #464344;
   border-radius: 30px;
   height: auto;
@@ -3523,9 +3574,11 @@ section.mainSlider .swiperthumbArea .custom-swiper-prev {
   padding: 10px 12.5px;
   top: 0;
   margin-top: 0;
+  left: 0;
+  right: 0;
 }
-section.mainSlider .swiperthumbArea .custom-swiper-next:after,
-section.mainSlider .swiperthumbArea .custom-swiper-prev:after {
+section.mainSlider .swiperthumbArea .swiper-thumb-menu .swiper-prev-next .custom-swiper-next:after,
+section.mainSlider .swiperthumbArea .swiper-thumb-menu .swiper-prev-next .custom-swiper-prev:after {
   content: "";
   background-image: url(../img/svg/arrow1.svg);
   width: 20px;
@@ -3533,13 +3586,13 @@ section.mainSlider .swiperthumbArea .custom-swiper-prev:after {
   background-size: contain;
   background-repeat: no-repeat;
 }
-section.mainSlider .swiperthumbArea .custom-swiper-next {
+section.mainSlider .swiperthumbArea .swiper-thumb-menu .custom-swiper-next {
   right: 0;
 }
-section.mainSlider .swiperthumbArea .custom-swiper-next:after {
+section.mainSlider .swiperthumbArea .swiper-thumb-menu .custom-swiper-next:after {
   transform: rotate(180deg);
 }
-section.mainSlider .swiperthumbArea .custom-swiper-prev {
+section.mainSlider .swiperthumbArea .swiper-thumb-menu .custom-swiper-prev {
   right: 0;
   left: 25px;
 }
@@ -3572,20 +3625,20 @@ section.projectReports .projectArea .col-lg-3:nth-last-child(1) .projectReportCa
 section.projectReports .projectArea .col-lg-4:nth-last-child(1) .projectReportCards1 {
   border-right: 0;
 }
-section.projectReports .projectArea .projectReportCards1 {
-  padding: 70px 0 0 50px;
+section.projectReports .projectArea .col-sm-6 {
+  padding: 70px 20px 20px 50px;
   border-top: 1px solid #C9E4EF;
   border-right: 1px solid #C9E4EF;
   max-height: 210px;
   min-height: 140px;
 }
-section.projectReports .projectArea .projectReportCards1 .content {
+section.projectReports .projectArea .col-sm-6 .content {
   line-height: 24px;
 }
-section.projectReports .projectArea .projectReportCards1 .content b {
+section.projectReports .projectArea .col-sm-6 .content b {
   font-weight: bold;
 }
-section.projectReports .projectArea .projectReportCards1.projectCardBorderBottom {
+section.projectReports .projectArea .col-sm-6.projectCardBorderBottom {
   border-bottom: 1px solid #C9E4EF;
 }
 section.projectReports .projectArea .swiperContracts {
@@ -3620,7 +3673,7 @@ section.roadMap {
   margin-bottom: 175px;
 }
 section.roadMap .container-fluid, section.roadMap .container-sm, section.roadMap .container-md, section.roadMap .container-lg, section.roadMap .container-xl, section.roadMap .container-xxl {
-  max-width: 1190px;
+  max-width: 62%;
 }
 section.roadMap .title {
   font-size: 24px;
@@ -3875,6 +3928,21 @@ section.mainProductDetailCards .productCard1 {
   border-radius: 12px;
   margin-bottom: 25px;
 }
+section.mainProductDetailCards .productCard1 .doubleContent {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+}
+section.mainProductDetailCards .productCard1 .doubleContent .content:nth-last-child(1):before {
+  content: "";
+  height: 100%;
+  width: 0.5px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(112, 112, 112, 0.5);
+}
 section.mainProductDetailCards .productCard1 .title {
   font-size: 24px;
   font-weight: 600;
@@ -3885,46 +3953,11 @@ section.mainProductDetailCards .productCard1 .content {
   font-weight: 400;
   line-height: 24px;
 }
-section.mainProductDetailCards .productCard2 {
-  background-color: #F6F6F6;
-  padding: 40px 40px 40px 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  color: #444444;
-  gap: 20px;
-  min-height: 90px;
-  max-height: 170px;
-  border-radius: 12px;
-  margin-bottom: 25px;
-}
-section.mainProductDetailCards .productCard2 .doubleContent {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  position: relative;
-}
-section.mainProductDetailCards .productCard2 .doubleContent .content:nth-last-child(1):before {
-  content: "";
-  height: 100%;
-  width: 0.5px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  background: rgba(112, 112, 112, 0.5);
-}
-section.mainProductDetailCards .productCard2 .content {
-  margin-top: 10px;
-  display: flex;
-  flex-direction: column;
-  gap: 7px;
-}
-section.mainProductDetailCards .productCard2 .content .subTitle {
+section.mainProductDetailCards .productCard1 .content .subTitle {
   font-weight: 600;
   white-space: nowrap;
 }
-section.mainProductDetailCards .productCard2 .content .subContent {
+section.mainProductDetailCards .productCard1 .content .subContent {
   color: rgba(68, 68, 68, 0.5);
   font-weight: 400;
 }
@@ -3946,6 +3979,23 @@ section.mainProductDetailCards .productCard2 .content .subContent {
 .sliderTop .sliderLinks a {
   font-weight: 600;
   color: #444444;
+  position: relative;
+}
+.sliderTop .sliderLinks a:before {
+  content: "";
+  position: absolute;
+  border-radius: 6px;
+  left: 0;
+  width: 0;
+  bottom: -5px;
+  height: 3px;
+  background: #3A98D4;
+  opacity: 0;
+  transition: 0.3s ease all;
+}
+.sliderTop .sliderLinks a:hover:before {
+  opacity: 1;
+  width: 100%;
 }
 
 .videoCard {

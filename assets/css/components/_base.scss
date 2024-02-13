@@ -14,6 +14,7 @@ img {
 
 body {
     max-width: 100%;
+
     &.greyBg {
         background: #ECEFF3;
     }
@@ -55,6 +56,8 @@ body {
 
 .container-fluid {
     max-width: 88.80%;
+    margin: 0 auto;
+    padding: 0;
 }
 
 .customSwiper {
@@ -96,4 +99,26 @@ body {
     padding-left: 0;
     padding-right: 0;
     margin: 0;
+}
+
+.customTabContent {
+    position: relative;
+}
+
+.customTabContent .tab {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.customTabContent .tab.active {
+    position: relative;
+    opacity: 1;
+    pointer-events: auto;
+    overflow: unset;
 }

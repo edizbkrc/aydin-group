@@ -1,7 +1,7 @@
 footer {
     position: relative;
-    margin-top: 90px;
-    padding-bottom: 15%;
+    margin-top: 110px;
+    padding-bottom: 240px;
     padding-top: 55%;
 
     .footerTop {
@@ -30,6 +30,7 @@ footer {
             .footerLinks {
                 display: flex;
                 gap: 140px;
+                flex-wrap: wrap;
 
                 .title {
                     color: #3A98D4;
@@ -129,6 +130,7 @@ footer {
         bottom: 0;
         left: 0;
         right: 0;
+        top: 0;
         width: 100%;
         height: 100%;
         background-image: url(../img/footerbg.png);
@@ -136,5 +138,6 @@ footer {
         background-position: center;
         background-size: cover;
         z-index: -1;
+        aspect-ratio: 1920/1700;
     }
 }

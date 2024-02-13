@@ -38,7 +38,7 @@ var swiper = new Swiper(".swiperContracts", {
         },
         '480': {
             slidesPerView: 3,
-        
+
         },
         '658': {
             slidesPerView: 4,
@@ -105,6 +105,20 @@ $(document).ready(function () {
     if ($(".gallery").length) {
         Fancybox.bind('.gallery .imgArea', {});
     }
+});
 
 
+$("body").on("click", ".customTabNavs a[href]", function (button) {
+    var anchor = $(this).attr("href");
+    var targetNavs = $(this).closest("[data-targetContent]");
+    var targetContent = targetNavs.data("targetcontent");
+    var navs = $(".customTabNavs[data-targetcontent=" + targetContent + "]");
+    targetContent = $(".customTabContent[data-content=" + targetContent + "]");
+    if (targetContent.find(anchor).length) {
+        targetContent.find(">.tab.active").removeClass("active");
+        navs.find("a.active").removeClass("active");
+        targetContent.find(anchor).addClass("active");
+        navs.find(" a[href='" + anchor + "']").addClass("active");
+        return false;
+    }
 });

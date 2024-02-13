@@ -16,6 +16,27 @@
         a {
             font-weight: 600;
             color: #444444;
+            position: relative;
+
+            &:before {
+                content: '';
+                position: absolute;
+                border-radius: 6px;
+                left: 0;
+                width: 0;
+                bottom: -5px;
+                height: 3px;
+                background: #3A98D4;
+                opacity: 0;
+                transition: .3s ease all;
+            }
+
+            &:hover{
+                &:before{
+                    opacity: 1;
+                    width: 100%;
+                }
+            }
         }
     }
 }

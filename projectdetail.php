@@ -6,27 +6,92 @@
         <div class="container-fluid">
             <div class="sliderTop">
                 <h2>Nish Meram</h2>
-                <div class="sliderLinks">
-                    <a href="">Dış Mekan</a>
-                    <a href="">İç Mekan</a>
-                    <a href="">Kat Planı</a>
-                    <a href="">Vaziyet Planı</a>
-                    <a href="">Katalog</a>
-                    <a href="">Video</a>
-                </div>
+
+                <ul class="customTabNavs sliderLinks" data-targetcontent="projects">
+                    <li><a href="#tab1" class="active">Dış Mekan </a></li>
+                    <li><a href="#tab2" class=""> İç Mekan </a></li>
+                    <li><a href="#tab3" class=""> Kat Planı </a></li>
+                    <li><a href="#tab4" class=""> Vaziyet Planı </a></li>
+                    <li><a href="#tab5" class=""> Katalog </a></li>
+                    <li><a href="#tab6" class=""> Video </a></li>
+                </ul>
             </div>
-            <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
-                class="swiper mySwiper2 swiperMain">
-                <div class="swiper-wrapper">
-                    <?php for ($i = 0; $i < 38; $i++) { ?>
-                        <div class="swiper-slide custom">
-                            <img src="assets/img/mainsliderimg1.png" />
+
+
+            <div class="customTabContent" data-content="projects">
+                <div class="tab active" id="tab1">
+                    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                        class="swiper mySwiper2 swiperMain">
+                        <div class="swiper-wrapper">
+                            <?php for ($i = 0; $i < 38; $i++) { ?>
+                                <div class="swiper-slide custom">
+                                    <img src="assets/img/mainsliderimg1.png" class="slideImg" />
+                                </div>
+                            <?php } ?>
                         </div>
-                    <?php } ?>
+                    </div>
                 </div>
-
+                <div class="tab" id="tab2">
+                    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                        class="swiper mySwiper2 swiperMain">
+                        <div class="swiper-wrapper">
+                            <?php for ($i = 0; $i < 38; $i++) { ?>
+                                <div class="swiper-slide custom">
+                                    <img src="assets/img/mainsliderimg1.png" />
+                                </div>
+                            <?php } ?>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab" id="tab3">
+                    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                        class="swiper mySwiper2 swiperMain">
+                        <div class="swiper-wrapper">
+                            <?php for ($i = 0; $i < 38; $i++) { ?>
+                                <div class="swiper-slide custom">
+                                    <img src="assets/img/mainsliderimg1.png" />
+                                </div>
+                            <?php } ?>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab" id="tab4">
+                    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                        class="swiper mySwiper2 swiperMain">
+                        <div class="swiper-wrapper">
+                            <?php for ($i = 0; $i < 38; $i++) { ?>
+                                <div class="swiper-slide custom">
+                                    <img src="assets/img/mainsliderimg1.png" />
+                                </div>
+                            <?php } ?>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab" id="tab5">
+                    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                        class="swiper mySwiper2 swiperMain">
+                        <div class="swiper-wrapper">
+                            <?php for ($i = 0; $i < 38; $i++) { ?>
+                                <div class="swiper-slide custom">
+                                    <img src="assets/img/mainsliderimg1.png" />
+                                </div>
+                            <?php } ?>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab" id="tab6">
+                    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                        class="swiper mySwiper2 swiperMain">
+                        <div class="swiper-wrapper">
+                            <?php for ($i = 0; $i < 38; $i++) { ?>
+                                <div class="swiper-slide custom">
+                                    <img src="assets/img/mainsliderimg1.png" />
+                                </div>
+                            <?php } ?>
+                        </div>
+                    </div>
+                </div>
             </div>
-
             <div class="swiperthumbArea">
                 <div thumbsSlider="" class="swiper mySwiper swiperTabs customSwiper">
                     <div class="swiper-wrapper">
@@ -38,10 +103,14 @@
                     </div>
 
                 </div>
-                <div class="swiper-pagination"></div>
+                <div class="swiper-thumb-menu">
+                    <div class="swiper-pagination"></div>
 
-                <div class="swiper-button-prev custom-swiper-prev"></div>
-                <div class="swiper-button-next custom-swiper-next"></div>
+                    <div class="swiper-prev-next">
+                        <div class="swiper-button-prev custom-swiper-prev"></div>
+                        <div class="swiper-button-next custom-swiper-next"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -80,7 +149,7 @@
     <section class="mainProductDetailCards">
 
         <div class="container-fluid">
-            <div class="row">
+            <div class="row colZero">
                 <div class="col-lg-4 col-sm-6">
                     <div class="productCard1">
                         <div class="title">Proje Detayları</div>
@@ -106,10 +175,10 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row colZero">
 
-                <div class="col-grid10-xl-2 col-lg-3 col-md-4 col-sm-6">
-                    <div class="productCard2">
+                <div class="col-grid10-xxl-2 col-lg-4 col-grid10-md-5 col-sm-6">
+                    <div class="productCard1">
                         <svg class="icon">
                             <use xlink:href="assets/img/svg/iconset.svg#location"></use>
                         </svg>
@@ -119,8 +188,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-grid10-xl-2 col-lg-3 col-md-4 col-sm-6">
-                    <div class="productCard2">
+                <div class="col-grid10-xxl-2 col-lg-4 col-grid10-md-5 col-sm-6">
+                    <div class="productCard1">
                         <svg class="icon">
                             <use xlink:href="assets/img/svg/iconset.svg#time"></use>
                         </svg>
@@ -136,8 +205,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-grid10-xl-2 col-lg-3 col-md-4 col-sm-6">
-                    <div class="productCard2">
+                <div class="col-grid10-xxl-2 col-lg-4 col-grid10-md-5 col-sm-6">
+                    <div class="productCard1">
                         <svg class="icon">
                             <use xlink:href="assets/img/svg/iconset.svg#home"></use>
                         </svg>
@@ -147,8 +216,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-grid10-xl-2 col-lg-3 col-md-4 col-sm-6">
-                    <div class="productCard2">
+                <div class="col-grid10-xxl-2 col-lg-4 col-grid10-md-5 col-sm-6">
+                    <div class="productCard1">
                         <svg class="icon">
                             <use xlink:href="assets/img/svg/iconset.svg#basket"></use>
                         </svg>
@@ -158,8 +227,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-grid10-xl-2 col-lg-3 col-md-4 col-sm-6">
-                    <div class="productCard2">
+                <div class="col-grid10-xxl-2 col-lg-4 col-grid10-md-5 col-sm-6">
+                    <div class="productCard1">
                         <svg class="icon">
                             <use xlink:href="assets/img/svg/iconset.svg#flag"></use>
                         </svg>
@@ -223,10 +292,9 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="row colZero">
-                    <div class="col-lg-4 col-sm-6 colZero">
-                        <div class="projectReportCards1 projectCardBorderBottom">
+
+                    <div class="col-lg-4 col-sm-6 colZero projectCardBorderBottom">
+                        <div class="projectReportCards1 ">
                             <div class="content">
                                 <b> Bina Kullanım Sınıfı / <br>
                                     Bina önem Katsayısı</b><br>
@@ -235,16 +303,16 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 colZero">
-                        <div class="projectReportCards1 projectCardBorderBottom">
+                    <div class="col-lg-4 col-sm-6 colZero projectCardBorderBottom">
+                        <div class="projectReportCards1 ">
                             <div class="content">
                                 <b>Temel Tipi</b><br>
                                 Radye Temel
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-sm-6 colZero">
-                        <div class="projectReportCards1 projectCardBorderBottom">
+                    <div class="col-lg-4 col-sm-6 colZero projectCardBorderBottom">
+                        <div class="projectReportCards1 ">
                             <div class="content">
                                 <b>Kalıp Tipi</b><br>
                                 Tünel kalıp /<br>
@@ -289,7 +357,7 @@
     <section class="projectStages">
         <div class="container-fluid">
             <div class="projectStagesInfo">
-                <div class="row">
+                <div class="row colZero">
                     <div class="col-lg-2">
                         <div class="cardInfo">
                             <div class="content">
@@ -313,7 +381,7 @@
                 </div>
             </div>
             <div class="projectStagesInfo">
-                <div class="row">
+                <div class="row colZero">
                     <div class="col-lg-2">
                         <div class="cardInfo">
                             <div class="content">
@@ -334,15 +402,15 @@
 
                                 <div class="stageImages">
 
-                                    <a data-fancybox="gallery" data-src="https://lipsum.app/id/2/1600x1200">
+                                    <a data-fancybox="gallery1" data-src="https://lipsum.app/id/2/1600x1200">
                                         <img src="assets/img/stagescardimg1.png " alt="">
                                     </a>
 
-                                    <a data-fancybox="gallery" data-src="https://lipsum.app/id/3/1600x1200">
+                                    <a data-fancybox="gallery1" data-src="https://lipsum.app/id/3/1600x1200">
                                         <img src="assets/img/stagescardimg2.png " alt="">
                                     </a>
 
-                                    <a data-fancybox="gallery" data-src="https://lipsum.app/id/4/1600x1200">
+                                    <a data-fancybox="gallery1" data-src="https://lipsum.app/id/4/1600x1200">
                                         <img src="assets/img/stagescardimg3.png " alt="">
                                     </a>
                                 </div>
@@ -352,7 +420,7 @@
                 </div>
             </div>
             <div class="projectStagesInfo">
-                <div class="row">
+                <div class="row colZero">
                     <div class="col-lg-2">
                         <div class="cardInfo">
                             <div class="content">
@@ -384,7 +452,7 @@
                 </div>
             </div>
             <div class="projectStagesInfo">
-                <div class="row">
+                <div class="row colZero">
                     <div class="col-lg-2">
                         <div class="cardInfo">
                             <div class="content">
@@ -408,7 +476,7 @@
                 </div>
             </div>
             <div class="projectStagesInfo">
-                <div class="row">
+                <div class="row colZero">
                     <div class="col-lg-2">
                         <div class="cardInfo">
                             <div class="content">

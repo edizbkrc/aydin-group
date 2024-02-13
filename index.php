@@ -1,6 +1,7 @@
 <?php include "inc.header.php"; ?>
 
 <body class="preload headerJustBurgerMenu ">
+    
     <section class="mainHead">
         <div class="container-fluid">
             <div class="headBg">
@@ -134,8 +135,5 @@
             </div>
         </div>
     </section>
-
-
-
 
     <?php include "inc.footer.php"; ?>
