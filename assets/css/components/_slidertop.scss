@@ -2,7 +2,6 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 30px;
-
     h2 {
         font-size: 28px;
         font-weight: 600;
@@ -12,6 +11,7 @@
     .sliderLinks {
         display: flex;
         gap: 40px;
+        flex-wrap: wrap;
 
         a {
             font-weight: 600;

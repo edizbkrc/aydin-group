@@ -3143,6 +3143,7 @@ header .menuRight .sidebar {
   height: 100%;
   max-width: 90vw;
   max-height: 88vh;
+  min-height: 88vh;
   padding: 100px 30px 0 50px;
 }
 header .menuRight .sidebar:after {
@@ -3975,6 +3976,7 @@ section.mainProductDetailCards .productCard1 .content .subContent {
 .sliderTop .sliderLinks {
   display: flex;
   gap: 40px;
+  flex-wrap: wrap;
 }
 .sliderTop .sliderLinks a {
   font-weight: 600;
