@@ -31,7 +31,8 @@
                 transition: .3s ease all;
             }
 
-            &:hover{
+            &:hover,
+            &.active{
                 &:before{
                     opacity: 1;
                     width: 100%;

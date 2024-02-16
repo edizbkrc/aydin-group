@@ -1,19 +1,20 @@
 @include media("screen", "<=md") {
-    .sliderTop{
+    .sliderTop {
         flex-direction: column;
         gap: 10px;
+
         .sliderLinks {
             gap: 10px 20px;
             align-items: center;
         }
     }
-    }
-
-@include media("screen", ">md" , "<=lg") {
-.sliderTop{
-    .sliderLinks {
-        gap: 10px 20px;
-        align-items: center;
-    }
 }
+
+@include media("screen", ">md", "<=lg") {
+    .sliderTop {
+        .sliderLinks {
+            gap: 10px 20px;
+            align-items: center;
+        }
+    }
 }

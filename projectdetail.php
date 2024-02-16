@@ -6,7 +6,6 @@
         <div class="container-fluid">
             <div class="sliderTop">
                 <h2>Nish Meram</h2>
-
                 <ul class="customTabNavs sliderLinks" data-targetcontent="projects">
                     <li><a href="#tab1" class="active">Dış Mekan </a></li>
                     <li><a href="#tab2" class=""> İç Mekan </a></li>
@@ -16,7 +15,6 @@
                     <li><a href="#tab6" class=""> Video </a></li>
                 </ul>
             </div>
-
 
             <div class="customTabContent" data-content="projects">
                 <div class="tab active" id="tab1">
@@ -32,16 +30,7 @@
                     </div>
                 </div>
                 <div class="tab" id="tab2">
-                    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
-                        class="swiper mySwiper2 swiperMain">
-                        <div class="swiper-wrapper">
-                            <?php for ($i = 0; $i < 38; $i++) { ?>
-                                <div class="swiper-slide custom">
-                                    <img src="assets/img/mainsliderimg1.png" />
-                                </div>
-                            <?php } ?>
-                        </div>
-                    </div>
+                    dfsdfgdfg
                 </div>
                 <div class="tab" id="tab3">
                     <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
@@ -349,6 +338,7 @@
             <div class="subTitle">Ön Görülen Teslim Tarihi: 08.08.2024</div>
 
             <div class="roadStages">
+                <span class="progress" style="--progress-comp:85%;"></span>
                 85%
             </div>
         </div>

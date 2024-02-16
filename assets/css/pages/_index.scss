@@ -1,6 +1,7 @@
 section.mainHead {
     padding-top: 30%;
     color: #444444;
+    padding-bottom: 300px;
 
     .headBg {
         position: absolute;
@@ -52,9 +53,11 @@ section.mainHead {
         margin: 0 auto;
         justify-content: center;
         gap: 60px;
-        padding: 21px 60px;
+        padding: 21px 40px;
         font-weight: 600;
         margin-top: 50px;
+        white-space: nowrap;
+
         a {
             color: #828282;
             position: relative;
@@ -130,32 +133,19 @@ section.homesSlides {
                 }
             }
 
-            .content {
-                margin-top: 15px;
-                display: flex;
-                flex-direction: column;
-                color: #444444;
-                font-size: 14px;
-                font-weight: 400;
 
-                b {
-                    font-weight: 600;
-                    font-size: 16px;
-                }
-            }
         }
     }
 }
 
 section.videoArea {
-    margin-top: 300px;
 
     .content {
         display: flex;
         flex-direction: column;
         gap: 20px;
-        
-        .title{
+
+        .title {
             font-size: 28px;
             font-weight: 600;
             color: #444444;
@@ -184,13 +174,13 @@ section.videoArea {
             text-align: center;
             justify-content: center;
 
-            &:hover{
+            &:hover {
                 background: #3A98D4;
             }
         }
     }
 
-    .videoCard{
+    .videoCard {
         max-height: 628px;
     }
 }

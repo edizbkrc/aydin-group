@@ -1,0 +1,16 @@
+@include media("screen", ">xs", "<=sm") {
+
+    .videoWrapper {
+        margin: 20px 0 0;
+        padding: 0;
+
+
+    }
+
+    .videoCard {
+        &::before {
+            width: 45px;
+            height: 55px;
+        }
+    }
+}

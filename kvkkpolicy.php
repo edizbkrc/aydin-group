@@ -1,6 +1,6 @@
 <?php include "inc.header.php"; ?>
 
-<body class="preload headerJustBurgerMenu">
+<body class="preload headerJustBurgerMenu footerTopHighOp">
     <section class="mainHead experience headFixed">
         <div class="container-fluid">
             <div class="headBg">

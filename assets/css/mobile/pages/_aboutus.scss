@@ -1,0 +1,14 @@
+@include media("screen", ">2000px") {
+    section.experience {
+        .leftWhiteBg {
+            &:before {
+                right: 1px;
+                width: 15%;
+            }
+
+            &:after {
+                width: 85%;
+            }
+        }
+    }
+}

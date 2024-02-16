@@ -1,7 +1,21 @@
 section.mainSlider {
     margin-bottom: 150px;
 
+    .customTabContent {
+        .tab {
+            .swiperMain {
+                .swiper-slide {
+                    &.custom {
+                        aspect-ratio: 1705/885;
 
+                        img {
+                            @include objectFitCover();
+                        }
+                    }
+                }
+            }
+        }
+    }
 
     .mySwiper2 {
         border-radius: 12px;
@@ -18,7 +32,7 @@ section.mainSlider {
         .swiper-thumb-menu {
             display: flex;
             align-items: center;
-            justify-content:space-between ;
+            justify-content: space-between;
             width: 100%;
 
             .swiper-prev-next {
@@ -107,6 +121,11 @@ section.projectReports {
             max-height: 210px;
             min-height: 140px;
 
+            &:nth-child(4),
+            &:nth-last-child(1) {
+                border-right: none;
+            }
+
             .content {
                 line-height: 24px;
 
@@ -174,6 +193,23 @@ section.roadMap {
         position: relative;
         padding-bottom: 25px;
 
+        .progress {
+            width: var(--progress-comp);
+            height: 6px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: #3A98D4;
+            color: #3A98D4;
+            border-radius: 12px;
+            display: block;
+            transition: width 0.3s ease;
+            overflow: hidden;
+
+        }
+
+
         &:before {
             content: '';
             width: 100%;
@@ -183,17 +219,6 @@ section.roadMap {
             right: 0;
             bottom: 0;
             background: rgba($color: #444444, $alpha: .10);
-            border-radius: 12px;
-        }
-
-        &:after {
-            content: '';
-            width: 85%;
-            height: 6px;
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            background: #3A98D4;
             border-radius: 12px;
         }
     }

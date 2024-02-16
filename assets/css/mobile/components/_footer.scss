@@ -1,0 +1,195 @@
+@include media("screen", ">xs", "<=sm") {
+    footer {
+        background: #E0E5EC;
+        padding-top: 150px;
+        margin-top: 250px;
+        padding-bottom: 80px;
+
+        .footerTop {
+            display: none;
+        }
+
+        .content {
+            .footerMenus {
+                flex-direction: column;
+                align-items: center;
+
+                .footerLinks {
+                    justify-content: center;
+                    gap: 50px;
+                    flex-direction: column;
+                    align-items: center;
+
+                    .title {
+                        display: flex;
+                        justify-content: center;
+                    }
+
+                    .footerLink {
+                        text-align: center;
+                        z-index: 2;
+                    }
+                }
+
+                .adress {
+                    margin-top: 50px;
+                    text-align: center;
+                    align-items: center;
+                }
+            }
+
+            .footerBottom {
+                .copyright {
+                    line-height: 24px;
+                }
+            }
+        }
+
+        &:after {
+            background-size: contain;
+            background-position: top center;
+            z-index: 1;
+            top: -15%;
+        }
+    }
+}
+
+@include media("screen", ">sm", "<=md") {
+    footer {
+        padding-bottom: 100px;
+
+        .content {
+            .footerMenus {
+                .footerLinks {
+                    gap: 60px;
+                }
+            }
+        }
+
+        .footerTop {
+            padding: 0 20px;
+
+            .title {
+                font-size: 45px;
+                letter-spacing: -3px;
+            }
+        }
+
+        &:after {
+            background-size: contain;
+            background-position: top center;
+        }
+
+        &::before {
+            content: "";
+            background: #E0E5EC;
+            position: absolute;
+            top: auto;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 80%;
+            z-index: -1;
+        }
+    }
+}
+
+@include media("screen", ">md", "<=lg") {
+    footer {
+        padding-bottom: 100px;
+
+        .content {
+            .footerMenus {
+                .footerLinks {
+                    gap: 60px;
+                }
+            }
+        }
+
+        .footerTop {
+            padding: 0 20px;
+
+            .title {
+                font-size: 60px;
+                letter-spacing: -3px;
+            }
+        }
+
+        &:after {
+            background-size: contain;
+            background-position: top center;
+        }
+
+        &::before {
+            content: "";
+            background: #E0E5EC;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 50%;
+            z-index: -1;
+        }
+    }
+}
+
+@include media("screen", ">lg", "<=xl") {
+    footer {
+        padding-bottom: 100px;
+
+        .footerTop {
+            padding: 0 20px;
+
+            .title {
+                font-size: 75px;
+                letter-spacing: -3px;
+            }
+        }
+
+        &:after {
+            background-size: contain;
+            background-position: top center;
+            height: 90%;
+            width: 100%;
+        }
+
+        &::before {
+            content: "";
+            background: #E0E5EC;
+            position: absolute;
+            top: auto;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 80%;
+            z-index: -1;
+        }
+    }
+}
+
+
+@include media("screen", ">xl", "<=xxl") {
+    footer {
+        padding-bottom: 100px;
+
+        .footerTop {
+            padding: 0 20px;
+
+            .title {
+                font-size: 100px;
+                letter-spacing: -7px;
+            }
+        }
+    }
+}
+
+
+@include media("screen", ">2000px") {
+    footer {
+        padding-top: 61%;
+    }
+}

@@ -1,6 +1,6 @@
 <?php include "inc.header.php"; ?>
 
-<body class="preload headerJustBurgerMenu">
+<body class="preload headerJustBurgerMenu footerTopHighOp">
     <section class="mainHead experience headFixed">
         <div class="container-fluid">
             <div class="headBg">
@@ -30,10 +30,6 @@
                     gelen yatırım şirketleri arasına girmeyi hedeflemektedir.
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="targets">
-        <div class="container-fluid">
             <div class="content ">
                 <div class="title">Hedefler</div>
                 <div class="description">

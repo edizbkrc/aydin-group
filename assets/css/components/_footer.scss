@@ -4,6 +4,7 @@ footer {
     padding-bottom: 240px;
     padding-top: 55%;
 
+
     .footerTop {
         left: 0;
         right: 0;
@@ -139,5 +140,17 @@ footer {
         background-size: cover;
         z-index: -1;
         aspect-ratio: 1920/1700;
+    }
+}
+
+body.footerTopHighOp {
+    footer {
+        .footerTop {
+
+            .title {
+                color: rgba($color: #7B7B7B, $alpha: .55);
+                z-index: -1;
+            }
+        }
     }
 }

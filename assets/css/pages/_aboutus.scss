@@ -2,13 +2,15 @@ section.experience {
     padding: 0 !important;
 
     &.headFixed {
-        .headBg{
+        .headBg {
             position: fixed;
         }
-        &:before{
+
+        &:before {
             position: fixed;
         }
-        .leftWhiteBg{
+
+        .leftWhiteBg {
             position: fixed;
         }
     }
@@ -32,7 +34,7 @@ section.experience {
         right: 0;
         left: 0;
         bottom: 0;
-
+        z-index: 0;
     }
 
     .leftWhiteBg {
@@ -61,7 +63,7 @@ section.experience {
             background: rgb(255, 255, 255);
             background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
             width: 30%;
-            right: 0;
+            right: 1px;
             bottom: 0;
             top: 0;
             z-index: -1;

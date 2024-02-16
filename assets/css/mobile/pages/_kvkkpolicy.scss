@@ -1,0 +1,33 @@
+@include media("screen", ">xs", "<=sm") {
+    section.experience {
+        .content {
+            .title {
+                margin-bottom: 40px;
+                padding-top: 0;
+                margin-top: 50px;
+
+                &:after{
+                    left: -14px;
+                    width: 10px;
+                    height: 10px;
+                }
+            }
+
+            .description {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+@include media("screen", ">sm", "<=lg") {
+    section.experience {
+        .content {
+            .title {
+                &:after{
+                    left:-30px;
+                }
+            }
+        }
+    }
+}

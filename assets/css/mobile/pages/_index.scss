@@ -1,0 +1,151 @@
+@include media("screen", ">xs", "<=sm") {
+    section.videoArea {
+
+        .content {
+            text-align: center;
+
+            .description {
+                max-width: unset;
+            }
+
+            .btnNext {
+                margin: 0 auto;
+                width: 140px;
+            }
+        }
+
+        .videoCard {
+            margin-top: 30px;
+        }
+    }
+
+    section.homesSlides{
+        margin-top: 100px;
+    }
+
+    section.mainHead {
+        padding-bottom: 150px;
+
+        .title {
+            padding-top: 150px;
+            font-size: 20px;
+            line-height: 26px;
+        }
+    }
+
+    section.mainHead {
+        padding-bottom: 100px;
+        .otherLinks {
+            max-width: unset;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 21px;
+            border-radius: 45px;
+        }
+    }
+}
+
+@include media("screen", ">sm", "<=md") {
+    section.videoArea {
+
+        .content {
+            text-align: center;
+
+            .description {
+                max-width: unset;
+            }
+
+            .btnNext {
+                margin: 0 auto;
+                width: 140px;
+            }
+        }
+
+        .videoCard {
+            margin-top: 30px;
+        }
+    }
+
+    section.mainHead {
+        padding-bottom: 130px;
+        .otherLinks {
+            max-width: unset;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 21px;
+        }
+    }
+}
+
+@include media("screen", ">md", "<=lg") {
+    section.videoArea {
+
+        .content {
+
+            .description {
+                max-width: 80%;
+            }
+
+            .btnNext {
+                width: 140px;
+            }
+        }
+    }
+
+    section.mainHead {
+        padding-bottom: 150px;
+        .otherLinks {
+            max-width: 70%;
+            flex-wrap: wrap;
+            gap: 40px;
+            padding: 21px;
+        }
+    }
+}
+
+@include media("screen", ">lg", "<=xl") {
+    section.mainHead {
+        padding-top: 20%;
+
+        .otherLinks {
+            max-width: 70%;
+            flex-wrap: wrap;
+            gap: 40px;
+            padding: 21px;
+        }
+    }
+
+    section.videoArea {
+
+        .content {
+
+            .description {
+                max-width: 80%;
+            }
+
+            .btnNext {
+                width: 140px;
+            }
+        }
+    }
+}
+
+@include media("screen", ">xl", "<=xxl") {
+    section.mainHead {
+        padding-top: 20%;
+
+        .otherLinks {
+            max-width: 50%;
+            flex-wrap: wrap;
+            gap: 40px;
+            padding: 21px;
+        }
+    }
+}
+
+@include media("screen", ">2000px") {
+    section.mainHead {
+        padding-top: 20%;
+
+    }
+}

@@ -1,0 +1,134 @@
+@include media("screen", ">xs", "<=sm") {
+    section.projectReports {
+        .projectArea {
+            .col-sm-6 {
+                border-right: none;
+                padding: 25px;
+
+                &:nth-last-child(1),
+                &:nth-last-child(2) {
+                    border-top: none;
+                }
+            }
+        }
+    }
+
+    section.mainSlider,
+    section.mainDescription{
+        margin-bottom: 70px;
+    }
+
+    section.projectStages {
+        .projectStagesInfo {
+            margin-bottom: 0;
+
+            .card {
+                .content {
+                    .videoWrapper {
+                        margin: 20px 0 0;
+                        padding: 0;
+
+                        .videoCard {
+                            &::before {
+                                width: 45px;
+                                height: 55px;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+@include media("screen", ">sm", "<=lg") {
+    section.projectReports {
+        .projectArea {
+            .col-sm-6 {
+                padding: 25px;
+
+                &:nth-last-child(1) {
+                    border-top: none;
+                    border-right: 1px solid #C9E4EF;
+
+                }
+
+                &:nth-child(even) {
+                    border-right: none;
+                }
+            }
+        }
+    }
+}
+
+@include media("screen", ">lg", "<=xl") {
+    section.projectReports {
+        .projectArea {
+            .col-sm-6 {
+                padding: 45px;
+
+                &:nth-child(3),
+                &:nth-child(6) {
+                    border-right: none;
+                }
+
+                &:nth-child(4) {
+                    border-bottom: 1px solid #C9E4EF;
+                    border-right: 1px solid #C9E4EF;
+                }
+
+                &:nth-last-child(1) {
+                    border-top: none;
+                    border-right: 1px solid #C9E4EF;
+                }
+            }
+        }
+    }
+}
+
+@include media("screen", ">xl", "<=xxl") {
+    section.projectReports {
+        .projectArea {
+            .col-sm-6 {
+                padding: 45px;
+
+            }
+        }
+    }
+}
+
+@include media("screen", "<=lg") {
+    section.projectStages {
+        .projectStagesInfo {
+            margin-bottom: 0;
+
+            .card {
+                padding: 40px 25px;
+            }
+
+            .cardInfo {
+                padding: 30px 0;
+                .content {
+                    padding: 20px;
+                    text-align: center;
+                }
+
+                &:after {
+                    transform: translateX(-50%);
+                }
+            }
+        }
+    }
+
+    section.roadMap {
+        .container-fluid {
+            max-width: 85%;
+        }
+
+        .roadStages {
+            margin-top: 20px;
+            text-align: center;
+        }
+    }
+}

@@ -7,8 +7,22 @@ $(document).ready(function () {
 
 var swiper = new Swiper(".swiperTabs", {
     spaceBetween: 5,
-    slidesPerView: 8,
+    slidesPerView: 1,
+    breakpoints: {
+        '0': {
+            slidesPerView: 1,
+        },
+        '480': {
+            slidesPerView: 3,
 
+        },
+        '658': {
+            slidesPerView: 4,
+        },
+        '1024': {
+            slidesPerView: 8,
+        },
+    },
 });
 var swiper2 = new Swiper(".swiperMain", {
     spaceBetween: 10,
@@ -16,6 +30,7 @@ var swiper2 = new Swiper(".swiperMain", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+
     pagination: {
         el: ".swiper-pagination",
         type: "fraction",
@@ -122,3 +137,4 @@ $("body").on("click", ".customTabNavs a[href]", function (button) {
         return false;
     }
 });
+

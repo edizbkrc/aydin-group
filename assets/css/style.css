@@ -3114,6 +3114,7 @@ header .menuRight .burgerMenu {
   fill: #444444;
   color: #444444;
   gap: 10px;
+  z-index: 2;
 }
 header .menuRight .burgerMenu .icon {
   width: 40px;
@@ -3360,9 +3361,15 @@ footer:after {
   aspect-ratio: 1920/1700;
 }
 
+body.footerTopHighOp footer .footerTop .title {
+  color: rgba(123, 123, 123, 0.55);
+  z-index: -1;
+}
+
 section.mainHead {
   padding-top: 30%;
   color: #444444;
+  padding-bottom: 300px;
 }
 section.mainHead .headBg {
   position: absolute;
@@ -3412,9 +3419,10 @@ section.mainHead .otherLinks {
   margin: 0 auto;
   justify-content: center;
   gap: 60px;
-  padding: 21px 60px;
+  padding: 21px 40px;
   font-weight: 600;
   margin-top: 50px;
+  white-space: nowrap;
 }
 section.mainHead .otherLinks a {
   color: #828282;
@@ -3482,22 +3490,7 @@ section.homesSlides .swiperHomes .homePageCard img {
 section.homesSlides .swiperHomes .homePageCard:hover img {
   filter: grayscale(0);
 }
-section.homesSlides .swiperHomes .homePageCard .content {
-  margin-top: 15px;
-  display: flex;
-  flex-direction: column;
-  color: #444444;
-  font-size: 14px;
-  font-weight: 400;
-}
-section.homesSlides .swiperHomes .homePageCard .content b {
-  font-weight: 600;
-  font-size: 16px;
-}
 
-section.videoArea {
-  margin-top: 300px;
-}
 section.videoArea .content {
   display: flex;
   flex-direction: column;
@@ -3543,6 +3536,15 @@ section.videoArea .videoCard {
 
 section.mainSlider {
   margin-bottom: 150px;
+}
+section.mainSlider .customTabContent .tab .swiperMain .swiper-slide.custom {
+  aspect-ratio: 1705/885;
+}
+section.mainSlider .customTabContent .tab .swiperMain .swiper-slide.custom img {
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
 }
 section.mainSlider .mySwiper2 {
   border-radius: 12px;
@@ -3633,6 +3635,9 @@ section.projectReports .projectArea .col-sm-6 {
   max-height: 210px;
   min-height: 140px;
 }
+section.projectReports .projectArea .col-sm-6:nth-child(4), section.projectReports .projectArea .col-sm-6:nth-last-child(1) {
+  border-right: none;
+}
 section.projectReports .projectArea .col-sm-6 .content {
   line-height: 24px;
 }
@@ -3692,6 +3697,20 @@ section.roadMap .roadStages {
   position: relative;
   padding-bottom: 25px;
 }
+section.roadMap .roadStages .progress {
+  width: var(--progress-comp);
+  height: 6px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #3A98D4;
+  color: #3A98D4;
+  border-radius: 12px;
+  display: block;
+  transition: width 0.3s ease;
+  overflow: hidden;
+}
 section.roadMap .roadStages:before {
   content: "";
   width: 100%;
@@ -3701,16 +3720,6 @@ section.roadMap .roadStages:before {
   right: 0;
   bottom: 0;
   background: rgba(68, 68, 68, 0.1);
-  border-radius: 12px;
-}
-section.roadMap .roadStages:after {
-  content: "";
-  width: 85%;
-  height: 6px;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  background: #3A98D4;
   border-radius: 12px;
 }
 
@@ -3804,6 +3813,7 @@ section.experience:before {
   right: 0;
   left: 0;
   bottom: 0;
+  z-index: 0;
 }
 section.experience .leftWhiteBg {
   position: absolute;
@@ -3830,7 +3840,7 @@ section.experience .leftWhiteBg:before {
   background: rgb(255, 255, 255);
   background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 100%);
   width: 30%;
-  right: 0;
+  right: 1px;
   bottom: 0;
   top: 0;
   z-index: -1;
@@ -3909,7 +3919,7 @@ section.experience .content .description {
 }
 
 section.projects {
-  margin-top: 0;
+  margin-top: -350px;
 }
 
 section.mainProductDetailCards {
@@ -3917,7 +3927,7 @@ section.mainProductDetailCards {
 }
 section.mainProductDetailCards .productCard1 {
   background-color: #F6F6F6;
-  padding: 40px;
+  padding: 40px 30px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -3963,6 +3973,28 @@ section.mainProductDetailCards .productCard1 .content .subContent {
   font-weight: 400;
 }
 
+.swiper-slide-grey .content {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  color: #444444;
+  font-size: 14px;
+  font-weight: 400;
+}
+.swiper-slide-grey .content b {
+  font-weight: 600;
+  font-size: 16px;
+}
+.swiper-slide-grey .grey-slide-img {
+  aspect-ratio: 420/600;
+}
+.swiper-slide-grey .grey-slide-img img {
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+
 .sliderTop {
   display: flex;
   justify-content: space-between;
@@ -3995,7 +4027,7 @@ section.mainProductDetailCards .productCard1 .content .subContent {
   opacity: 0;
   transition: 0.3s ease all;
 }
-.sliderTop .sliderLinks a:hover:before {
+.sliderTop .sliderLinks a:hover:before, .sliderTop .sliderLinks a.active:before {
   opacity: 1;
   width: 100%;
 }
@@ -4005,6 +4037,7 @@ section.mainProductDetailCards .productCard1 .content .subContent {
   border-radius: 12px;
   overflow: hidden;
   position: relative;
+  aspect-ratio: 1117/628;
 }
 .videoCard:after {
   content: "";
@@ -4026,13 +4059,14 @@ section.mainProductDetailCards .productCard1 .content .subContent {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 85px;
-  height: 100px;
+  width: 90px;
+  height: 11 0px;
   background-image: url(../img/videostarticon.png);
   background-repeat: no-repeat;
   background-size: contain;
   transition: 0.15s ease all;
   opacity: 0.8;
+  aspect-ratio: 91/110;
 }
 .videoCard:hover:after {
   opacity: 0;

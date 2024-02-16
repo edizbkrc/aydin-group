@@ -1,27 +1,52 @@
 @include media("screen", "<=sm") {
-    header{
+    header {
         padding: 10px 20px;
         gap: 20px;
-        .menuRight{
+
+        .menuRight {
             align-items: center;
-            .btnRequest{
+
+            .btnRequest {
                 white-space: nowrap;
                 padding: 10px;
             }
 
 
-            .sidebar{
+            .sidebar {
                 background: #222;
                 padding: 50px 20px 70px;
                 top: 0;
                 width: 100%;
                 position: fixed;
-                &:after,&:before{
+                max-width: unset;
+
+                &:after,
+                &:before {
                     display: none;
                 }
 
-                .headerLinks{
+                .headerLinks {
                     margin-top: 40px;
+                }
+            }
+        }
+    }
+}
+
+@include media("screen", ">sm", "<=xxl") {
+    header {
+
+        .menuRight {
+            align-items: center;
+
+            .sidebar {
+                padding: 50px 20px 70px;
+                max-width: unset;
+
+
+                .headerLinks {
+                    margin-top: 40px;
+                    margin-right: 50px;
                 }
             }
         }

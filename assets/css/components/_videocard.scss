@@ -3,6 +3,7 @@
     border-radius: 12px;
     overflow: hidden;
     position: relative;
+    aspect-ratio: 1117/628;
 
     &:after {
         content: '';
@@ -25,15 +26,16 @@
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
-        width: 85px;
-        height: 100px;
+        width: 90px;
+        height: 11
+        0px;
         background-image: url(../img/videostarticon.png);
         background-repeat: no-repeat;
         background-size: contain;
         transition: .15s ease all;
         opacity: .8;
+        aspect-ratio: 91/110;
     }
-
     &:hover {
         &:after {
             opacity: 0;
