@@ -3922,6 +3922,54 @@ section.projects {
   margin-top: -350px;
 }
 
+section.news {
+  z-index: 1;
+  position: relative;
+}
+section.news .content .newsCard {
+  padding: 55px 30px 30px 45px;
+  background: #fff;
+  border-radius: 12px;
+  width: 29.5%;
+  box-shadow: 0px 0px 64px -18px rgba(0, 0, 0, 0.15);
+}
+section.news .content .newsCard .title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+}
+section.news .content .newsCard .description {
+  color: rgba(68, 68, 68, 0.52);
+  line-height: 24px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  -webkit-box-orient: vertical;
+  transition: 0.3s ease all;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+section.news .content .newsCard .btnMore {
+  font-size: 18px;
+  font-weight: 600;
+  background: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 13px;
+  cursor: pointer;
+}
+section.news .content .newsCard .btnMore span {
+  transform: translateX(5px);
+  transition: 0.15s ease all;
+  display: flex;
+}
+section.news .content .newsCard .btnMore:hover span {
+  transform: translateX(10px);
+}
+
 section.mainProductDetailCards {
   margin-bottom: 80px;
 }

@@ -1,0 +1,54 @@
+section.news {
+    z-index: 1;
+    position: relative;
+
+    .content {
+        .newsCard {
+            padding: 55px 30px 30px 45px;
+            background: #fff;
+            border-radius: 12px;
+            width: 29.5%;
+            box-shadow: 0px 0px 64px -18px rgba(0, 0, 0, 0.15);
+
+            .title {
+                font-size: 18px;
+                font-weight: 600;
+                line-height: 24px;
+            }
+
+            .description {
+                color: rgba($color: #444444, $alpha: .52);
+                line-height: 24px;
+                @include maxLine(4);
+                transition: .3s ease all;
+                margin-top: 20px;
+                margin-bottom: 40px;
+            }
+
+            .btnMore {
+                font-size: 18px;
+                font-weight: 600;
+                background: transparent;
+                border: none;
+                display: flex;
+                align-items: center;
+                margin-left: auto;
+                margin-right: 13px;
+                cursor: pointer;
+
+                span {
+                    transform: translateX(5px);
+                    transition: .15s ease all;
+                    display: flex;
+                }
+
+                &:hover {
+                    span {
+                        transform: translateX(10px);
+
+                    }
+                }
+            }
+        }
+    }
+}
