@@ -3926,19 +3926,91 @@ section.news {
   z-index: 1;
   position: relative;
 }
+section.news .content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
 section.news .content .newsCard {
+  display: flex;
+  transition: 0.3s ease all;
+  width: 33%;
+}
+section.news .content .newsCard.cardMoreActive {
+  transition: 0.3s ease all;
+}
+section.news .content .newsCard.cardMoreActive .cardContent .description {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: unset;
+  line-clamp: unset;
+  -webkit-box-orient: vertical;
+}
+section.news .content .newsCard.cardMoreActive .cardContent .btnMore {
+  display: none;
+}
+section.news .content .newsCard.cardMoreActive:hover .cardDate {
+  opacity: 0;
+  pointer-events: none;
+}
+section.news .content .newsCard.cardMoreActive:hover .cardContent {
+  color: #000;
+  background: #fff;
+  transform: translateX(0);
+  box-shadow: none;
+  box-shadow: 0px 0px 64px -18px rgba(0, 0, 0, 0.15);
+}
+section.news .content .newsCard.cardMoreActive:hover .cardContent .description {
+  color: rgba(68, 68, 68, 0.52);
+}
+section.news .content .newsCard.cardMoreActive:hover .cardContent .btnMore {
+  color: #000;
+}
+section.news .content .newsCard:hover .cardDate {
+  opacity: 1;
+  pointer-events: auto;
+}
+section.news .content .newsCard:hover .cardContent {
+  color: #fff;
+  background: #444444;
+  transform: translateX(110px);
+  box-shadow: none;
+}
+section.news .content .newsCard:hover .cardContent .description {
+  color: #fff;
+}
+section.news .content .newsCard:hover .cardContent .btnMore {
+  color: #fff;
+}
+section.news .content .newsCard .cardDate {
+  background: #fff;
+  height: 294px;
+  display: flex;
+  align-items: center;
+  padding: 0 17.5px;
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s ease all;
+}
+section.news .content .newsCard .cardDate .date {
+  transform: rotate(-90deg);
+  color: rgba(68, 68, 68, 0.52);
+}
+section.news .content .newsCard .cardContent {
   padding: 55px 30px 30px 45px;
   background: #fff;
   border-radius: 12px;
-  width: 29.5%;
   box-shadow: 0px 0px 64px -18px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: 0.5s ease all;
 }
-section.news .content .newsCard .title {
+section.news .content .newsCard .cardContent .title {
   font-size: 18px;
   font-weight: 600;
   line-height: 24px;
 }
-section.news .content .newsCard .description {
+section.news .content .newsCard .cardContent .description {
   color: rgba(68, 68, 68, 0.52);
   line-height: 24px;
   overflow: hidden;
@@ -3950,23 +4022,38 @@ section.news .content .newsCard .description {
   margin-top: 20px;
   margin-bottom: 40px;
 }
-section.news .content .newsCard .btnMore {
+section.news .content .newsCard .cardContent .description .newsCardImg {
+  border-radius: 12px;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 473/265;
+}
+section.news .content .newsCard .cardContent .description .newsCardImg img {
+  width: 100%;
+  height: 100%;
+  object-position: center;
+  object-fit: cover;
+}
+section.news .content .newsCard .cardContent .btnMore {
   font-size: 18px;
   font-weight: 600;
   background: transparent;
   border: none;
   display: flex;
   align-items: center;
-  margin-left: auto;
+  justify-content: flex-end;
   margin-right: 13px;
   cursor: pointer;
+  transition: 0.3s ease all;
+  color: #000;
 }
-section.news .content .newsCard .btnMore span {
+section.news .content .newsCard .cardContent .btnMore span {
   transform: translateX(5px);
   transition: 0.15s ease all;
   display: flex;
 }
-section.news .content .newsCard .btnMore:hover span {
+section.news .content .newsCard .cardContent .btnMore:hover span {
   transform: translateX(10px);
 }
 

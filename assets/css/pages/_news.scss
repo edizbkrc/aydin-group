@@ -3,49 +3,152 @@ section.news {
     position: relative;
 
     .content {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
         .newsCard {
-            padding: 55px 30px 30px 45px;
-            background: #fff;
-            border-radius: 12px;
-            width: 29.5%;
-            box-shadow: 0px 0px 64px -18px rgba(0, 0, 0, 0.15);
+            display: flex;
+            transition: .3s ease all;
+            width: 33%;
 
-            .title {
-                font-size: 18px;
-                font-weight: 600;
-                line-height: 24px;
-            }
-
-            .description {
-                color: rgba($color: #444444, $alpha: .52);
-                line-height: 24px;
-                @include maxLine(4);
+            &.cardMoreActive {
                 transition: .3s ease all;
-                margin-top: 20px;
-                margin-bottom: 40px;
-            }
 
-            .btnMore {
-                font-size: 18px;
-                font-weight: 600;
-                background: transparent;
-                border: none;
-                display: flex;
-                align-items: center;
-                margin-left: auto;
-                margin-right: 13px;
-                cursor: pointer;
-
-                span {
-                    transform: translateX(5px);
-                    transition: .15s ease all;
-                    display: flex;
+                .cardContent {
+                    .description {
+                        @include maxLine(unset);
+                    }
+                    .btnMore{
+                        display: none;
+                    }
                 }
 
                 &:hover {
-                    span {
-                        transform: translateX(10px);
+                    .cardDate {
+                        opacity: 0;
+                        pointer-events: none;
+                    }
 
+                    .cardContent {
+                        color: #000;
+                        background: #fff;
+                        transform: translateX(0);
+                        box-shadow: none;
+                        box-shadow: 0px 0px 64px -18px rgba(0, 0, 0, 0.15);
+
+                        .description {
+                            color: rgba($color: #444444, $alpha: .52);
+
+                        }
+
+                        .btnMore {
+                            color: #000;
+                        }
+                    }
+                }
+
+            }
+
+            &:hover {
+                .cardDate {
+                    opacity: 1;
+                    pointer-events: auto;
+                }
+
+                .cardContent {
+                    color: #fff;
+                    background: #444444;
+                    transform: translateX(110px);
+                    box-shadow: none;
+
+                    .description {
+                        color: #fff;
+                    }
+
+                    .btnMore {
+                        color: #fff;
+                    }
+                }
+            }
+
+            .cardDate {
+                background: #fff;
+                height: 294px;
+                display: flex;
+                align-items: center;
+                padding: 0 17.5px;
+                position: absolute;
+                opacity: 0;
+                pointer-events: none;
+                transition: .3s ease all;
+
+                .date {
+                    transform: rotate(-90deg);
+                    color: rgba($color: #444444, $alpha: .52);
+
+                }
+            }
+
+            .cardContent {
+                padding: 55px 30px 30px 45px;
+                background: #fff;
+                border-radius: 12px;
+                box-shadow: 0px 0px 64px -18px rgba(0, 0, 0, 0.15);
+                cursor: pointer;
+                transition: .5s ease all;
+
+
+                .title {
+                    font-size: 18px;
+                    font-weight: 600;
+                    line-height: 24px;
+                }
+
+                .description {
+                    color: rgba($color: #444444, $alpha: .52);
+                    line-height: 24px;
+                    @include maxLine(4);
+                    transition: .3s ease all;
+                    margin-top: 20px;
+                    margin-bottom: 40px;
+
+                    .newsCardImg {
+                        border-radius: 12px;
+                        overflow: hidden;
+                        width: 100%;
+                        height: 100%;
+                        aspect-ratio: 473/265;
+
+                        img {
+                            @include objectFitCover();
+                        }
+                    }
+                }
+
+                .btnMore {
+                    font-size: 18px;
+                    font-weight: 600;
+                    background: transparent;
+                    border: none;
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    margin-right: 13px;
+                    cursor: pointer;
+                    transition: .3s ease all;
+                    color: #000;
+                    span {
+                        transform: translateX(5px);
+                        transition: .15s ease all;
+                        display: flex;
+                    }
+
+                    &:hover {
+                        span {
+                            transform: translateX(10px);
+
+                        }
                     }
                 }
             }
