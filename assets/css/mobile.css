@@ -579,6 +579,96 @@ html.debugMode:after {
     left: -30px;
   }
 }
+@media screen and (min-width: 1px) and (max-width: 576px) {
+  section.news .content .newsCard:before {
+    left: -15px;
+    top: 35px;
+  }
+  section.news .content .newsCard .cardContent {
+    padding: 35px 20px 20px 25px;
+  }
+}
+@media screen and (min-width: 1px) and (max-width: 576px) {
+  section.generalCenter .container-fluid {
+    max-width: 88%;
+  }
+  section.generalCenter .content .contactCard {
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+  section.generalCenter .content .contactCard .contactInfo {
+    margin-bottom: 40px;
+  }
+  section.generalCenter .content .contactCard .contactInfo .content {
+    margin-top: 40px;
+  }
+  section.generalCenter .content .contactCard .contactInfo .content .info .adress:before {
+    left: -15px;
+  }
+  section.generalCenter .content .contactCard.contactForm .content {
+    margin-top: 30px;
+  }
+  section.generalCenter .content .contactCard.contactForm .contactFormSend {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 768px) {
+  section.generalCenter .container-fluid {
+    max-width: 78%;
+  }
+  section.generalCenter .content .contactCard {
+    padding: 25px;
+    flex-wrap: wrap;
+  }
+  section.generalCenter .content .contactCard .contactInfo {
+    margin-bottom: 40px;
+  }
+  section.generalCenter .content .contactCard .contactInfo .content {
+    margin-top: 40px;
+  }
+  section.generalCenter .content .contactCard .contactInfo .content .info .adress:before {
+    left: -17px;
+  }
+  section.generalCenter .content .contactCard.contactForm .content {
+    margin-top: 30px;
+  }
+  section.generalCenter .content .contactCard.contactForm .contactFormSend {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 992px) {
+  section.generalCenter .content .contactCard {
+    padding: 40px;
+  }
+  section.generalCenter .content .contactCard .contactInfo {
+    margin-bottom: 40px;
+  }
+  section.generalCenter .content .contactCard .contactInfo .content {
+    margin-top: 40px;
+  }
+  section.generalCenter .content .contactCard.contactForm .contactFormSend {
+    gap: 20px;
+    justify-content: space-between;
+  }
+  section.generalCenter .content .contactCard.contactForm .contactFormSend .btnSend {
+    max-width: 240px;
+  }
+}
+@media screen and (min-width: 993px) and (max-width: 1200px) {
+  section.generalCenter .content .contactCard .contactInfo {
+    margin-bottom: 40px;
+  }
+  section.generalCenter .content .contactCard .contactInfo .content {
+    margin-top: 40px;
+  }
+}
+@media screen and (min-width: 1201px) and (max-width: 1400px) {
+  section.generalCenter .content .contactCard {
+    padding: 50px;
+  }
+}
 @media screen and (max-width: 768px) {
   .sliderTop {
     flex-direction: column;

@@ -1,0 +1,132 @@
+@include media("screen", ">xs", "<=sm") {
+    section.generalCenter {
+
+        .container-fluid{
+            max-width: 88%;
+        }
+        .content {
+            .contactCard {
+                padding: 20px;
+                flex-wrap: wrap;
+
+                .contactInfo {
+                    margin-bottom: 40px;
+
+                    .content {
+                        margin-top: 40px;
+
+                        .info{
+                            .adress{
+                                &:before{
+                                    left: -15px;
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                &.contactForm{
+                    .content{
+                        margin-top: 30px;
+                    }
+                    .contactFormSend{
+                       flex-direction: column;
+                       gap: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+@include media("screen", ">sm", "<=md") {
+    section.generalCenter {
+
+        .container-fluid{
+            max-width: 78%;
+        }
+        .content {
+            .contactCard {
+                padding: 25px;
+                flex-wrap: wrap;
+
+                .contactInfo {
+                    margin-bottom: 40px;
+
+                    .content {
+                        margin-top: 40px;
+
+                        .info{
+                            .adress{
+                                &:before{
+                                    left: -17px;
+                                }
+                            }
+                        }
+                    }
+                }
+                &.contactForm{
+                    .content{
+                        margin-top: 30px;
+                    }
+                    .contactFormSend{
+                       flex-direction: column;
+                       gap: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+@include media("screen", ">md", "<=lg") {
+    section.generalCenter {
+        .content {
+            .contactCard {
+                padding: 40px;
+
+                .contactInfo {
+                    margin-bottom: 40px;
+
+                    .content {
+                        margin-top: 40px;
+                    }
+                }
+                &.contactForm{
+                    .contactFormSend{
+                        gap: 20px;
+                        justify-content: space-between;
+                        .btnSend{
+                            max-width: 240px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include media("screen", ">lg", "<=xl") {
+    section.generalCenter {
+        .content {
+            .contactCard {
+                .contactInfo {
+                    margin-bottom: 40px;
+
+                    .content {
+                        margin-top: 40px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@include media("screen", ">xl", "<=xxl") {
+    section.generalCenter {
+        .content {
+            .contactCard {
+                padding: 50px;
+            }
+        }
+    }
+}

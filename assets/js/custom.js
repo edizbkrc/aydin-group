@@ -138,3 +138,12 @@ $("body").on("click", ".customTabNavs a[href]", function (button) {
     }
 });
 
+function initMap() {
+    var istanbul = {lat: 37.9195958795463, lng: 32.53087110184796};
+    var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 18,
+        center: istanbul
+    });
+}
+ 
+

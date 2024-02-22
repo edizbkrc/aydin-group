@@ -122,3 +122,57 @@ body {
     pointer-events: auto;
     overflow: unset;
 }
+
+
+.customcheckbox2 {
+    position: relative;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: flex;
+    padding: 0;
+    gap: 10px;
+    align-items: center;
+
+    input {
+        display: none;
+
+        &:checked {
+            ~.checkmark {
+                &:after {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .text {
+        color: #444444;
+        font-size: 14px;
+    }
+
+    .checkmark {
+        width: 20px;
+        height: 20px;
+        border-radius: 6px;
+        background: #fff;
+        border: 2px solid #707070;
+        flex-shrink: 0;
+        position: relative;
+
+        &:after {
+            content: "";
+            position: absolute;
+            display: none;
+            background: #707070;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            @include getMask("../img/svg/check.svg");
+            width: 15px;
+            height: 12px;
+        }
+    }
+}
